@@ -17,7 +17,10 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    # 用自托管 runner：GitHub 托管 runner 的出口 IP 是数据中心段，
+    # Capitol Trades（Vercel Security Checkpoint）对它一律返回 429，抓不到数据。
+    # 自托管 runner 让同一个工作流从住宅网络发出请求，调度与日志仍留在 GitHub 云端。
+    runs-on: [self-hosted, cnassetlab]
     steps:
       - uses: actions/checkout@v4
 
