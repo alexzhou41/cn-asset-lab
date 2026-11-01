@@ -87,21 +87,13 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw "api_commit failed" }
           exit 0
 
-      # 把站点拷进 runner 工作区，再用相对路径上传产物
-      - name: Stage site for Pages
+      # 发布 Pages：走 legacy 的 gh-pages 分支 + GitHub 服务端自动构建。
+      # 不用 actions/upload-pages-artifact + deploy-pages：产物上传要走 Azure 产物服务，
+      # 而本机 runner 的 .NET/schannel TLS 到那个平面会被重置，上传这一步必挂。
+      # legacy 路径只需要 api.github.com，全程 OpenSSL，稳定。
+      - name: Publish site to GitHub Pages
         shell: powershell
         run: |
-          $dest = Join-Path $env:GITHUB_WORKSPACE "site_cn_allweather"
-          New-Item -ItemType Directory -Path $dest -Force | Out-Null
-          Copy-Item -Path (Join-Path $env:WS "site_cn_allweather\*") -Destination $dest -Recurse -Force
-          Get-ChildItem $dest | ForEach-Object { Write-Output ("staged: " + $_.Name + " " + $_.Length) }
+          & $env:PY_EXE "$env:WS\carry\pages_deploy.py"
+          if ($LASTEXITCODE -ne 0) { throw "pages_deploy failed" }
           exit 0
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site_cn_allweather
-          if-no-files-found: error
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4

@@ -45,6 +45,7 @@ PIPELINE_SCRIPTS = [
     "cloud_task_sync.py",     # local mirror sync
     "setup_selfhosted_runner.py",
     "fetch_job_log.py",
+    "pages_deploy.py",        # publishes the site to the gh-pages branch
 ]
 
 # workspace path -> repository path
