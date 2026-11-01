@@ -2,16 +2,19 @@ name: update-site
 
 # 云端定时刷新：抓取最新的美国国会财务披露 -> 合并快照 -> 重算事后收益 -> 重建静态站 -> 发布到 GitHub -> 部署 Pages
 #
-# 三个绕不开的约束（都已在真实运行中验证过）：
+# 四个绕不开的约束（都已在真实运行中验证过）：
 #  1. Capitol Trades（Vercel Security Checkpoint）对所有数据中心出口 IP 一律 429，
 #     公共代理（r.jina.ai / allorigins / codetabs…）本身也是数据中心段，同样 429。
 #     所以抓取必须从住宅网络发出 -> 用本机自托管 runner。
-#  2. 本机到 github.com / codeload.github.com / raw.githubusercontent.com 不可达
-#     （connect timeout），只有 api.github.com 通 -> 不用 actions/checkout，也不用 git push，
-#     改用 Git Data API（carry/api_commit.py + carry/github_api.py）。
+#  2. 本机到 github.com / codeload.github.com / raw.githubusercontent.com 默认不可达；
+#     Windows 的 schannel TLS 会被重置，而 OpenSSL 正常。所以：
+#       - git 要设 http.sslBackend=openssl；
+#       - 所有 GitHub 读写统一走 api.github.com 的 Git Data API（carry/api_commit.py）。
 #  3. 本机 Git 装在 D:\Program Files\Git，runner 找不到默认位置的 bash.exe；
 #     actions/setup-python 又要写注册表（非管理员会失败）-> 全部步骤用 Windows PowerShell
 #     加本机自带的 Python 3.11。
+#  4. 不需要 actions/checkout：代码和数据都在本机工作区，直接用绝对路径，
+#     顺便去掉对 github.com 的依赖。
 on:
   schedule:
     - cron: '17 */6 * * *'   # UTC，对应北京时间 01:17 / 07:17 / 13:17 / 19:17
@@ -24,6 +27,7 @@ on:
 
 permissions:
   contents: write
+  workflows: write
   pages: write
   id-token: write
 
@@ -74,7 +78,7 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw "policy_refresh failed" }
           exit 0
 
-      # 用 Git Data API 发布（api.github.com 可达，github.com 不可达，所以不能 git push）
+      # 用 Git Data API 发布（api.github.com 可达，github.com 不可靠，所以不 git push）
       - name: Publish to GitHub via API
         shell: powershell
         run: |
@@ -82,10 +86,20 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw "api_commit failed" }
           exit 0
 
+      # 把站点拷进 runner 工作区，再用相对路径上传产物
+      - name: Stage site for Pages
+        shell: powershell
+        run: |
+          $dest = Join-Path $env:GITHUB_WORKSPACE "site_cn_allweather"
+          New-Item -ItemType Directory -Path $dest -Force | Out-Null
+          Copy-Item -Path (Join-Path $env:WS "site_cn_allweather\*") -Destination $dest -Recurse -Force
+          Get-ChildItem $dest | ForEach-Object { Write-Output ("staged: " + $_.Name + " " + $_.Length) }
+          exit 0
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: C:\Users\thinkpad\.minimax\sessions\mvs_3a2722267d8a4bfe89b4674dba46a98a\workspace\site_cn_allweather
+          path: site_cn_allweather
           if-no-files-found: error
 
       - name: Deploy to GitHub Pages
