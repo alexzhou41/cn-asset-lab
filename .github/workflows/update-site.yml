@@ -27,7 +27,6 @@ on:
 
 permissions:
   contents: write
-  workflows: write
   pages: write
   id-token: write
 
@@ -78,11 +77,13 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw "policy_refresh failed" }
           exit 0
 
-      # 用 Git Data API 发布（api.github.com 可达，github.com 不可靠，所以不 git push）
+      # 用 Git Data API 发布（api.github.com 可达，github.com 不可靠，所以不 git push）。
+      # 工作流文件本身不在这里改：运行中的工作流改自己会让 dispatch 解析失败，
+      # 而且 GITHUB_TOKEN 也没有改 workflow 的权限。
       - name: Publish to GitHub via API
         shell: powershell
         run: |
-          & $env:PY_EXE "$env:WS\carry\api_commit.py"
+          & $env:PY_EXE "$env:WS\carry\api_commit.py" --skip .github/workflows/update-site.yml
           if ($LASTEXITCODE -ne 0) { throw "api_commit failed" }
           exit 0
 

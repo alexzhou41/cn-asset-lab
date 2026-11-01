@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """Publish the workspace state to GitHub over api.github.com.
 
-Why not `git push`: on this machine github.com is unreachable (connect
-timeout) while api.github.com works fine, so the Git Data API is the only
-working transport. See github_api.py.
+Why not `git push`: on this machine github.com is unreliable (Windows schannel
+TLS gets reset; git works only after `http.sslBackend=openssl`), while
+api.github.com is stable over OpenSSL. See github_api.py.
 
 What gets published:
   * the refreshed congressional-trading artifacts (snapshot, trades, analysis)
@@ -12,7 +12,11 @@ What gets published:
     complete, runnable mirror of the workspace
 
 Only files whose content actually changed are included in the commit.
+
+Usage:
+  python api_commit.py [--skip <repo/path>]...
 """
+import argparse
 import hashlib
 import os
 import subprocess
@@ -40,6 +44,7 @@ PIPELINE_SCRIPTS = [
     "api_commit.py",          # this publisher
     "cloud_task_sync.py",     # local mirror sync
     "setup_selfhosted_runner.py",
+    "fetch_job_log.py",
 ]
 
 # workspace path -> repository path
@@ -88,12 +93,23 @@ def resolve_token():
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--skip", action="append", default=[],
+                    help="repository path to skip (repeatable)")
+    ap.add_argument("--repo", default=REPO)
+    ap.add_argument("--branch", default=BRANCH)
+    args = ap.parse_args()
+    skip = set(args.skip)
+
     tok = resolve_token()
-    remote, _ = ga.list_tree(REPO, BRANCH, tok)
-    print(f"remote blobs on {BRANCH}: {len(remote)}", flush=True)
+    remote, _ = ga.list_tree(args.repo, args.branch, tok)
+    print(f"remote blobs on {args.branch}: {len(remote)}", flush=True)
 
     changed, missing = [], []
     for local, repo_path in collect():
+        if repo_path in skip:
+            print(f"  skipped by request: {repo_path}", flush=True)
+            continue
         if not os.path.exists(local):
             missing.append(repo_path)
             continue
@@ -117,9 +133,9 @@ def main():
 
     payload = {repo_path: data for repo_path, data, _old in changed}
     stamp = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    res = ga.commit_files(REPO, payload, f"chore: refresh site and data {stamp}",
-                          ref=BRANCH, tok=tok)
-    print(f"commit {res['commit']} on {BRANCH}", flush=True)
+    res = ga.commit_files(args.repo, payload, f"chore: refresh site and data {stamp}",
+                          ref=args.branch, tok=tok)
+    print(f"commit {res['commit']} on {args.branch}", flush=True)
     print("PUBLISH_OK")
     return 0
 
