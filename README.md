@@ -7,7 +7,8 @@
 
 **https://alexzhou41.github.io/cn-asset-lab/**
 
-（国内访问更快的镜像：`https://bqtvkpthqal4c.space.mcode.cn`）
+（国内访问更快的镜像：`https://eoq6d3ozjp99b.space.mcode.cn`；
+更早的旧节点 `https://bqtvkpthqal4c.space.mcode.cn` 仍在，但平台没有删除接口，请自行在云盘里清理）
 
 ## 站点结构
 
