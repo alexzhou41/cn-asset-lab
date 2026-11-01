@@ -15,7 +15,11 @@ S.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Apple
                                "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
                    "Referer": "https://finance.sina.com.cn/"})
 
-CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "us_stocks")
+# 缓存目录可用环境变量 US_PRICE_CACHE 覆盖。
+# 自托管 runner 的 checkout 每次都会被 actions/checkout 清空，所以那里必须指向
+# 一个跨运行持久的目录；否则每次运行都要重抓 700+ 个 ticker 的日线。
+CACHE = os.environ.get("US_PRICE_CACHE") or os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "..", "data", "us_stocks")
 os.makedirs(CACHE, exist_ok=True)
 
 KLINE = ("https://stock.finance.sina.com.cn/usstock/api/jsonp.php/var%20_/"

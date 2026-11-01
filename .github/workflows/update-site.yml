@@ -21,6 +21,7 @@ jobs:
     # Capitol Trades（Vercel Security Checkpoint）对它一律返回 429，抓不到数据。
     # 自托管 runner 让同一个工作流从住宅网络发出请求，调度与日志仍留在 GitHub 云端。
     runs-on: [self-hosted, cnassetlab]
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -29,22 +30,27 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+        shell: bash
+        run: |
+          set -e
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      # 美股日线缓存：每个 ticker 一个 csv，重复抓取很慢，缓存后每次运行只需补新增的
-      - name: Cache US price history
-        uses: actions/cache@v4
-        with:
-          path: data/us_stocks
-          key: us-prices-${{ github.run_id }}
-          restore-keys: |
-            us-prices-
-
+      # 美股日线缓存：700+ 个 ticker 的完整历史，重复抓取极慢。
+      # 自托管 runner 的 checkout 每次都会被清空，所以缓存必须放在仓库之外的持久目录，
+      # 用 US_PRICE_CACHE 传进去（Windows 上指向 _price_cache 目录联接）。
       - name: Refresh congressional trading data
-        run: python carry/policy_refresh.py
+        shell: bash
+        env:
+          US_PRICE_CACHE: ${{ runner.os == 'Windows' && 'C:\Users\thinkpad\.minimax\actions-runner\_price_cache' || format('{0}/us_stocks', runner.temp) }}
+        run: |
+          set -e
+          python carry/policy_refresh.py
 
       - name: Commit refreshed snapshot and site
+        shell: bash
         run: |
+          set -e
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add carry/output/policy_trades_snapshot.csv \
