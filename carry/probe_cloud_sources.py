@@ -1,53 +1,60 @@
 # -*- coding: utf-8 -*-
-"""Probe candidate congressional-trade data sources FROM a GitHub-hosted runner.
+"""Probe round 3 (cloud): find how Quiver's congress-trading page sources its data.
 
-Round 2: Capitol Trades is 429 on every path from datacenter IPs, but Quiver
-Quant answered 200 on its homepage. This round tries the specific Quiver
-congressional-trading endpoints and prints enough of the body to tell JSON
-from HTML.
+If the page ships its trades inside the Next.js RSC payload (like Capitol
+Trades does), we can swap the scraper to Quiver and run entirely on a hosted
+GitHub runner. This script reports the page's plumbing so we know which.
 """
+import re
 import sys
-import time
 
 import requests
 
 HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"),
-    "Accept": "application/json, text/plain, */*",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://www.quiverquant.com/congresstrading",
 }
 
-TARGETS = [
-    ("QQ-congress-page", "https://www.quiverquant.com/congresstrading"),
-    ("QQ-hist-root", "https://www.quiverquant.com/api/historical/congresstrading/"),
-    ("QQ-hist-slash", "https://www.quiverquant.com/api/historical/congresstrading"),
-    ("QQ-hist-range", "https://www.quiverquant.com/api/historical/congresstrading/"
-                      "?start_date=2026-10-01&end_date=2026-11-01"),
-    ("QQ-hist-ticker", "https://www.quiverquant.com/api/historical/congresstrading/NVDA"),
-    ("QQ-hist-congress", "https://www.quiverquant.com/api/historical/congresstrading/"
-                         "?congress=house&ticker=NVDA"),
-    ("QQ-hist-nodate", "https://www.quiverquant.com/api/historical/congresstrading?limit=5"),
-    ("QQ-api-root", "https://api.quiverquant.com/api/historical/congresstrading"),
-    ("QQ-hist-all", "https://www.quiverquant.com/api/historical/congresstrading/all"),
-    ("CT-json-ext", "https://www.capitoltrades.com/trades.json"),
-]
+PAGE = "https://www.quiverquant.com/congresstrading"
+
+API_RE = re.compile(r"""["'`]([^"'`\s]{0,120}(?:/api/|api\.quiver|/congress|congresstrading)[^"'`\s]{0,120})["'`]""", re.I)
+SRC_RE = re.compile(r"""<script[^>]+src=["']([^"']+)["']""")
 
 
 def main():
     s = requests.Session()
     s.trust_env = False
-    for name, url in TARGETS:
-        try:
-            r = s.get(url, headers=HEADERS, timeout=40)
-            body = (r.text or "")[:400].replace("\n", " ").replace("\r", " ")
-            print(f"### {name} | {r.status_code} | {len(r.content)} | {r.headers.get('content-type')}",
-                  flush=True)
-            print(f"    {body}", flush=True)
-        except Exception as exc:  # noqa: BLE001
-            print(f"### {name} | ERROR | {type(exc).__name__}: {str(exc)[:160]}", flush=True)
-        time.sleep(3)
+    r = s.get(PAGE, headers=HEADERS, timeout=60)
+    html = r.text
+    print(f"status={r.status_code} bytes={len(html)}", flush=True)
+
+    print(f"has __NEXT_DATA__: {'__NEXT_DATA__' in html}", flush=True)
+    print(f"has self.__next_f.push: {html.count('self.__next_f.push')}", flush=True)
+    print(f"count 'congresstrading': {html.lower().count('congresstrading')}", flush=True)
+    print(f"count 'disclosedDate': {html.count('disclosedDate')}", flush=True)
+    print(f"count 'txDate': {html.count('txDate')}", flush=True)
+    print(f"count 'representative': {html.count('representative')}", flush=True)
+
+    print("\n--- api-ish strings (unique, first 40) ---", flush=True)
+    seen = []
+    for m in API_RE.findall(html):
+        if m not in seen:
+            seen.append(m)
+    for u in seen[:40]:
+        print(f"  {u}", flush=True)
+
+    print("\n--- script srcs (first 25) ---", flush=True)
+    for u in SRC_RE.findall(html)[:25]:
+        print(f"  {u}", flush=True)
+
+    print("\n--- snippet around 'disclosedDate'/'txDate' (if any) ---", flush=True)
+    for kw in ("disclosedDate", "txDate", "\"politician\"", "amount"):
+        i = html.find(kw)
+        if i >= 0:
+            print(f"[{kw}] ...{html[max(0, i - 300):i + 400]}...", flush=True)
+            break
     return 0
 
 
