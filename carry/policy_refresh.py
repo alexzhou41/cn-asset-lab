@@ -23,10 +23,21 @@ SLEEP = 6.0
 
 S = requests.Session()
 S.trust_env = False
-S.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                               "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                   "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                   "Accept-Language": "en-US,en;q=0.9"})
+S.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
+              "image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+})
 
 
 def flight_payload(html):
@@ -113,6 +124,14 @@ def fetch():
                f"&sortBy=-txDate")
         try:
             r = S.get(url, timeout=60)
+            if r.status_code == 429:
+                # Vercel Security Checkpoint 对数据中心出口 IP 很敏感：退避后重试。
+                for wait in (45, 90, 180):
+                    print(f"  page {page}: HTTP 429, retry in {wait}s", flush=True)
+                    time.sleep(wait)
+                    r = S.get(url, timeout=60)
+                    if r.status_code != 429:
+                        break
             if r.status_code != 200:
                 print(f"  page {page}: HTTP {r.status_code}", flush=True)
                 break
