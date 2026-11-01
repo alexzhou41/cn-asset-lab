@@ -138,6 +138,10 @@ def commit_files(repo, files, message, ref="main", tok=None, dry_run=False):
     base_tree = list_tree(repo, base_commit, tok)[1]
     entries = []
     for path, data in files.items():
+        if data is None:
+            # sha=null removes the path from the tree
+            entries.append({"path": path, "sha": None})
+            continue
         if isinstance(data, str):
             data = data.encode("utf-8")
         entries.append({"path": path, "sha": create_blob(repo, data, tok)})

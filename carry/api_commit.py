@@ -97,6 +97,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip", action="append", default=[],
                     help="repository path to skip (repeatable)")
+    ap.add_argument("--delete", action="append", default=[],
+                    help="repository path to delete (repeatable)")
     ap.add_argument("--repo", default=REPO)
     ap.add_argument("--branch", default=BRANCH)
     args = ap.parse_args()
@@ -110,6 +112,8 @@ def main():
     for local, repo_path in collect():
         if repo_path in skip:
             print(f"  skipped by request: {repo_path}", flush=True)
+            continue
+        if repo_path in set(args.delete):
             continue
         if not os.path.exists(local):
             missing.append(repo_path)
@@ -133,6 +137,9 @@ def main():
         print(f"  changed: {repo_path} ({len(data)} bytes, old={old})", flush=True)
 
     payload = {repo_path: data for repo_path, data, _old in changed}
+    for repo_path in args.delete:
+        payload[repo_path] = None
+        print(f"  deleted: {repo_path}", flush=True)
     stamp = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     res = ga.commit_files(args.repo, payload, f"chore: refresh site and data {stamp}",
                           ref=args.branch, tok=tok)
