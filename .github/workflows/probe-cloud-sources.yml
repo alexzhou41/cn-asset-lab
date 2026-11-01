@@ -1,0 +1,25 @@
+name: probe-cloud-sources
+
+# 一次性诊断：在 GitHub 托管 runner（数据中心出口 IP）上探测候选数据源是否可达。
+# 结论决定 update-site.yml 用托管 runner 还是自托管 runner。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Probe sources
+        run: python carry/probe_cloud_sources.py
