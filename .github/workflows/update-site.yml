@@ -1,10 +1,26 @@
 name: update-site
 
-# 云端定时刷新：抓取最新的美国国会财务披露 -> 合并快照 -> 重算事后收益 -> 重建静态站 -> 部署 Pages
+# 云端定时刷新：抓取最新的美国国会财务披露 -> 合并快照 -> 重算事后收益 -> 重建静态站 -> 发布到 GitHub -> 部署 Pages
+#
+# 三个绕不开的约束（都已在真实运行中验证过）：
+#  1. Capitol Trades（Vercel Security Checkpoint）对所有数据中心出口 IP 一律 429，
+#     公共代理（r.jina.ai / allorigins / codetabs…）本身也是数据中心段，同样 429。
+#     所以抓取必须从住宅网络发出 -> 用本机自托管 runner。
+#  2. 本机到 github.com / codeload.github.com / raw.githubusercontent.com 不可达
+#     （connect timeout），只有 api.github.com 通 -> 不用 actions/checkout，也不用 git push，
+#     改用 Git Data API（carry/api_commit.py + carry/github_api.py）。
+#  3. 本机 Git 装在 D:\Program Files\Git，runner 找不到默认位置的 bash.exe；
+#     actions/setup-python 又要写注册表（非管理员会失败）-> 全部步骤用 Windows PowerShell
+#     加本机自带的 Python 3.11。
 on:
   schedule:
     - cron: '17 */6 * * *'   # UTC，对应北京时间 01:17 / 07:17 / 13:17 / 19:17
   workflow_dispatch:
+    inputs:
+      deploy_only:
+        description: '只重新发布已有产物，不抓取新数据'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -17,30 +33,19 @@ concurrency:
 
 jobs:
   update:
-    # 用自托管 runner：GitHub 托管 runner 的出口 IP 是数据中心段，
-    # Capitol Trades（Vercel Security Checkpoint）对它一律返回 429，抓不到数据；
-    # 公共代理（r.jina.ai / allorigins / codetabs 等）也都是数据中心段，同样 429。
-    # 自托管 runner 让同一个工作流从住宅网络发出请求，调度与日志仍留在 GitHub 云端。
     runs-on: [self-hosted, cnassetlab]
     timeout-minutes: 90
+    env:
+      WS: C:\Users\thinkpad\.minimax\sessions\mvs_3a2722267d8a4bfe89b4674dba46a98a\workspace
+      GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
-
-      # 全部用 Windows PowerShell：本机 Git 装在 D:\Program Files\Git，
-      # runner 找不到默认位置的 bash.exe，`shell: bash` 会直接报 command not found。
-      # 也不用 actions/setup-python：它要写注册表安装 Python，自托管 runner 没有
-      # 管理员权限会失败（Requested registry access is not allowed）。本机自带 Python 3.11。
       - name: Locate Python
         shell: powershell
         run: |
-          $py = $null
-          foreach ($cand in @("C:\Users\thinkpad\AppData\Local\Programs\Python\Python311\python.exe",
-                              "C:\Python311\python.exe")) {
-            if (Test-Path $cand) { $py = $cand; break }
-          }
-          if (-not $py) {
-            $cmd = Get-Command python -ErrorAction SilentlyContinue
-            if ($cmd) { $py = $cmd.Source }
+          $py = "C:\Users\thinkpad\AppData\Local\Programs\Python\Python311\python.exe"
+          if (-not (Test-Path $py)) {
+            $c = Get-Command python -ErrorAction SilentlyContinue
+            if ($c) { $py = $c.Source }
           }
           if (-not $py) { throw "python interpreter not found" }
           & $py --version
@@ -50,53 +55,38 @@ jobs:
       - name: Install dependencies
         shell: powershell
         run: |
-          & $env:PY_EXE -m pip install --upgrade pip
-          if ($LASTEXITCODE -ne 0) { throw "pip upgrade failed" }
-          & $env:PY_EXE -m pip install -r requirements.txt
+          & $env:PY_EXE -m pip install -r "$env:WS\carry\requirements.txt"
           if ($LASTEXITCODE -ne 0) { throw "pip install failed" }
           exit 0
 
       # 美股日线缓存：700+ 个 ticker 的完整历史，重复抓取极慢。
-      # 自托管 runner 的 checkout 每次都会被清空，所以缓存必须放在仓库之外的持久目录
-      # （_price_cache 是指向工作区 data\us_stocks 的目录联接）。
+      # 缓存放在仓库之外的持久目录（_price_cache 是指向工作区 data\us_stocks 的目录联接），
+      # 否则每次运行都要重抓一遍日线。
       - name: Refresh congressional trading data
+        if: ${{ !inputs.deploy_only }}
         shell: powershell
         run: |
           $cache = "C:\Users\thinkpad\.minimax\actions-runner\_price_cache"
           if (-not (Test-Path $cache)) { $cache = Join-Path $env:RUNNER_TEMP "us_stocks" }
           $env:US_PRICE_CACHE = $cache
           Write-Output "price cache: $cache"
-          & $env:PY_EXE carry/policy_refresh.py
+          & $env:PY_EXE "$env:WS\carry\policy_refresh.py"
           if ($LASTEXITCODE -ne 0) { throw "policy_refresh failed" }
           exit 0
 
-      - name: Commit refreshed snapshot and site
+      # 用 Git Data API 发布（api.github.com 可达，github.com 不可达，所以不能 git push）
+      - name: Publish to GitHub via API
         shell: powershell
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add carry/output/policy_trades_snapshot.csv `
-                  carry/output/policy_trades.csv `
-                  carry/output/policy_analysis.json `
-                  miniapps/china-all-weather/miniapp/client/data.json `
-                  site_cn_allweather/index.html
-          if ($LASTEXITCODE -ne 0) { throw "git add failed" }
-          git diff --staged --quiet
-          if ($LASTEXITCODE -eq 0) {
-            Write-Output "no new disclosures"
-          } else {
-            $stamp = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
-            git commit -m "chore: refresh congressional trading data $stamp"
-            if ($LASTEXITCODE -ne 0) { throw "git commit failed" }
-            git push
-            if ($LASTEXITCODE -ne 0) { throw "git push failed" }
-          }
+          & $env:PY_EXE "$env:WS\carry\api_commit.py"
+          if ($LASTEXITCODE -ne 0) { throw "api_commit failed" }
           exit 0
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site_cn_allweather
+          path: C:\Users\thinkpad\.minimax\sessions\mvs_3a2722267d8a4bfe89b4674dba46a98a\workspace\site_cn_allweather
+          if-no-files-found: error
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
