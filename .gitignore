@@ -1,0 +1,9 @@
+# 美股日线缓存（约 65 MB，用 Actions cache 代替）
+data/us_stocks/
+# 抓取缓存与中间文件
+carry/output/ct_pages*/
+carry/output/_*
+carry/output/policy_trades_raw.csv
+carry/output/*.log
+__pycache__/
+*.pyc
