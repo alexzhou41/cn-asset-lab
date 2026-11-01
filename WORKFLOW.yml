@@ -25,16 +25,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+      # 不用 actions/setup-python：它要写注册表安装 Python，自托管 runner 没有管理员
+      # 权限会失败（Requested registry access is not allowed）。本机自带 Python 3.11，
+      # 直接用它。
+      - name: Locate Python
+        shell: bash
+        run: |
+          set -e
+          PY_EXE=""
+          for cand in "C:/Users/thinkpad/AppData/Local/Programs/Python/Python311/python.exe" \
+                      "C:/Python311/python.exe"; do
+            if [ -f "$cand" ]; then PY_EXE="$cand"; break; fi
+          done
+          if [ -z "$PY_EXE" ]; then
+            PY_EXE="$(command -v python || command -v python3)"
+          fi
+          "$PY_EXE" --version
+          echo "PY_EXE=$PY_EXE" >> "$GITHUB_ENV"
 
       - name: Install dependencies
         shell: bash
         run: |
           set -e
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          "$PY_EXE" -m pip install --upgrade pip
+          "$PY_EXE" -m pip install -r requirements.txt
 
       # 美股日线缓存：700+ 个 ticker 的完整历史，重复抓取极慢。
       # 自托管 runner 的 checkout 每次都会被清空，所以缓存必须放在仓库之外的持久目录，
@@ -45,7 +59,7 @@ jobs:
           US_PRICE_CACHE: ${{ runner.os == 'Windows' && 'C:\Users\thinkpad\.minimax\actions-runner\_price_cache' || format('{0}/us_stocks', runner.temp) }}
         run: |
           set -e
-          python carry/policy_refresh.py
+          "$PY_EXE" carry/policy_refresh.py
 
       - name: Commit refreshed snapshot and site
         shell: bash
