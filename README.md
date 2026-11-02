@@ -48,8 +48,25 @@ carry/pages_deploy.py     写入 gh-pages 分支 → GitHub 服务端构建 → 
    本机 runner 的 .NET 到那个平面同样被重置。改用 legacy Pages：把站点写进
    `gh-pages` 分支，由 GitHub 自己的构建服务发布。
 
-本机另有一个定时任务（每 6 小时的 :47 分，与云端调度错开）负责：
-保证自托管 runner 在线、把云端产物同步回工作区、更新国内镜像站、刷新桌面端 Mini App。
+### runner 保活与积压补跑
+
+自托管 runner 是本机的后台进程，机器休眠或重启后会消失。GitHub 的定时作业此时会一直
+**queued**，等 runner 重新上线后会自动补跑（实测隔夜排队的作业一上线就转 in_progress 并全绿），
+所以「关机 → 积压 → 开机补跑」是安全的，不需要额外的补抓逻辑。
+
+本机用三种方式保证 runner 在线（都不需要管理员权限）：
+
+| 手段 | 作用 |
+|---|---|
+| Windows 任务计划程序 `CNAssetLab Runner Keepalive`（每小时） | 兜底保活，先查 `Runner.Listener.exe` 再启动，避免多实例 |
+| 启动文件夹 `CNAssetLab Runner.cmd` | 登录即启动 |
+| `carry/cloud_task_sync.py` | 每次本地同步时检查并拉起 runner |
+
+启动脚本会先清掉 `HTTP_PROXY`/`HTTPS_PROXY` 等代理变量——本机代理 127.0.0.1:7897
+对 api.github.com 返回 EOF，runner 必须直连 GitHub。
+
+另有本机 MiniMax 定时任务（每 6 小时的 :47 分，与云端调度错开）负责：
+把云端产物同步回工作区、更新国内镜像站、刷新桌面端 Mini App。
 
 ## 目录
 
