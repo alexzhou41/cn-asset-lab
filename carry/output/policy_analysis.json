@@ -1,39 +1,39 @@
 {
- "n_trades": 3900,
- "n_politicians": 90,
+ "n_trades": 3912,
+ "n_politicians": 91,
  "n_tickers": 744,
  "date_min": "2026-05-22",
  "date_max": "2026-10-28",
- "n_buy": 1961,
- "n_sell": 1915,
+ "n_buy": 1967,
+ "n_sell": 1921,
  "n_exchange": 24,
- "total_value": 266385568.0,
- "avg_reporting_gap": 23.49820512820513,
+ "total_value": 266498779.0,
+ "avg_reporting_gap": 23.531952965235174,
  "median_reporting_gap": 23.0,
  "horizon_stats": {
   "30": {
-   "n_total": 2763,
-   "n_buy": 1343,
-   "n_sell": 1420,
-   "buy_ret": 1.0742109001493465,
-   "sell_ret": 3.1028816606375242,
-   "spy_ret": 0.9411134638475793,
-   "buy_alpha": 0.15250183707161746,
-   "sell_alpha": -2.143416006484375,
-   "buy_alpha_t": 0.43532030199537164,
-   "sell_alpha_t": -5.407559819406698
+   "n_total": 2765,
+   "n_buy": 1344,
+   "n_sell": 1421,
+   "buy_ret": 1.0892068671721191,
+   "sell_ret": 3.102308877114955,
+   "spy_ret": 0.9410739178502036,
+   "buy_alpha": 0.16752404512162375,
+   "sell_alpha": -2.1428946124985244,
+   "buy_alpha_t": 0.4781177375029641,
+   "sell_alpha_t": -5.410048278975446
   },
   "90": {
    "n_total": 917,
    "n_buy": 501,
    "n_sell": 416,
-   "buy_ret": 2.3572905966278923,
+   "buy_ret": 2.357290596627892,
    "sell_ret": 1.6053653923138405,
    "spy_ret": 2.90878789585542,
-   "buy_alpha": -0.5420461873698507,
-   "sell_alpha": 1.3148047320047918,
-   "buy_alpha_t": -0.6298127273414824,
-   "sell_alpha_t": 1.3642254880542273
+   "buy_alpha": -0.5420461873698508,
+   "sell_alpha": 1.314804732004791,
+   "buy_alpha_t": -0.6298127273414825,
+   "sell_alpha_t": 1.3642254880542268
   },
   "180": {
    "n_total": 0,
@@ -79,17 +79,17 @@
   },
   {
    "m": "2026-09",
-   "n": 811,
-   "buy": 11530500.0,
-   "sell": 10773500.0,
-   "net": 757000.0
+   "n": 821,
+   "buy": 11562500.0,
+   "sell": 10814211.0,
+   "net": 748289.0
   },
   {
    "m": "2026-10",
-   "n": 98,
-   "buy": 20129000.0,
+   "n": 100,
+   "buy": 20169500.0,
    "sell": 20828845.0,
-   "net": -699845.0
+   "net": -659345.0
   }
  ],
  "politicians": [
@@ -398,11 +398,11 @@
    "party": "democrat",
    "chamber": "house",
    "state": "va",
-   "n": 9,
-   "nBuy": 5,
+   "n": 10,
+   "nBuy": 6,
    "nSell": 1,
-   "value": 462500.0,
-   "net": 257500.0,
+   "value": 495000.0,
+   "net": 290000.0,
    "topTicker": null
   },
   {
@@ -458,6 +458,19 @@
    "topTicker": null
   },
   {
+   "id": "K000398",
+   "name": "Thomas Kean Jr",
+   "party": "republican",
+   "chamber": "house",
+   "state": "nj",
+   "n": 38,
+   "nBuy": 15,
+   "nSell": 23,
+   "value": 377500.0,
+   "net": -88500.0,
+   "topTicker": "GOOGL"
+  },
+  {
    "id": "J000309",
    "name": "Jonathan Jackson",
    "party": "democrat",
@@ -495,19 +508,6 @@
    "value": 339000.0,
    "net": -339000.0,
    "topTicker": "ALNY"
-  },
-  {
-   "id": "K000398",
-   "name": "Thomas Kean Jr",
-   "party": "republican",
-   "chamber": "house",
-   "state": "nj",
-   "n": 32,
-   "nBuy": 13,
-   "nSell": 19,
-   "value": 329500.0,
-   "net": -72500.0,
-   "topTicker": "GOOGL"
   },
   {
    "id": "W000805",
@@ -770,6 +770,19 @@
    "topTicker": "AAPL"
   },
   {
+   "id": "M001239",
+   "name": "John McGuire",
+   "party": "republican",
+   "chamber": "house",
+   "state": "va",
+   "n": 14,
+   "nBuy": 7,
+   "nSell": 7,
+   "value": 112000.0,
+   "net": 0.0,
+   "topTicker": "BLK"
+  },
+  {
    "id": "M001245",
    "name": "Christian Menefee",
    "party": "democrat",
@@ -846,19 +859,6 @@
    "value": 80000.0,
    "net": 80000.0,
    "topTicker": "HD"
-  },
-  {
-   "id": "M001239",
-   "name": "John McGuire",
-   "party": "republican",
-   "chamber": "house",
-   "state": "va",
-   "n": 10,
-   "nBuy": 4,
-   "nSell": 6,
-   "value": 80000.0,
-   "net": -16000.0,
-   "topTicker": "BLK"
   },
   {
    "id": "G000603",
@@ -1262,6 +1262,19 @@
    "value": 2723.0,
    "net": -2723.0,
    "topTicker": "ICHR"
+  },
+  {
+   "id": "M001205",
+   "name": "Carol Miller",
+   "party": "republican",
+   "chamber": "house",
+   "state": "wv",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 711.0,
+   "net": -711.0,
+   "topTicker": "HONA"
   }
  ],
  "sectors": [
@@ -1283,11 +1296,11 @@
   },
   {
    "sector": "industrials",
-   "n": 463,
-   "nBuy": 206,
-   "nSell": 249,
-   "value": 17383345.0,
-   "net": 4267655.0
+   "n": 465,
+   "nBuy": 207,
+   "nSell": 250,
+   "value": 17392056.0,
+   "net": 4274944.0
   },
   {
    "sector": "consumer-discretionary",
@@ -1299,27 +1312,27 @@
   },
   {
    "sector": "health-care",
-   "n": 482,
+   "n": 485,
    "nBuy": 200,
-   "nSell": 282,
-   "value": 6113000.0,
-   "net": -2093000.0
+   "nSell": 285,
+   "value": 6137000.0,
+   "net": -2117000.0
   },
   {
    "sector": "information-technology",
-   "n": 627,
-   "nBuy": 307,
-   "nSell": 320,
-   "value": 16435723.0,
-   "net": 1722277.0
+   "n": 632,
+   "nBuy": 311,
+   "nSell": 321,
+   "value": 16475723.0,
+   "net": 1746277.0
   },
   {
    "sector": "consumer-staples",
-   "n": 170,
+   "n": 171,
    "nBuy": 80,
-   "nSell": 90,
-   "value": 2761500.0,
-   "net": -968500.0
+   "nSell": 91,
+   "value": 2769500.0,
+   "net": -976500.0
   },
   {
    "sector": "communication-services",
@@ -1829,6 +1842,17 @@
    "r30": 10.57425433452758
   },
   {
+   "ticker": "MU",
+   "name": "Micron Technology Inc",
+   "sector": "information-technology",
+   "n": 26,
+   "nBuy": 9,
+   "nSell": 17,
+   "value": 281500.0,
+   "net": -137500.0,
+   "r30": -6.0480673665783895
+  },
+  {
    "ticker": "STE",
    "name": "Steris PLC",
    "sector": "health-care",
@@ -1917,6 +1941,17 @@
    "r30": 7.446383319441696
   },
   {
+   "ticker": "ABT",
+   "name": "Abbott Laboratories",
+   "sector": "health-care",
+   "n": 18,
+   "nBuy": 7,
+   "nSell": 11,
+   "value": 260000.0,
+   "net": -148000.0,
+   "r30": 13.301383893329705
+  },
+  {
    "ticker": "PG",
    "name": "The Procter & Gamble Co",
    "sector": "consumer-staples",
@@ -1928,17 +1963,6 @@
    "r30": 3.3710238178320826
   },
   {
-   "ticker": "MU",
-   "name": "Micron Technology Inc",
-   "sector": "information-technology",
-   "n": 23,
-   "nBuy": 6,
-   "nSell": 17,
-   "value": 257500.0,
-   "net": -161500.0,
-   "r30": -6.0480673665783895
-  },
-  {
    "ticker": "AMD",
    "name": "Advanced Micro Devices Inc",
    "sector": "information-technology",
@@ -1948,17 +1972,6 @@
    "value": 255000.0,
    "net": -159000.0,
    "r30": 2.4185852244189423
-  },
-  {
-   "ticker": "ABT",
-   "name": "Abbott Laboratories",
-   "sector": "health-care",
-   "n": 17,
-   "nBuy": 7,
-   "nSell": 10,
-   "value": 252000.0,
-   "net": -140000.0,
-   "r30": 13.989660619471186
   },
   {
    "ticker": "VSH",
@@ -2008,11 +2021,11 @@
    "ticker": "HONA",
    "name": "HONEYWELL AEROSPACE INC",
    "sector": "industrials",
-   "n": 8,
+   "n": 9,
    "nBuy": 0,
-   "nSell": 4,
-   "value": 229000.0,
-   "net": -56500.0,
+   "nSell": 5,
+   "value": 229711.0,
+   "net": -57211.0,
    "r30": -22.510653204988927
   },
   {
@@ -2093,6 +2106,17 @@
    "r30": -6.34752626529275
   },
   {
+   "ticker": "AVGO",
+   "name": "Broadcom Inc",
+   "sector": "information-technology",
+   "n": 15,
+   "nBuy": 9,
+   "nSell": 6,
+   "value": 218000.0,
+   "net": 24000.0,
+   "r30": -3.19931587741773
+  },
+  {
    "ticker": "LH",
    "name": "Laboratory Corp of America Holdings",
    "sector": "health-care",
@@ -2102,17 +2126,6 @@
    "value": 215000.0,
    "net": -199000.0,
    "r30": 1.6888902502205279
-  },
-  {
-   "ticker": "AVGO",
-   "name": "Broadcom Inc",
-   "sector": "information-technology",
-   "n": 14,
-   "nBuy": 9,
-   "nSell": 5,
-   "value": 210000.0,
-   "net": 32000.0,
-   "r30": -3.19931587741773
   },
   {
    "ticker": "SGI",
@@ -2379,6 +2392,17 @@
    "r30": -2.328518341977253
   },
   {
+   "ticker": "TXN",
+   "name": "Texas Instruments Inc",
+   "sector": "information-technology",
+   "n": 12,
+   "nBuy": 5,
+   "nSell": 7,
+   "value": 169500.0,
+   "net": -40500.0,
+   "r30": 1.682290741853486
+  },
+  {
    "ticker": "WDAY",
    "name": "Workday Inc",
    "sector": "information-technology",
@@ -2432,17 +2456,6 @@
    "value": 161500.0,
    "net": -97500.0,
    "r30": -4.702571091830903
-  },
-  {
-   "ticker": "TXN",
-   "name": "Texas Instruments Inc",
-   "sector": "information-technology",
-   "n": 11,
-   "nBuy": 4,
-   "nSell": 7,
-   "value": 161500.0,
-   "net": -48500.0,
-   "r30": -0.4895425733578744
   },
   {
    "ticker": "VZ",
@@ -2533,6 +2546,17 @@
    "r30": -13.147394480908522
   },
   {
+   "ticker": "JNJ",
+   "name": "Johnson & Johnson",
+   "sector": "health-care",
+   "n": 15,
+   "nBuy": 8,
+   "nSell": 7,
+   "value": 144500.0,
+   "net": 32500.0,
+   "r30": 3.0205254335237584
+  },
+  {
    "ticker": "SCI",
    "name": "Service Corp International",
    "sector": "consumer-discretionary",
@@ -2597,17 +2621,6 @@
    "value": 136500.0,
    "net": -88500.0,
    "r30": -0.6160641631245933
-  },
-  {
-   "ticker": "JNJ",
-   "name": "Johnson & Johnson",
-   "sector": "health-care",
-   "n": 14,
-   "nBuy": 8,
-   "nSell": 6,
-   "value": 136500.0,
-   "net": 40500.0,
-   "r30": 3.0205254335237584
   },
   {
    "ticker": "UPST",
@@ -3017,6 +3030,17 @@
    "r30": 0.41156982342614445
   },
   {
+   "ticker": "SYK",
+   "name": "Stryker Corp",
+   "sector": "health-care",
+   "n": 9,
+   "nBuy": 3,
+   "nSell": 6,
+   "value": 96500.0,
+   "net": -48500.0,
+   "r30": 7.680394412934202
+  },
+  {
    "ticker": "CHTR",
    "name": "Charter Communications Inc",
    "sector": "communication-services",
@@ -3103,17 +3127,6 @@
    "value": 88500.0,
    "net": -88500.0,
    "r30": -14.394285839220593
-  },
-  {
-   "ticker": "SYK",
-   "name": "Stryker Corp",
-   "sector": "health-care",
-   "n": 8,
-   "nBuy": 3,
-   "nSell": 5,
-   "value": 88500.0,
-   "net": -40500.0,
-   "r30": 7.680394412934202
   },
   {
    "ticker": "CCI",
@@ -6911,6 +6924,17 @@
    "r30": 6.706215317373632
   },
   {
+   "ticker": "MDLZ",
+   "name": "Mondelez International Inc",
+   "sector": "consumer-staples",
+   "n": 2,
+   "nBuy": 0,
+   "nSell": 2,
+   "value": 16000.0,
+   "net": -16000.0,
+   "r30": -0.8945686900958538
+  },
+  {
    "ticker": "MGK",
    "name": "Vanguard Mega Cap Growth ETF",
    "sector": null,
@@ -8592,17 +8616,6 @@
    "value": 8000.0,
    "net": -8000.0,
    "r30": null
-  },
-  {
-   "ticker": "MDLZ",
-   "name": "Mondelez International Inc",
-   "sector": "consumer-staples",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 8000.0,
-   "net": -8000.0,
-   "r30": -0.8945686900958538
   },
   {
    "ticker": "MET",
