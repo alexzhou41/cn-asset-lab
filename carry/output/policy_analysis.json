@@ -1,39 +1,39 @@
 {
- "n_trades": 3912,
- "n_politicians": 91,
- "n_tickers": 744,
+ "n_trades": 4333,
+ "n_politicians": 95,
+ "n_tickers": 770,
  "date_min": "2026-05-22",
- "date_max": "2026-10-28",
- "n_buy": 1967,
- "n_sell": 1921,
+ "date_max": "2026-11-09",
+ "n_buy": 2168,
+ "n_sell": 2141,
  "n_exchange": 24,
- "total_value": 266498779.0,
- "avg_reporting_gap": 23.531952965235174,
+ "total_value": 276590779.0,
+ "avg_reporting_gap": 23.469882298638357,
  "median_reporting_gap": 23.0,
  "horizon_stats": {
   "30": {
    "n_total": 2765,
    "n_buy": 1344,
    "n_sell": 1421,
-   "buy_ret": 1.0892068671721196,
+   "buy_ret": 1.0892068671721191,
    "sell_ret": 3.1023088771149547,
    "spy_ret": 0.9410739178502036,
    "buy_alpha": 0.1675240451216236,
-   "sell_alpha": -2.142894612498524,
+   "sell_alpha": -2.1428946124985244,
    "buy_alpha_t": 0.4781177375029637,
-   "sell_alpha_t": -5.410048278975444
+   "sell_alpha_t": -5.410048278975446
   },
   "90": {
    "n_total": 917,
    "n_buy": 501,
    "n_sell": 416,
    "buy_ret": 2.357290596627892,
-   "sell_ret": 1.6053653923138405,
+   "sell_ret": 1.60536539231384,
    "spy_ret": 2.90878789585542,
-   "buy_alpha": -0.5420461873698507,
-   "sell_alpha": 1.3148047320047918,
-   "buy_alpha_t": -0.6298127273414824,
-   "sell_alpha_t": 1.3642254880542273
+   "buy_alpha": -0.5420461873698508,
+   "sell_alpha": 1.314804732004791,
+   "buy_alpha_t": -0.6298127273414826,
+   "sell_alpha_t": 1.3642254880542268
   },
   "180": {
    "n_total": 0,
@@ -86,10 +86,17 @@
   },
   {
    "m": "2026-10",
-   "n": 100,
-   "buy": 20169500.0,
-   "sell": 20828845.0,
-   "net": -659345.0
+   "n": 499,
+   "buy": 24667000.0,
+   "sell": 25880345.0,
+   "net": -1213345.0
+  },
+  {
+   "m": "2026-11",
+   "n": 22,
+   "buy": 455000.0,
+   "sell": 88000.0,
+   "net": 367000.0
   }
  ],
  "politicians": [
@@ -120,6 +127,19 @@
    "topTicker": null
   },
   {
+   "id": "K000389",
+   "name": "Rohit Khanna",
+   "party": "democrat",
+   "chamber": "house",
+   "state": "ca",
+   "n": 1949,
+   "nBuy": 1065,
+   "nSell": 884,
+   "value": 26653500.0,
+   "net": 1137500.0,
+   "topTicker": "UBER"
+  },
+  {
    "id": "M001243",
    "name": "David McCormick",
    "party": "republican",
@@ -133,17 +153,17 @@
    "topTicker": "GS"
   },
   {
-   "id": "K000389",
-   "name": "Rohit Khanna",
+   "id": "P000608",
+   "name": "Scott Peters",
    "party": "democrat",
    "chamber": "house",
    "state": "ca",
-   "n": 1664,
-   "nBuy": 934,
-   "nSell": 730,
-   "value": 22152000.0,
-   "net": 620000.0,
-   "topTicker": "UBER"
+   "n": 59,
+   "nBuy": 32,
+   "nSell": 27,
+   "value": 18545500.0,
+   "net": 680500.0,
+   "topTicker": null
   },
   {
    "id": "M001157",
@@ -157,19 +177,6 @@
    "value": 18109000.0,
    "net": 4746000.0,
    "topTicker": "TAXI"
-  },
-  {
-   "id": "P000608",
-   "name": "Scott Peters",
-   "party": "democrat",
-   "chamber": "house",
-   "state": "ca",
-   "n": 51,
-   "nBuy": 28,
-   "nSell": 23,
-   "value": 17237500.0,
-   "net": 1522500.0,
-   "topTicker": null
   },
   {
    "id": "B001277",
@@ -203,12 +210,25 @@
    "party": "democrat",
    "chamber": "house",
    "state": "ca",
-   "n": 10,
+   "n": 11,
    "nBuy": 10,
-   "nSell": 0,
-   "value": 13875000.0,
-   "net": 13875000.0,
+   "nSell": 1,
+   "value": 13950000.0,
+   "net": 13800000.0,
    "topTicker": "BE"
+  },
+  {
+   "id": "C001123",
+   "name": "Gilbert Cisneros",
+   "party": "democrat",
+   "chamber": "house",
+   "state": "ca",
+   "n": 329,
+   "nBuy": 194,
+   "nSell": 133,
+   "value": 8951500.0,
+   "net": 839500.0,
+   "topTicker": "APP"
   },
   {
    "id": "H001082",
@@ -237,17 +257,17 @@
    "topTicker": "HUBB"
   },
   {
-   "id": "C001123",
-   "name": "Gilbert Cisneros",
+   "id": "D000617",
+   "name": "Suzan DelBene",
    "party": "democrat",
    "chamber": "house",
-   "state": "ca",
-   "n": 265,
-   "nBuy": 160,
-   "nSell": 103,
-   "value": 6363000.0,
-   "net": 499000.0,
-   "topTicker": "LAMR"
+   "state": "wa",
+   "n": 23,
+   "nBuy": 16,
+   "nSell": 7,
+   "value": 6529000.0,
+   "net": 1964000.0,
+   "topTicker": null
   },
   {
    "id": "H001086",
@@ -261,19 +281,6 @@
    "value": 6068500.0,
    "net": 2637500.0,
    "topTicker": "HON"
-  },
-  {
-   "id": "D000617",
-   "name": "Suzan DelBene",
-   "party": "democrat",
-   "chamber": "house",
-   "state": "wa",
-   "n": 17,
-   "nBuy": 11,
-   "nSell": 6,
-   "value": 5722500.0,
-   "net": 1907500.0,
-   "topTicker": null
   },
   {
    "id": "S001217",
@@ -307,11 +314,11 @@
    "party": "democrat",
    "chamber": "house",
    "state": "nj",
-   "n": 30,
-   "nBuy": 13,
-   "nSell": 17,
-   "value": 2458000.0,
-   "net": -32000.0,
+   "n": 33,
+   "nBuy": 15,
+   "nSell": 18,
+   "value": 2482000.0,
+   "net": -24000.0,
    "topTicker": "MSFT"
   },
   {
@@ -354,6 +361,19 @@
    "topTicker": "BNS"
   },
   {
+   "id": "S000168",
+   "name": "Maria Elvira Salazar",
+   "party": "republican",
+   "chamber": "house",
+   "state": "fl",
+   "n": 76,
+   "nBuy": 32,
+   "nSell": 44,
+   "value": 926500.0,
+   "net": 26500.0,
+   "topTicker": "BEP"
+  },
+  {
    "id": "C001114",
    "name": "John Curtis",
    "party": "republican",
@@ -367,17 +387,17 @@
    "topTicker": "UBS"
   },
   {
-   "id": "S000168",
-   "name": "Maria Elvira Salazar",
+   "id": "T000490",
+   "name": "David Taylor",
    "party": "republican",
    "chamber": "house",
-   "state": "fl",
+   "state": "oh",
    "n": 71,
-   "nBuy": 28,
-   "nSell": 43,
-   "value": 886500.0,
-   "net": 2500.0,
-   "topTicker": "BEP"
+   "nBuy": 44,
+   "nSell": 27,
+   "value": 592500.0,
+   "net": 111500.0,
+   "topTicker": "AMGN"
   },
   {
    "id": "B001236",
@@ -385,12 +405,38 @@
    "party": "republican",
    "chamber": "senate",
    "state": "ar",
-   "n": 68,
-   "nBuy": 37,
+   "n": 70,
+   "nBuy": 39,
    "nSell": 31,
-   "value": 568500.0,
-   "net": 23500.0,
+   "value": 584500.0,
+   "net": 39500.0,
    "topTicker": "SPYM"
+  },
+  {
+   "id": "W000812",
+   "name": "Ann Wagner",
+   "party": "republican",
+   "chamber": "house",
+   "state": "mo",
+   "n": 3,
+   "nBuy": 1,
+   "nSell": 2,
+   "value": 582500.0,
+   "net": 167500.0,
+   "topTicker": "3733Z"
+  },
+  {
+   "id": "K000376",
+   "name": "George Kelly",
+   "party": "republican",
+   "chamber": "house",
+   "state": "pa",
+   "n": 12,
+   "nBuy": 4,
+   "nSell": 8,
+   "value": 504500.0,
+   "net": -74500.0,
+   "topTicker": "ABT"
   },
   {
    "id": "B001292",
@@ -406,43 +452,17 @@
    "topTicker": null
   },
   {
-   "id": "T000490",
-   "name": "David Taylor",
-   "party": "republican",
+   "id": "J000309",
+   "name": "Jonathan Jackson",
+   "party": "democrat",
    "chamber": "house",
-   "state": "oh",
-   "n": 52,
-   "nBuy": 35,
-   "nSell": 17,
-   "value": 440500.0,
-   "net": 119500.0,
-   "topTicker": "MPC"
-  },
-  {
-   "id": "K000376",
-   "name": "George Kelly",
-   "party": "republican",
-   "chamber": "house",
-   "state": "pa",
-   "n": 11,
-   "nBuy": 4,
-   "nSell": 7,
-   "value": 429500.0,
-   "net": 500.0,
-   "topTicker": "ABT"
-  },
-  {
-   "id": "W000812",
-   "name": "Ann Wagner",
-   "party": "republican",
-   "chamber": "house",
-   "state": "mo",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 407500.0,
-   "net": 342500.0,
-   "topTicker": null
+   "state": "il",
+   "n": 13,
+   "nBuy": 7,
+   "nSell": 6,
+   "value": 396500.0,
+   "net": 32500.0,
+   "topTicker": "DDOG"
   },
   {
    "id": "C001101",
@@ -471,17 +491,17 @@
    "topTicker": "GOOGL"
   },
   {
-   "id": "J000309",
-   "name": "Jonathan Jackson",
+   "id": "W000802",
+   "name": "Sheldon Whitehouse",
    "party": "democrat",
-   "chamber": "house",
-   "state": "il",
-   "n": 10,
-   "nBuy": 5,
-   "nSell": 5,
-   "value": 372500.0,
-   "net": 24500.0,
-   "topTicker": "VSAT"
+   "chamber": "senate",
+   "state": "ri",
+   "n": 19,
+   "nBuy": 2,
+   "nSell": 17,
+   "value": 348000.0,
+   "net": -267000.0,
+   "topTicker": "NVDA"
   },
   {
    "id": "M001218",
@@ -521,19 +541,6 @@
    "value": 325000.0,
    "net": 325000.0,
    "topTicker": null
-  },
-  {
-   "id": "W000802",
-   "name": "Sheldon Whitehouse",
-   "party": "democrat",
-   "chamber": "senate",
-   "state": "ri",
-   "n": 17,
-   "nBuy": 2,
-   "nSell": 15,
-   "value": 307500.0,
-   "net": -226500.0,
-   "topTicker": "NVDA"
   },
   {
    "id": "M001234",
@@ -601,6 +608,32 @@
    "topTicker": "IBRX"
   },
   {
+   "id": "A000372",
+   "name": "Richard Allen",
+   "party": "republican",
+   "chamber": "house",
+   "state": "ga",
+   "n": 12,
+   "nBuy": 6,
+   "nSell": 6,
+   "value": 243000.0,
+   "net": -49000.0,
+   "topTicker": "AVGO"
+  },
+  {
+   "id": "F000459",
+   "name": "Charles Fleischmann",
+   "party": "republican",
+   "chamber": "house",
+   "state": "tn",
+   "n": 20,
+   "nBuy": 10,
+   "nSell": 10,
+   "value": 233500.0,
+   "net": 24500.0,
+   "topTicker": "IEUR"
+  },
+  {
    "id": "D000624",
    "name": "Deborah Dingell",
    "party": "democrat",
@@ -612,19 +645,6 @@
    "value": 215000.0,
    "net": 107500.0,
    "topTicker": "HONA"
-  },
-  {
-   "id": "F000459",
-   "name": "Charles Fleischmann",
-   "party": "republican",
-   "chamber": "house",
-   "state": "tn",
-   "n": 13,
-   "nBuy": 7,
-   "nSell": 6,
-   "value": 177500.0,
-   "net": 32500.0,
-   "topTicker": "GDX"
   },
   {
    "id": "B001323",
@@ -677,19 +697,6 @@
    "value": 175000.0,
    "net": -175000.0,
    "topTicker": "TCNNF"
-  },
-  {
-   "id": "A000372",
-   "name": "Richard Allen",
-   "party": "republican",
-   "chamber": "house",
-   "state": "ga",
-   "n": 9,
-   "nBuy": 4,
-   "nSell": 5,
-   "value": 170000.0,
-   "net": -106000.0,
-   "topTicker": "AVGO"
   },
   {
    "id": "M001236",
@@ -775,12 +782,25 @@
    "party": "republican",
    "chamber": "house",
    "state": "va",
-   "n": 14,
+   "n": 15,
    "nBuy": 7,
-   "nSell": 7,
-   "value": 112000.0,
-   "net": 0.0,
+   "nSell": 8,
+   "value": 120000.0,
+   "net": -8000.0,
    "topTicker": "BLK"
+  },
+  {
+   "id": "C001047",
+   "name": "Shelley Moore Capito",
+   "party": "republican",
+   "chamber": "senate",
+   "state": "wv",
+   "n": 10,
+   "nBuy": 0,
+   "nSell": 10,
+   "value": 104500.0,
+   "net": -104500.0,
+   "topTicker": "AAPL"
   },
   {
    "id": "M001245",
@@ -900,19 +920,6 @@
    "topTicker": "EFC"
   },
   {
-   "id": "C001047",
-   "name": "Shelley Moore Capito",
-   "party": "republican",
-   "chamber": "senate",
-   "state": "wv",
-   "n": 6,
-   "nBuy": 0,
-   "nSell": 6,
-   "value": 72500.0,
-   "net": -72500.0,
-   "topTicker": "AAPL"
-  },
-  {
    "id": "F000479",
    "name": "John Fetterman",
    "party": "democrat",
@@ -924,6 +931,19 @@
    "value": 72000.0,
    "net": 8000.0,
    "topTicker": "DELL"
+  },
+  {
+   "id": "S001201",
+   "name": "Thomas Suozzi",
+   "party": "democrat",
+   "chamber": "house",
+   "state": "ny",
+   "n": 2,
+   "nBuy": 2,
+   "nSell": 0,
+   "value": 65000.0,
+   "net": 65000.0,
+   "topTicker": null
   },
   {
    "id": "Y000067",
@@ -965,6 +985,19 @@
    "topTicker": "COF"
   },
   {
+   "id": "L000566",
+   "name": "Robert Latta",
+   "party": "republican",
+   "chamber": "house",
+   "state": "oh",
+   "n": 3,
+   "nBuy": 3,
+   "nSell": 0,
+   "value": 48500.0,
+   "net": 48500.0,
+   "topTicker": "FMAO"
+  },
+  {
    "id": "M001204",
    "name": "Daniel Meuser",
    "party": "republican",
@@ -989,19 +1022,6 @@
    "value": 48000.0,
    "net": -32000.0,
    "topTicker": "AAPL"
-  },
-  {
-   "id": "L000566",
-   "name": "Robert Latta",
-   "party": "republican",
-   "chamber": "house",
-   "state": "oh",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 40500.0,
-   "net": 40500.0,
-   "topTicker": "FMAO"
   },
   {
    "id": "M000355",
@@ -1238,6 +1258,45 @@
    "topTicker": "AAPL"
   },
   {
+   "id": "H001072",
+   "name": "James Hill",
+   "party": "republican",
+   "chamber": "house",
+   "state": "ar",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "topTicker": "JBGS"
+  },
+  {
+   "id": "J000310",
+   "name": "Julie Johnson",
+   "party": "democrat",
+   "chamber": "house",
+   "state": "tx",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "topTicker": "WBD"
+  },
+  {
+   "id": "K000392",
+   "name": "David Kustoff",
+   "party": "republican",
+   "chamber": "house",
+   "state": "tn",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "topTicker": "WBD"
+  },
+  {
    "id": "W000804",
    "name": "Robert Wittman",
    "party": "republican",
@@ -1288,83 +1347,83 @@
   },
   {
    "sector": "financials",
-   "n": 416,
-   "nBuy": 243,
-   "nSell": 173,
-   "value": 13721500.0,
-   "net": 5895500.0
+   "n": 460,
+   "nBuy": 266,
+   "nSell": 194,
+   "value": 14728000.0,
+   "net": 6468000.0
   },
   {
    "sector": "industrials",
-   "n": 465,
-   "nBuy": 207,
-   "nSell": 250,
-   "value": 17392056.0,
-   "net": 4274944.0
+   "n": 502,
+   "nBuy": 225,
+   "nSell": 269,
+   "value": 17902056.0,
+   "net": 4382944.0
   },
   {
    "sector": "consumer-discretionary",
-   "n": 394,
-   "nBuy": 169,
-   "nSell": 225,
-   "value": 6328500.0,
-   "net": -2327500.0
+   "n": 432,
+   "nBuy": 188,
+   "nSell": 244,
+   "value": 6804000.0,
+   "net": -2303000.0
   },
   {
    "sector": "health-care",
-   "n": 485,
-   "nBuy": 200,
-   "nSell": 285,
-   "value": 6137000.0,
-   "net": -2117000.0
+   "n": 549,
+   "nBuy": 233,
+   "nSell": 316,
+   "value": 7036500.0,
+   "net": -2145500.0
   },
   {
    "sector": "information-technology",
-   "n": 632,
-   "nBuy": 311,
-   "nSell": 321,
-   "value": 16475723.0,
-   "net": 1746277.0
+   "n": 705,
+   "nBuy": 352,
+   "nSell": 353,
+   "value": 17298223.0,
+   "net": 1726777.0
   },
   {
    "sector": "consumer-staples",
-   "n": 171,
-   "nBuy": 80,
-   "nSell": 91,
-   "value": 2769500.0,
-   "net": -976500.0
+   "n": 202,
+   "nBuy": 92,
+   "nSell": 110,
+   "value": 3140000.0,
+   "net": -959000.0
   },
   {
    "sector": "communication-services",
-   "n": 217,
-   "nBuy": 105,
-   "nSell": 108,
-   "value": 3405000.0,
-   "net": -690000.0
+   "n": 255,
+   "nBuy": 118,
+   "nSell": 133,
+   "value": 3849500.0,
+   "net": -877500.0
   },
   {
    "sector": "materials",
-   "n": 110,
-   "nBuy": 61,
-   "nSell": 49,
-   "value": 1626000.0,
-   "net": -405000.0
+   "n": 127,
+   "nBuy": 64,
+   "nSell": 63,
+   "value": 1762000.0,
+   "net": -493000.0
   },
   {
    "sector": "real-estate",
-   "n": 94,
-   "nBuy": 48,
-   "nSell": 44,
-   "value": 948000.0,
-   "net": -139500.0
+   "n": 112,
+   "nBuy": 52,
+   "nSell": 58,
+   "value": 1165500.0,
+   "net": -244000.0
   },
   {
    "sector": "utilities",
-   "n": 53,
-   "nBuy": 32,
-   "nSell": 21,
-   "value": 736000.0,
-   "net": 8000.0
+   "n": 57,
+   "nBuy": 35,
+   "nSell": 22,
+   "value": 768000.0,
+   "net": 24000.0
   }
  ],
  "tickers": [
@@ -1383,11 +1442,11 @@
    "ticker": "BE",
    "name": "Bloom Energy Corp",
    "sector": "industrials",
-   "n": 5,
-   "nBuy": 5,
+   "n": 7,
+   "nBuy": 7,
    "nSell": 0,
-   "value": 7508000.0,
-   "net": 7508000.0,
+   "value": 7524000.0,
+   "net": 7524000.0,
    "r30": 49.08397586808274
   },
   {
@@ -1405,33 +1464,33 @@
    "ticker": "INTC",
    "name": "Intel Corp",
    "sector": "information-technology",
-   "n": 11,
+   "n": 14,
    "nBuy": 6,
-   "nSell": 5,
-   "value": 4189000.0,
-   "net": 4109000.0,
+   "nSell": 8,
+   "value": 4213000.0,
+   "net": 4085000.0,
    "r30": -10.61737756194641
   },
   {
    "ticker": "MSFT",
    "name": "Microsoft Corp",
    "sector": "information-technology",
-   "n": 33,
+   "n": 35,
    "nBuy": 15,
-   "nSell": 18,
-   "value": 3136500.0,
-   "net": -580500.0,
+   "nSell": 20,
+   "value": 3152500.0,
+   "net": -596500.0,
    "r30": 10.43258477962067
   },
   {
    "ticker": "BNS",
    "name": "The Bank of Nova Scotia",
    "sector": "financials",
-   "n": 4,
-   "nBuy": 3,
+   "n": 5,
+   "nBuy": 4,
    "nSell": 1,
-   "value": 1650000.0,
-   "net": 150000.0,
+   "value": 1658000.0,
+   "net": 158000.0,
    "r30": -1.873366950615879
   },
   {
@@ -1460,11 +1519,11 @@
    "ticker": "UBER",
    "name": "Uber Technologies Inc",
    "sector": "industrials",
-   "n": 28,
-   "nBuy": 22,
-   "nSell": 6,
-   "value": 1064000.0,
-   "net": 870000.0,
+   "n": 32,
+   "nBuy": 23,
+   "nSell": 9,
+   "value": 1096000.0,
+   "net": 854000.0,
    "r30": 2.5306146734627784
   },
   {
@@ -1504,12 +1563,23 @@
    "ticker": "AAPL",
    "name": "Apple Inc",
    "sector": "information-technology",
-   "n": 21,
-   "nBuy": 5,
-   "nSell": 16,
-   "value": 751000.0,
-   "net": -671000.0,
+   "n": 23,
+   "nBuy": 6,
+   "nSell": 17,
+   "value": 791500.0,
+   "net": -646500.0,
    "r30": 7.406064971378033
+  },
+  {
+   "ticker": "COST",
+   "name": "Costco Wholesale Corp",
+   "sector": "consumer-staples",
+   "n": 13,
+   "nBuy": 6,
+   "nSell": 7,
+   "value": 754000.0,
+   "net": -609000.0,
+   "r30": 3.4006742636880736
   },
   {
    "ticker": "BXPE",
@@ -1523,17 +1593,6 @@
    "r30": null
   },
   {
-   "ticker": "COST",
-   "name": "Costco Wholesale Corp",
-   "sector": "consumer-staples",
-   "n": 11,
-   "nBuy": 4,
-   "nSell": 7,
-   "value": 713500.0,
-   "net": -649500.0,
-   "r30": 3.4006742636880736
-  },
-  {
    "ticker": "DVN",
    "name": "Devon Energy Corp",
    "sector": "energy",
@@ -1545,14 +1604,25 @@
    "r30": 3.4457616122178436
   },
   {
+   "ticker": "HD",
+   "name": "The Home Depot Inc",
+   "sector": "consumer-discretionary",
+   "n": 33,
+   "nBuy": 11,
+   "nSell": 22,
+   "value": 674000.0,
+   "net": -302000.0,
+   "r30": -1.2119750917177947
+  },
+  {
    "ticker": "AMZN",
    "name": "Amazon.com Inc",
    "sector": "consumer-discretionary",
-   "n": 23,
+   "n": 24,
    "nBuy": 10,
-   "nSell": 13,
-   "value": 640500.0,
-   "net": -480500.0,
+   "nSell": 14,
+   "value": 648500.0,
+   "net": -488500.0,
    "r30": -0.570986324515149
   },
   {
@@ -1567,48 +1637,48 @@
    "r30": 10.894390656964873
   },
   {
-   "ticker": "HD",
-   "name": "The Home Depot Inc",
-   "sector": "consumer-discretionary",
-   "n": 29,
-   "nBuy": 10,
-   "nSell": 19,
-   "value": 617500.0,
-   "net": -261500.0,
-   "r30": -1.2119750917177947
-  },
-  {
    "ticker": "GOOGL",
    "name": "Alphabet Inc",
    "sector": "communication-services",
-   "n": 30,
-   "nBuy": 14,
+   "n": 33,
+   "nBuy": 17,
    "nSell": 16,
-   "value": 590000.0,
-   "net": -366000.0,
+   "value": 614000.0,
+   "net": -342000.0,
    "r30": -1.4829493056986933
   },
   {
-   "ticker": "MLM",
-   "name": "Martin Marietta Materials Inc",
-   "sector": "materials",
-   "n": 13,
-   "nBuy": 9,
-   "nSell": 4,
-   "value": 520000.0,
-   "net": -278000.0,
-   "r30": -5.163588255904085
+   "ticker": "WFC",
+   "name": "Wells Fargo & Co",
+   "sector": "financials",
+   "n": 16,
+   "nBuy": 13,
+   "nSell": 3,
+   "value": 611000.0,
+   "net": 563000.0,
+   "r30": -3.282642098273643
   },
   {
    "ticker": "JPM",
    "name": "JPMorgan Chase & Co",
    "sector": "financials",
-   "n": 12,
-   "nBuy": 5,
+   "n": 14,
+   "nBuy": 7,
    "nSell": 7,
-   "value": 479000.0,
-   "net": 269000.0,
+   "value": 562000.0,
+   "net": 352000.0,
    "r30": 3.3927970542628727
+  },
+  {
+   "ticker": "MLM",
+   "name": "Martin Marietta Materials Inc",
+   "sector": "materials",
+   "n": 15,
+   "nBuy": 9,
+   "nSell": 6,
+   "value": 536000.0,
+   "net": -294000.0,
+   "r30": -5.163588255904085
   },
   {
    "ticker": "ITT",
@@ -1622,6 +1692,39 @@
    "r30": -2.7138557141470065
   },
   {
+   "ticker": "MCD",
+   "name": "McDonald's Corp",
+   "sector": "consumer-discretionary",
+   "n": 20,
+   "nBuy": 7,
+   "nSell": 13,
+   "value": 429500.0,
+   "net": -121500.0,
+   "r30": -6.017565401825709
+  },
+  {
+   "ticker": "T",
+   "name": "AT&T Inc",
+   "sector": "communication-services",
+   "n": 21,
+   "nBuy": 15,
+   "nSell": 6,
+   "value": 424500.0,
+   "net": 96500.0,
+   "r30": 2.9476929461262205
+  },
+  {
+   "ticker": "TD",
+   "name": "The Toronto-Dominion Bank",
+   "sector": "financials",
+   "n": 6,
+   "nBuy": 6,
+   "nSell": 0,
+   "value": 398000.0,
+   "net": 398000.0,
+   "r30": -2.267958030669892
+  },
+  {
    "ticker": "FWONK",
    "name": "Formula One Group - The Liberty Media Group",
    "sector": "communication-services",
@@ -1631,17 +1734,6 @@
    "value": 394000.0,
    "net": 44000.0,
    "r30": -4.219115198273464
-  },
-  {
-   "ticker": "T",
-   "name": "AT&T Inc",
-   "sector": "communication-services",
-   "n": 17,
-   "nBuy": 12,
-   "nSell": 5,
-   "value": 392500.0,
-   "net": 80500.0,
-   "r30": 2.9476929461262205
   },
   {
    "ticker": "MRSH",
@@ -1655,17 +1747,6 @@
    "r30": 6.849040121852404
   },
   {
-   "ticker": "MCD",
-   "name": "McDonald's Corp",
-   "sector": "consumer-discretionary",
-   "n": 18,
-   "nBuy": 6,
-   "nSell": 12,
-   "value": 364500.0,
-   "net": -121500.0,
-   "r30": -6.017565401825709
-  },
-  {
    "ticker": "HUBB",
    "name": "Hubbell Inc",
    "sector": "industrials",
@@ -1675,6 +1756,17 @@
    "value": 360000.0,
    "net": -22000.0,
    "r30": -2.4139478560892975
+  },
+  {
+   "ticker": "WMT",
+   "name": "Walmart Inc",
+   "sector": "consumer-staples",
+   "n": 16,
+   "nBuy": 7,
+   "nSell": 9,
+   "value": 360000.0,
+   "net": -199000.0,
+   "r30": 1.818695517385652
   },
   {
    "ticker": "PAYX",
@@ -1699,6 +1791,17 @@
    "r30": null
   },
   {
+   "ticker": "NVDA",
+   "name": "NVIDIA Corporation",
+   "sector": "information-technology",
+   "n": 29,
+   "nBuy": 14,
+   "nSell": 15,
+   "value": 354500.0,
+   "net": -130500.0,
+   "r30": 4.153044575169163
+  },
+  {
    "ticker": "CHRW",
    "name": "C.H. Robinson Worldwide Inc",
    "sector": "industrials",
@@ -1721,15 +1824,26 @@
    "r30": -5.261243955851696
   },
   {
-   "ticker": "WMT",
-   "name": "Walmart Inc",
+   "ticker": "PEP",
+   "name": "PepsiCo Inc",
    "sector": "consumer-staples",
-   "n": 14,
-   "nBuy": 6,
-   "nSell": 8,
-   "value": 344000.0,
-   "net": -199000.0,
-   "r30": 1.818695517385652
+   "n": 16,
+   "nBuy": 7,
+   "nSell": 9,
+   "value": 348500.0,
+   "net": -40500.0,
+   "r30": -2.6486993630264246
+  },
+  {
+   "ticker": "BSX",
+   "name": "Boston Scientific Corp",
+   "sector": "health-care",
+   "n": 23,
+   "nBuy": 9,
+   "nSell": 14,
+   "value": 342500.0,
+   "net": -198500.0,
+   "r30": -4.211905994116684
   },
   {
    "ticker": "TJX",
@@ -1743,48 +1857,59 @@
    "r30": 3.016300730477286
   },
   {
-   "ticker": "BSX",
-   "name": "Boston Scientific Corp",
-   "sector": "health-care",
-   "n": 21,
-   "nBuy": 8,
+   "ticker": "LOW",
+   "name": "Lowe's Cos Inc",
+   "sector": "consumer-discretionary",
+   "n": 20,
+   "nBuy": 7,
    "nSell": 13,
-   "value": 326500.0,
-   "net": -198500.0,
-   "r30": -4.211905994116684
+   "value": 331500.0,
+   "net": -121500.0,
+   "r30": -3.391037219686284
   },
   {
-   "ticker": "TD",
-   "name": "The Toronto-Dominion Bank",
+   "ticker": "C",
+   "name": "Citigroup Inc",
    "sector": "financials",
-   "n": 3,
-   "nBuy": 3,
-   "nSell": 0,
-   "value": 325000.0,
-   "net": 325000.0,
-   "r30": -2.267958030669892
+   "n": 11,
+   "nBuy": 7,
+   "nSell": 4,
+   "value": 328500.0,
+   "net": 215500.0,
+   "r30": -2.5529437322990893
   },
   {
-   "ticker": "NVDA",
-   "name": "NVIDIA Corporation",
-   "sector": "information-technology",
-   "n": 25,
-   "nBuy": 12,
-   "nSell": 13,
-   "value": 322500.0,
-   "net": -130500.0,
-   "r30": 4.153044575169163
+   "ticker": "JNJ",
+   "name": "Johnson & Johnson",
+   "sector": "health-care",
+   "n": 16,
+   "nBuy": 8,
+   "nSell": 8,
+   "value": 319500.0,
+   "net": -142500.0,
+   "r30": 3.0205254335237584
   },
   {
    "ticker": "ACN",
    "name": "Accenture PLC",
    "sector": "information-technology",
-   "n": 16,
-   "nBuy": 10,
+   "n": 17,
+   "nBuy": 11,
    "nSell": 6,
-   "value": 311000.0,
-   "net": 117000.0,
+   "value": 319000.0,
+   "net": 125000.0,
    "r30": 9.206620897429545
+  },
+  {
+   "ticker": "MU",
+   "name": "Micron Technology Inc",
+   "sector": "information-technology",
+   "n": 28,
+   "nBuy": 11,
+   "nSell": 17,
+   "value": 297500.0,
+   "net": -121500.0,
+   "r30": -6.0480673665783895
   },
   {
    "ticker": "WAB",
@@ -1798,6 +1923,28 @@
    "r30": 4.067632533008889
   },
   {
+   "ticker": "MCHP",
+   "name": "Microchip Technology Inc",
+   "sector": "information-technology",
+   "n": 14,
+   "nBuy": 9,
+   "nSell": 5,
+   "value": 295000.0,
+   "net": 32000.0,
+   "r30": -7.390810650983324
+  },
+  {
+   "ticker": "ABT",
+   "name": "Abbott Laboratories",
+   "sector": "health-care",
+   "n": 19,
+   "nBuy": 8,
+   "nSell": 11,
+   "value": 292500.0,
+   "net": -115500.0,
+   "r30": 13.301383893329705
+  },
+  {
    "ticker": "INTU",
    "name": "Intuit Inc",
    "sector": "information-technology",
@@ -1809,26 +1956,15 @@
    "r30": -0.7658862881257061
   },
   {
-   "ticker": "MCHP",
-   "name": "Microchip Technology Inc",
-   "sector": "information-technology",
-   "n": 13,
-   "nBuy": 9,
-   "nSell": 4,
-   "value": 287000.0,
-   "net": 40000.0,
-   "r30": -7.390810650983324
-  },
-  {
-   "ticker": "PEP",
-   "name": "PepsiCo Inc",
+   "ticker": "PG",
+   "name": "The Procter & Gamble Co",
    "sector": "consumer-staples",
-   "n": 14,
-   "nBuy": 6,
-   "nSell": 8,
-   "value": 283500.0,
-   "net": -40500.0,
-   "r30": -2.6486993630264246
+   "n": 21,
+   "nBuy": 9,
+   "nSell": 12,
+   "value": 284000.0,
+   "net": -140000.0,
+   "r30": 3.3710238178320826
   },
   {
    "ticker": "MA",
@@ -1842,48 +1978,48 @@
    "r30": 10.57425433452758
   },
   {
-   "ticker": "MU",
-   "name": "Micron Technology Inc",
-   "sector": "information-technology",
-   "n": 26,
-   "nBuy": 9,
-   "nSell": 17,
-   "value": 281500.0,
-   "net": -137500.0,
-   "r30": -6.0480673665783895
-  },
-  {
    "ticker": "STE",
    "name": "Steris PLC",
    "sector": "health-care",
-   "n": 10,
+   "n": 11,
    "nBuy": 2,
-   "nSell": 8,
-   "value": 271500.0,
-   "net": -239500.0,
+   "nSell": 9,
+   "value": 279500.0,
+   "net": -247500.0,
    "r30": 0.8335924770103673
+  },
+  {
+   "ticker": "V",
+   "name": "Visa Inc",
+   "sector": "financials",
+   "n": 14,
+   "nBuy": 5,
+   "nSell": 9,
+   "value": 277000.0,
+   "net": -99000.0,
+   "r30": 7.446383319441696
   },
   {
    "ticker": "CRM",
    "name": "salesforce.com Inc",
    "sector": "information-technology",
-   "n": 12,
-   "nBuy": 7,
+   "n": 13,
+   "nBuy": 8,
    "nSell": 5,
-   "value": 267500.0,
-   "net": 40500.0,
+   "value": 275500.0,
+   "net": 48500.0,
    "r30": 13.248502455157693
   },
   {
-   "ticker": "LOW",
-   "name": "Lowe's Cos Inc",
-   "sector": "consumer-discretionary",
-   "n": 18,
-   "nBuy": 5,
-   "nSell": 13,
-   "value": 266500.0,
-   "net": -186500.0,
-   "r30": -3.391037219686284
+   "ticker": "MRK",
+   "name": "Merck & Co Inc",
+   "sector": "health-care",
+   "n": 13,
+   "nBuy": 9,
+   "nSell": 4,
+   "value": 269000.0,
+   "net": 71000.0,
+   "r30": 4.944000667200131
   },
   {
    "ticker": "CVX",
@@ -1895,17 +2031,6 @@
    "value": 264000.0,
    "net": -216000.0,
    "r30": 10.514658582198782
-  },
-  {
-   "ticker": "C",
-   "name": "Citigroup Inc",
-   "sector": "financials",
-   "n": 9,
-   "nBuy": 5,
-   "nSell": 4,
-   "value": 263500.0,
-   "net": 150500.0,
-   "r30": -2.5529437322990893
   },
   {
    "ticker": "EME",
@@ -1930,39 +2055,6 @@
    "r30": -11.829295799793137
   },
   {
-   "ticker": "V",
-   "name": "Visa Inc",
-   "sector": "financials",
-   "n": 12,
-   "nBuy": 5,
-   "nSell": 7,
-   "value": 261000.0,
-   "net": -83000.0,
-   "r30": 7.446383319441696
-  },
-  {
-   "ticker": "ABT",
-   "name": "Abbott Laboratories",
-   "sector": "health-care",
-   "n": 18,
-   "nBuy": 7,
-   "nSell": 11,
-   "value": 260000.0,
-   "net": -148000.0,
-   "r30": 13.301383893329705
-  },
-  {
-   "ticker": "PG",
-   "name": "The Procter & Gamble Co",
-   "sector": "consumer-staples",
-   "n": 18,
-   "nBuy": 7,
-   "nSell": 11,
-   "value": 260000.0,
-   "net": -148000.0,
-   "r30": 3.3710238178320826
-  },
-  {
    "ticker": "AMD",
    "name": "Advanced Micro Devices Inc",
    "sector": "information-technology",
@@ -1985,6 +2077,28 @@
    "r30": -36.60475084836578
   },
   {
+   "ticker": "NOW",
+   "name": "ServiceNow Inc",
+   "sector": "information-technology",
+   "n": 10,
+   "nBuy": 7,
+   "nSell": 3,
+   "value": 245000.0,
+   "net": 63000.0,
+   "r30": 0.5449101895281558
+  },
+  {
+   "ticker": "IBM",
+   "name": "International Business Machines Corp",
+   "sector": "information-technology",
+   "n": 24,
+   "nBuy": 11,
+   "nSell": 13,
+   "value": 241000.0,
+   "net": -16000.0,
+   "r30": -3.6530970269009617
+  },
+  {
    "ticker": "LYV",
    "name": "Live Nation Entertainment Inc",
    "sector": "communication-services",
@@ -1996,15 +2110,37 @@
    "r30": -0.07666795813423924
   },
   {
-   "ticker": "NOW",
-   "name": "ServiceNow Inc",
+   "ticker": "ITW",
+   "name": "Illinois Tool Works Inc",
+   "sector": "industrials",
+   "n": 12,
+   "nBuy": 3,
+   "nSell": 9,
+   "value": 236500.0,
+   "net": -188500.0,
+   "r30": 1.6190969138400508
+  },
+  {
+   "ticker": "QCOM",
+   "name": "QUALCOMM Inc",
    "sector": "information-technology",
-   "n": 9,
-   "nBuy": 6,
-   "nSell": 3,
-   "value": 237000.0,
-   "net": 55000.0,
-   "r30": 0.5449101895281558
+   "n": 11,
+   "nBuy": 5,
+   "nSell": 6,
+   "value": 235000.0,
+   "net": -8000.0,
+   "r30": 6.014480027921993
+  },
+  {
+   "ticker": "AVGO",
+   "name": "Broadcom Inc",
+   "sector": "information-technology",
+   "n": 17,
+   "nBuy": 11,
+   "nSell": 6,
+   "value": 234000.0,
+   "net": 40000.0,
+   "r30": -3.19931587741773
   },
   {
    "ticker": "BWXT",
@@ -2029,39 +2165,6 @@
    "r30": -22.510653204988927
   },
   {
-   "ticker": "ITW",
-   "name": "Illinois Tool Works Inc",
-   "sector": "industrials",
-   "n": 11,
-   "nBuy": 2,
-   "nSell": 9,
-   "value": 228500.0,
-   "net": -196500.0,
-   "r30": 1.6190969138400508
-  },
-  {
-   "ticker": "MRK",
-   "name": "Merck & Co Inc",
-   "sector": "health-care",
-   "n": 11,
-   "nBuy": 7,
-   "nSell": 4,
-   "value": 228500.0,
-   "net": 30500.0,
-   "r30": 4.944000667200131
-  },
-  {
-   "ticker": "WFC",
-   "name": "Wells Fargo & Co",
-   "sector": "financials",
-   "n": 14,
-   "nBuy": 11,
-   "nSell": 3,
-   "value": 228000.0,
-   "net": 180000.0,
-   "r30": -3.282642098273643
-  },
-  {
    "ticker": "LMT",
    "name": "Lockheed Martin Corp",
    "sector": "industrials",
@@ -2071,6 +2174,17 @@
    "value": 227500.0,
    "net": -227500.0,
    "r30": 7.704992663217544
+  },
+  {
+   "ticker": "CMCSA",
+   "name": "Comcast Corp",
+   "sector": "communication-services",
+   "n": 13,
+   "nBuy": 5,
+   "nSell": 8,
+   "value": 226500.0,
+   "net": -97500.0,
+   "r30": 2.7159078078160275
   },
   {
    "ticker": "UBS",
@@ -2095,6 +2209,17 @@
    "r30": 9.191922102138141
   },
   {
+   "ticker": "LH",
+   "name": "Laboratory Corp of America Holdings",
+   "sector": "health-care",
+   "n": 7,
+   "nBuy": 1,
+   "nSell": 6,
+   "value": 223000.0,
+   "net": -207000.0,
+   "r30": 1.6888902502205279
+  },
+  {
    "ticker": "MKL",
    "name": "Markel Corp",
    "sector": "financials",
@@ -2106,26 +2231,48 @@
    "r30": -6.34752626529275
   },
   {
-   "ticker": "AVGO",
-   "name": "Broadcom Inc",
+   "ticker": "PTC",
+   "name": "PTC Inc",
    "sector": "information-technology",
-   "n": 15,
-   "nBuy": 9,
-   "nSell": 6,
-   "value": 218000.0,
-   "net": 24000.0,
-   "r30": -3.19931587741773
+   "n": 8,
+   "nBuy": 3,
+   "nSell": 5,
+   "value": 222500.0,
+   "net": -174500.0,
+   "r30": 25.729021899626204
   },
   {
-   "ticker": "LH",
-   "name": "Laboratory Corp of America Holdings",
-   "sector": "health-care",
-   "n": 6,
-   "nBuy": 1,
-   "nSell": 5,
-   "value": 215000.0,
-   "net": -199000.0,
-   "r30": 1.6888902502205279
+   "ticker": "BAC",
+   "name": "Bank of America Corp",
+   "sector": "financials",
+   "n": 10,
+   "nBuy": 3,
+   "nSell": 7,
+   "value": 220500.0,
+   "net": -123500.0,
+   "r30": 4.789936789966517
+  },
+  {
+   "ticker": "ADBE",
+   "name": "Adobe Inc",
+   "sector": "information-technology",
+   "n": 15,
+   "nBuy": 6,
+   "nSell": 9,
+   "value": 211500.0,
+   "net": 18500.0,
+   "r30": 8.23560359401761
+  },
+  {
+   "ticker": "TXN",
+   "name": "Texas Instruments Inc",
+   "sector": "information-technology",
+   "n": 14,
+   "nBuy": 7,
+   "nSell": 7,
+   "value": 210000.0,
+   "net": 0.0,
+   "r30": 1.682290741853486
   },
   {
    "ticker": "SGI",
@@ -2139,17 +2286,6 @@
    "r30": -1.9000054203535566
   },
   {
-   "ticker": "QCOM",
-   "name": "QUALCOMM Inc",
-   "sector": "information-technology",
-   "n": 10,
-   "nBuy": 5,
-   "nSell": 5,
-   "value": 202500.0,
-   "net": 24500.0,
-   "r30": 6.014480027921993
-  },
-  {
    "ticker": "TSLA",
    "name": "Tesla Inc",
    "sector": "consumer-discretionary",
@@ -2161,15 +2297,15 @@
    "r30": -1.5721335748671577
   },
   {
-   "ticker": "IBM",
-   "name": "International Business Machines Corp",
+   "ticker": "TENB",
+   "name": "TENABLE HOLDINGS INC",
    "sector": "information-technology",
    "n": 22,
-   "nBuy": 10,
-   "nSell": 12,
+   "nBuy": 0,
+   "nSell": 22,
    "value": 200500.0,
-   "net": 8500.0,
-   "r30": -3.6530970269009617
+   "net": -200500.0,
+   "r30": 5.506620093839199
   },
   {
    "ticker": "BRO",
@@ -2183,15 +2319,15 @@
    "r30": 9.086256163216449
   },
   {
-   "ticker": "ADBE",
-   "name": "Adobe Inc",
+   "ticker": "MRVL",
+   "name": "Marvell Technology Inc",
    "sector": "information-technology",
-   "n": 13,
-   "nBuy": 5,
-   "nSell": 8,
-   "value": 195500.0,
-   "net": 18500.0,
-   "r30": 8.23560359401761
+   "n": 18,
+   "nBuy": 14,
+   "nSell": 4,
+   "value": 193000.0,
+   "net": 80000.0,
+   "r30": -2.7831852796987655
   },
   {
    "ticker": "SPGI",
@@ -2205,6 +2341,17 @@
    "r30": 0.42514233599486784
   },
   {
+   "ticker": "META",
+   "name": "Meta Platforms Inc",
+   "sector": "communication-services",
+   "n": 21,
+   "nBuy": 13,
+   "nSell": 8,
+   "value": 192500.0,
+   "net": 64500.0,
+   "r30": 5.579737282003369
+  },
+  {
    "ticker": "CNM",
    "name": "CORE & MAIN INC",
    "sector": "industrials",
@@ -2216,17 +2363,6 @@
    "r30": -7.497979963148167
   },
   {
-   "ticker": "PTC",
-   "name": "PTC Inc",
-   "sector": "information-technology",
-   "n": 7,
-   "nBuy": 3,
-   "nSell": 4,
-   "value": 190000.0,
-   "net": -142000.0,
-   "r30": 25.729021899626204
-  },
-  {
    "ticker": "SPCX",
    "name": "SPACE EXPLORATION TECHS CORP",
    "sector": "communication-services",
@@ -2236,6 +2372,39 @@
    "value": 188000.0,
    "net": 172000.0,
    "r30": -26.932872008919585
+  },
+  {
+   "ticker": "ROL",
+   "name": "ROLLINS Inc",
+   "sector": "industrials",
+   "n": 12,
+   "nBuy": 6,
+   "nSell": 6,
+   "value": 187500.0,
+   "net": -91500.0,
+   "r30": -12.9810700358962
+  },
+  {
+   "ticker": "ISRG",
+   "name": "Intuitive Surgical Inc",
+   "sector": "health-care",
+   "n": 14,
+   "nBuy": 8,
+   "nSell": 6,
+   "value": 185500.0,
+   "net": 40500.0,
+   "r30": 3.3505934850048993
+  },
+  {
+   "ticker": "APP",
+   "name": "APPLOVIN CORP",
+   "sector": "communication-services",
+   "n": 17,
+   "nBuy": 7,
+   "nSell": 10,
+   "value": 185000.0,
+   "net": -73000.0,
+   "r30": -17.599394969301603
   },
   {
    "ticker": "BABA",
@@ -2271,17 +2440,6 @@
    "r30": -11.009602549411484
   },
   {
-   "ticker": "BAC",
-   "name": "Bank of America Corp",
-   "sector": "financials",
-   "n": 8,
-   "nBuy": 2,
-   "nSell": 6,
-   "value": 180000.0,
-   "net": -99000.0,
-   "r30": 4.789936789966517
-  },
-  {
    "ticker": "FDX",
    "name": "FedEx Corp",
    "sector": "industrials",
@@ -2293,26 +2451,15 @@
    "r30": -4.010192404264841
   },
   {
-   "ticker": "ROL",
-   "name": "ROLLINS Inc",
-   "sector": "industrials",
-   "n": 11,
-   "nBuy": 6,
-   "nSell": 5,
-   "value": 179500.0,
-   "net": -83500.0,
-   "r30": -12.9810700358962
-  },
-  {
-   "ticker": "CMCSA",
-   "name": "Comcast Corp",
-   "sector": "communication-services",
+   "ticker": "BKNG",
+   "name": "Booking Holdings Inc",
+   "sector": "consumer-discretionary",
    "n": 10,
-   "nBuy": 4,
-   "nSell": 6,
+   "nBuy": 3,
+   "nSell": 7,
    "value": 178000.0,
-   "net": -65000.0,
-   "r30": 2.7159078078160275
+   "net": -81000.0,
+   "r30": 3.665817276005147
   },
   {
    "ticker": "PINS",
@@ -2326,15 +2473,37 @@
    "r30": -9.004188575233622
   },
   {
-   "ticker": "ISRG",
-   "name": "Intuitive Surgical Inc",
+   "ticker": "AMGN",
+   "name": "Amgen Inc",
    "sector": "health-care",
-   "n": 13,
-   "nBuy": 7,
-   "nSell": 6,
-   "value": 177500.0,
-   "net": 32500.0,
-   "r30": 3.3505934850048993
+   "n": 16,
+   "nBuy": 8,
+   "nSell": 8,
+   "value": 177000.0,
+   "net": 0.0,
+   "r30": 6.411734883609903
+  },
+  {
+   "ticker": "ZTS",
+   "name": "Zoetis Inc",
+   "sector": "health-care",
+   "n": 19,
+   "nBuy": 11,
+   "nSell": 8,
+   "value": 176500.0,
+   "net": 48500.0,
+   "r30": -1.0673123239586795
+  },
+  {
+   "ticker": "3733Z",
+   "name": "AMERICAN EXPRESS NATIONAL BANK",
+   "sector": null,
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 175000.0,
+   "net": -175000.0,
+   "r30": null
   },
   {
    "ticker": "ARW",
@@ -2392,15 +2561,26 @@
    "r30": -2.328518341977253
   },
   {
-   "ticker": "TXN",
-   "name": "Texas Instruments Inc",
+   "ticker": "CDNS",
+   "name": "Cadence Design Systems Inc",
    "sector": "information-technology",
    "n": 12,
    "nBuy": 5,
    "nSell": 7,
    "value": 169500.0,
-   "net": -40500.0,
-   "r30": 1.682290741853486
+   "net": -89500.0,
+   "r30": -4.702571091830903
+  },
+  {
+   "ticker": "VZ",
+   "name": "Verizon Communications Inc",
+   "sector": "communication-services",
+   "n": 12,
+   "nBuy": 6,
+   "nSell": 6,
+   "value": 169500.0,
+   "net": -24500.0,
+   "r30": -3.1450363326177158
   },
   {
    "ticker": "WDAY",
@@ -2414,17 +2594,6 @@
    "r30": 4.2971585210878915
   },
   {
-   "ticker": "MRVL",
-   "name": "Marvell Technology Inc",
-   "sector": "information-technology",
-   "n": 15,
-   "nBuy": 11,
-   "nSell": 4,
-   "value": 169000.0,
-   "net": 56000.0,
-   "r30": -2.7831852796987655
-  },
-  {
    "ticker": "TSCO",
    "name": "Tractor Supply Co",
    "sector": "consumer-discretionary",
@@ -2434,6 +2603,28 @@
    "value": 169000.0,
    "net": -89000.0,
    "r30": 0.8589927366822308
+  },
+  {
+   "ticker": "COO",
+   "name": "The Cooper Cos Inc",
+   "sector": "health-care",
+   "n": 21,
+   "nBuy": 20,
+   "nSell": 1,
+   "value": 168000.0,
+   "net": 152000.0,
+   "r30": 6.382713485997849
+  },
+  {
+   "ticker": "GEHC",
+   "name": "GE HEALTHCARE TECHNOLOGI INC",
+   "sector": "health-care",
+   "n": 21,
+   "nBuy": 19,
+   "nSell": 2,
+   "value": 168000.0,
+   "net": 136000.0,
+   "r30": 9.030914309272973
   },
   {
    "ticker": "LIN",
@@ -2447,48 +2638,37 @@
    "r30": 0.9802313905284663
   },
   {
-   "ticker": "CDNS",
-   "name": "Cadence Design Systems Inc",
-   "sector": "information-technology",
-   "n": 11,
-   "nBuy": 4,
-   "nSell": 7,
-   "value": 161500.0,
-   "net": -97500.0,
-   "r30": -4.702571091830903
-  },
-  {
-   "ticker": "VZ",
-   "name": "Verizon Communications Inc",
-   "sector": "communication-services",
-   "n": 11,
-   "nBuy": 6,
-   "nSell": 5,
-   "value": 161500.0,
-   "net": -16500.0,
-   "r30": -3.1450363326177158
-  },
-  {
-   "ticker": "META",
-   "name": "Meta Platforms Inc",
-   "sector": "communication-services",
-   "n": 16,
-   "nBuy": 10,
-   "nSell": 6,
-   "value": 152500.0,
-   "net": 56500.0,
-   "r30": 5.579737282003369
-  },
-  {
-   "ticker": "ZTS",
-   "name": "Zoetis Inc",
+   "ticker": "PFE",
+   "name": "Pfizer Inc",
    "sector": "health-care",
-   "n": 16,
-   "nBuy": 10,
+   "n": 8,
+   "nBuy": 4,
+   "nSell": 4,
+   "value": 162000.0,
+   "net": -49000.0,
+   "r30": 2.659642348921454
+  },
+  {
+   "ticker": "TTD",
+   "name": "The Trade Desk Inc",
+   "sector": "communication-services",
+   "n": 10,
+   "nBuy": 4,
    "nSell": 6,
+   "value": 153500.0,
+   "net": -40500.0,
+   "r30": -13.147394480908522
+  },
+  {
+   "ticker": "CSCO",
+   "name": "Cisco Systems Inc",
+   "sector": "information-technology",
+   "n": 16,
+   "nBuy": 4,
+   "nSell": 12,
    "value": 152500.0,
-   "net": 56500.0,
-   "r30": -1.0673123239586795
+   "net": -88500.0,
+   "r30": -0.6160641631245933
   },
   {
    "ticker": "CHWY",
@@ -2502,17 +2682,6 @@
    "r30": 4.559268001738698
   },
   {
-   "ticker": "GEHC",
-   "name": "GE HEALTHCARE TECHNOLOGI INC",
-   "sector": "health-care",
-   "n": 19,
-   "nBuy": 18,
-   "nSell": 1,
-   "value": 152000.0,
-   "net": 136000.0,
-   "r30": 9.030914309272973
-  },
-  {
    "ticker": "SCHO",
    "name": "SCHWAB SHORT-TERM US TRS ETF",
    "sector": null,
@@ -2522,6 +2691,17 @@
    "value": 150000.0,
    "net": 0.0,
    "r30": -0.6434123239102529
+  },
+  {
+   "ticker": "ORCL",
+   "name": "Oracle Corp",
+   "sector": "information-technology",
+   "n": 9,
+   "nBuy": 3,
+   "nSell": 6,
+   "value": 145500.0,
+   "net": -48500.0,
+   "r30": 0.333251005260351
   },
   {
    "ticker": "SCHW",
@@ -2535,26 +2715,15 @@
    "r30": 7.524181286876522
   },
   {
-   "ticker": "TTD",
-   "name": "The Trade Desk Inc",
-   "sector": "communication-services",
-   "n": 9,
-   "nBuy": 4,
-   "nSell": 5,
-   "value": 145500.0,
-   "net": -32500.0,
-   "r30": -13.147394480908522
-  },
-  {
-   "ticker": "JNJ",
-   "name": "Johnson & Johnson",
-   "sector": "health-care",
-   "n": 15,
-   "nBuy": 8,
-   "nSell": 7,
-   "value": 144500.0,
-   "net": 32500.0,
-   "r30": 3.0205254335237584
+   "ticker": "XSP",
+   "name": "CBOE MINI SPX INDEX",
+   "sector": null,
+   "n": 18,
+   "nBuy": 0,
+   "nSell": 18,
+   "value": 144000.0,
+   "net": -144000.0,
+   "r30": null
   },
   {
    "ticker": "SCI",
@@ -2590,17 +2759,6 @@
    "r30": 3.041655259738505
   },
   {
-   "ticker": "BKNG",
-   "name": "Booking Holdings Inc",
-   "sector": "consumer-discretionary",
-   "n": 8,
-   "nBuy": 3,
-   "nSell": 5,
-   "value": 137500.0,
-   "net": -40500.0,
-   "r30": 3.665817276005147
-  },
-  {
    "ticker": "CB",
    "name": "Chubb Ltd",
    "sector": "financials",
@@ -2612,15 +2770,59 @@
    "r30": 1.6103993658118247
   },
   {
-   "ticker": "CSCO",
-   "name": "Cisco Systems Inc",
+   "ticker": "COHR",
+   "name": "Coherent Corp",
    "sector": "information-technology",
+   "n": 11,
+   "nBuy": 4,
+   "nSell": 7,
+   "value": 137000.0,
+   "net": -24000.0,
+   "r30": -14.224758955453625
+  },
+  {
+   "ticker": "DHR",
+   "name": "Danaher Corp",
+   "sector": "health-care",
+   "n": 11,
+   "nBuy": 9,
+   "nSell": 2,
+   "value": 137000.0,
+   "net": 56000.0,
+   "r30": 10.126889847451178
+  },
+  {
+   "ticker": "TMUS",
+   "name": "T-Mobile US Inc",
+   "sector": "communication-services",
    "n": 14,
-   "nBuy": 3,
-   "nSell": 11,
+   "nBuy": 8,
+   "nSell": 6,
    "value": 136500.0,
-   "net": -88500.0,
-   "r30": -0.6160641631245933
+   "net": 40500.0,
+   "r30": -3.7452148907198874
+  },
+  {
+   "ticker": "NFLX",
+   "name": "Netflix Inc",
+   "sector": "communication-services",
+   "n": 17,
+   "nBuy": 8,
+   "nSell": 9,
+   "value": 136000.0,
+   "net": -8000.0,
+   "r30": -2.893696119533437
+  },
+  {
+   "ticker": "LLY",
+   "name": "Eli Lilly and Co",
+   "sector": "health-care",
+   "n": 8,
+   "nBuy": 4,
+   "nSell": 4,
+   "value": 131000.0,
+   "net": 67000.0,
+   "r30": 6.020961322057068
   },
   {
    "ticker": "UPST",
@@ -2634,37 +2836,26 @@
    "r30": -9.700344888573262
   },
   {
-   "ticker": "PFE",
-   "name": "Pfizer Inc",
-   "sector": "health-care",
-   "n": 7,
-   "nBuy": 3,
-   "nSell": 4,
-   "value": 129500.0,
-   "net": -81500.0,
-   "r30": 2.659642348921454
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp",
+   "ticker": "APH",
+   "name": "Amphenol Corp",
    "sector": "information-technology",
-   "n": 10,
-   "nBuy": 3,
-   "nSell": 7,
-   "value": 129000.0,
-   "net": -32000.0,
-   "r30": -14.224758955453625
+   "n": 7,
+   "nBuy": 6,
+   "nSell": 1,
+   "value": 129500.0,
+   "net": 113500.0,
+   "r30": -0.05951113453662541
   },
   {
-   "ticker": "DHR",
-   "name": "Danaher Corp",
-   "sector": "health-care",
+   "ticker": "AMT",
+   "name": "American Tower Corp",
+   "sector": "real-estate",
    "n": 10,
-   "nBuy": 8,
-   "nSell": 2,
+   "nBuy": 4,
+   "nSell": 6,
    "value": 129000.0,
-   "net": 48000.0,
-   "r30": 10.126889847451178
+   "net": -65000.0,
+   "r30": -0.40166433959533754
   },
   {
    "ticker": "FLT",
@@ -2689,26 +2880,26 @@
    "r30": 1.0271531191144045
   },
   {
-   "ticker": "TENB",
-   "name": "TENABLE HOLDINGS INC",
-   "sector": "information-technology",
+   "ticker": "NKE",
+   "name": "Nike Inc",
+   "sector": "consumer-discretionary",
    "n": 13,
-   "nBuy": 0,
-   "nSell": 13,
+   "nBuy": 5,
+   "nSell": 8,
    "value": 128500.0,
-   "net": -128500.0,
-   "r30": 5.506620093839199
+   "net": -48500.0,
+   "r30": -9.006733268548913
   },
   {
-   "ticker": "COO",
-   "name": "The Cooper Cos Inc",
+   "ticker": "ZBH",
+   "name": "Zimmer Biomet Holdings Inc",
    "sector": "health-care",
-   "n": 16,
-   "nBuy": 16,
-   "nSell": 0,
-   "value": 128000.0,
-   "net": 128000.0,
-   "r30": 6.382713485997849
+   "n": 13,
+   "nBuy": 2,
+   "nSell": 11,
+   "value": 128500.0,
+   "net": -96500.0,
+   "r30": 7.016559348033886
   },
   {
    "ticker": "BLK",
@@ -2722,26 +2913,37 @@
    "r30": 6.715398417502369
   },
   {
-   "ticker": "AMGN",
-   "name": "Amgen Inc",
-   "sector": "health-care",
-   "n": 12,
-   "nBuy": 8,
-   "nSell": 4,
-   "value": 120500.0,
-   "net": 56500.0,
-   "r30": 6.411734883609903
+   "ticker": "CMG",
+   "name": "Chipotle Mexican Grill Inc",
+   "sector": "consumer-discretionary",
+   "n": 9,
+   "nBuy": 3,
+   "nSell": 6,
+   "value": 121000.0,
+   "net": -73000.0,
+   "r30": -1.9836745158027822
   },
   {
-   "ticker": "APP",
-   "name": "APPLOVIN CORP",
-   "sector": "communication-services",
+   "ticker": "ORLY",
+   "name": "O'Reilly Automotive Inc",
+   "sector": "consumer-discretionary",
+   "n": 9,
+   "nBuy": 2,
+   "nSell": 7,
+   "value": 121000.0,
+   "net": -89000.0,
+   "r30": -0.24981653905378048
+  },
+  {
+   "ticker": "ETN",
+   "name": "Eaton Corp PLC",
+   "sector": "industrials",
    "n": 12,
-   "nBuy": 7,
-   "nSell": 5,
+   "nBuy": 9,
+   "nSell": 3,
    "value": 120500.0,
-   "net": -8500.0,
-   "r30": -17.599394969301603
+   "net": 72500.0,
+   "r30": -1.4323497111162875
   },
   {
    "ticker": "FBIN",
@@ -2766,6 +2968,39 @@
    "r30": 21.277653768227488
   },
   {
+   "ticker": "EL",
+   "name": "The Estee Lauder Cos Inc",
+   "sector": "consumer-staples",
+   "n": 6,
+   "nBuy": 4,
+   "nSell": 2,
+   "value": 115000.0,
+   "net": 83000.0,
+   "r30": 3.7722362852402993
+  },
+  {
+   "ticker": "MBGL",
+   "name": "MOBILITY GLOBAL INC",
+   "sector": "industrials",
+   "n": 6,
+   "nBuy": 2,
+   "nSell": 4,
+   "value": 115000.0,
+   "net": 51000.0,
+   "r30": -3.7001522915494522
+  },
+  {
+   "ticker": "WBD",
+   "name": "Warner Bros Discover Inc",
+   "sector": "communication-services",
+   "n": 6,
+   "nBuy": 1,
+   "nSell": 5,
+   "value": 115000.0,
+   "net": -99000.0,
+   "r30": -4.248120300751889
+  },
+  {
    "ticker": "MELI",
    "name": "MercadoLibre Inc",
    "sector": "consumer-discretionary",
@@ -2786,28 +3021,6 @@
    "value": 113000.0,
    "net": -65000.0,
    "r30": 6.741580203578879
-  },
-  {
-   "ticker": "ORCL",
-   "name": "Oracle Corp",
-   "sector": "information-technology",
-   "n": 8,
-   "nBuy": 3,
-   "nSell": 5,
-   "value": 113000.0,
-   "net": -16000.0,
-   "r30": 0.333251005260351
-  },
-  {
-   "ticker": "ORLY",
-   "name": "O'Reilly Automotive Inc",
-   "sector": "consumer-discretionary",
-   "n": 8,
-   "nBuy": 2,
-   "nSell": 6,
-   "value": 113000.0,
-   "net": -81000.0,
-   "r30": -0.24981653905378048
   },
   {
    "ticker": "VTI",
@@ -2832,26 +3045,26 @@
    "r30": 6.215919586417018
   },
   {
-   "ticker": "NKE",
-   "name": "Nike Inc",
-   "sector": "consumer-discretionary",
+   "ticker": "SYK",
+   "name": "Stryker Corp",
+   "sector": "health-care",
    "n": 11,
-   "nBuy": 5,
-   "nSell": 6,
+   "nBuy": 4,
+   "nSell": 7,
    "value": 112500.0,
-   "net": -32500.0,
-   "r30": -9.006733268548913
+   "net": -48500.0,
+   "r30": 7.680394412934202
   },
   {
-   "ticker": "XSP",
-   "name": "CBOE MINI SPX INDEX",
-   "sector": null,
+   "ticker": "CHTR",
+   "name": "Charter Communications Inc",
+   "sector": "communication-services",
    "n": 14,
-   "nBuy": 0,
-   "nSell": 14,
+   "nBuy": 6,
+   "nSell": 6,
    "value": 112000.0,
-   "net": -112000.0,
-   "r30": null
+   "net": 0.0,
+   "r30": -10.328512113683018
   },
   {
    "ticker": "CR",
@@ -2865,26 +3078,37 @@
    "r30": -0.6388062612766365
   },
   {
-   "ticker": "EL",
-   "name": "The Estee Lauder Cos Inc",
-   "sector": "consumer-staples",
-   "n": 5,
-   "nBuy": 3,
-   "nSell": 2,
-   "value": 107000.0,
-   "net": 75000.0,
-   "r30": 3.7722362852402993
+   "ticker": "MSTR",
+   "name": "MicroStrategy Inc",
+   "sector": "information-technology",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 107500.0,
+   "net": -42500.0,
+   "r30": -15.352042510793751
   },
   {
-   "ticker": "LLY",
-   "name": "Eli Lilly and Co",
-   "sector": "health-care",
+   "ticker": "DDOG",
+   "name": "Datadog Inc",
+   "sector": "information-technology",
    "n": 5,
    "nBuy": 3,
    "nSell": 2,
    "value": 107000.0,
    "net": 75000.0,
-   "r30": 6.020961322057068
+   "r30": 19.191653539435606
+  },
+  {
+   "ticker": "ABBV",
+   "name": "AbbVie Inc",
+   "sector": "health-care",
+   "n": 4,
+   "nBuy": 2,
+   "nSell": 2,
+   "value": 105500.0,
+   "net": -24500.0,
+   "r30": 12.621310612692996
   },
   {
    "ticker": "AIO",
@@ -2898,15 +3122,37 @@
    "r30": -7.91185664514421
   },
   {
-   "ticker": "CMG",
-   "name": "Chipotle Mexican Grill Inc",
-   "sector": "consumer-discretionary",
+   "ticker": "COF",
+   "name": "Capital One Financial Corp",
+   "sector": "financials",
    "n": 7,
    "nBuy": 3,
    "nSell": 4,
    "value": 105000.0,
    "net": -57000.0,
-   "r30": -1.9836745158027822
+   "r30": 8.308786194998884
+  },
+  {
+   "ticker": "IDXX",
+   "name": "IDEXX Laboratories Inc",
+   "sector": "health-care",
+   "n": 7,
+   "nBuy": 4,
+   "nSell": 3,
+   "value": 105000.0,
+   "net": 8000.0,
+   "r30": 3.0913566957581162
+  },
+  {
+   "ticker": "PLD",
+   "name": "Prologis Inc",
+   "sector": "real-estate",
+   "n": 7,
+   "nBuy": 3,
+   "nSell": 4,
+   "value": 105000.0,
+   "net": -57000.0,
+   "r30": -1.4840251271713345
   },
   {
    "ticker": "SBUX",
@@ -2920,6 +3166,17 @@
    "r30": 4.489507854993313
   },
   {
+   "ticker": "AMAT",
+   "name": "Applied Materials Inc",
+   "sector": "information-technology",
+   "n": 10,
+   "nBuy": 7,
+   "nSell": 3,
+   "value": 104500.0,
+   "net": 7500.0,
+   "r30": -14.758280152359287
+  },
+  {
    "ticker": "EQT",
    "name": "EQT Corp",
    "sector": "energy",
@@ -2929,28 +3186,6 @@
    "value": 104500.0,
    "net": 23500.0,
    "r30": -5.268768354071775
-  },
-  {
-   "ticker": "ZBH",
-   "name": "Zimmer Biomet Holdings Inc",
-   "sector": "health-care",
-   "n": 10,
-   "nBuy": 2,
-   "nSell": 8,
-   "value": 104500.0,
-   "net": -72500.0,
-   "r30": 7.016559348033886
-  },
-  {
-   "ticker": "NFLX",
-   "name": "Netflix Inc",
-   "sector": "communication-services",
-   "n": 13,
-   "nBuy": 8,
-   "nSell": 5,
-   "value": 104000.0,
-   "net": 24000.0,
-   "r30": -2.893696119533437
   },
   {
    "ticker": "CLH",
@@ -2964,17 +3199,6 @@
    "r30": 3.9364028845734866
   },
   {
-   "ticker": "DDOG",
-   "name": "Datadog Inc",
-   "sector": "information-technology",
-   "n": 4,
-   "nBuy": 2,
-   "nSell": 2,
-   "value": 99000.0,
-   "net": 67000.0,
-   "r30": 19.191653539435606
-  },
-  {
    "ticker": "GPC",
    "name": "Genuine Parts Co",
    "sector": "consumer-discretionary",
@@ -2984,17 +3208,6 @@
    "value": 99000.0,
    "net": 67000.0,
    "r30": 16.101034810825464
-  },
-  {
-   "ticker": "APH",
-   "name": "Amphenol Corp",
-   "sector": "information-technology",
-   "n": 6,
-   "nBuy": 5,
-   "nSell": 1,
-   "value": 97000.0,
-   "net": 81000.0,
-   "r30": -0.05951113453662541
   },
   {
    "ticker": "DFIC",
@@ -3008,15 +3221,15 @@
    "r30": 5.513717052178579
   },
   {
-   "ticker": "AMAT",
-   "name": "Applied Materials Inc",
+   "ticker": "ON",
+   "name": "ON Semiconductor Corp",
    "sector": "information-technology",
-   "n": 9,
-   "nBuy": 6,
-   "nSell": 3,
-   "value": 96500.0,
-   "net": -500.0,
-   "r30": -14.758280152359287
+   "n": 6,
+   "nBuy": 5,
+   "nSell": 1,
+   "value": 97000.0,
+   "net": 81000.0,
+   "r30": -16.495892767147662
   },
   {
    "ticker": "HON",
@@ -3030,48 +3243,26 @@
    "r30": 0.41156982342614445
   },
   {
-   "ticker": "SYK",
-   "name": "Stryker Corp",
-   "sector": "health-care",
-   "n": 9,
-   "nBuy": 3,
-   "nSell": 6,
-   "value": 96500.0,
-   "net": -48500.0,
-   "r30": 7.680394412934202
-  },
-  {
-   "ticker": "CHTR",
-   "name": "Charter Communications Inc",
-   "sector": "communication-services",
-   "n": 12,
-   "nBuy": 5,
-   "nSell": 5,
-   "value": 96000.0,
-   "net": 0.0,
-   "r30": -10.328512113683018
-  },
-  {
-   "ticker": "TMUS",
-   "name": "T-Mobile US Inc",
-   "sector": "communication-services",
-   "n": 12,
-   "nBuy": 7,
-   "nSell": 5,
-   "value": 96000.0,
-   "net": 16000.0,
-   "r30": -3.7452148907198874
-  },
-  {
-   "ticker": "AMT",
-   "name": "American Tower Corp",
+   "ticker": "CCI",
+   "name": "Crown Castle International Corp",
    "sector": "real-estate",
-   "n": 8,
-   "nBuy": 4,
+   "n": 12,
+   "nBuy": 3,
+   "nSell": 9,
+   "value": 96000.0,
+   "net": -48000.0,
+   "r30": -1.6047813777908946
+  },
+  {
+   "ticker": "KR",
+   "name": "The Kroger Co",
+   "sector": "consumer-staples",
+   "n": 12,
+   "nBuy": 8,
    "nSell": 4,
-   "value": 88500.0,
-   "net": -24500.0,
-   "r30": -0.40166433959533754
+   "value": 96000.0,
+   "net": 32000.0,
+   "r30": 1.0787200342447734
   },
   {
    "ticker": "BEP",
@@ -3085,6 +3276,17 @@
    "r30": -13.176576752739638
   },
   {
+   "ticker": "CARR",
+   "name": "Carrier Global Corp",
+   "sector": "industrials",
+   "n": 8,
+   "nBuy": 1,
+   "nSell": 7,
+   "value": 88500.0,
+   "net": -72500.0,
+   "r30": -8.073059342689252
+  },
+  {
    "ticker": "DIS",
    "name": "The Walt Disney Co",
    "sector": "communication-services",
@@ -3094,17 +3296,6 @@
    "value": 88500.0,
    "net": -40500.0,
    "r30": 3.608650624942008
-  },
-  {
-   "ticker": "ETN",
-   "name": "Eaton Corp PLC",
-   "sector": "industrials",
-   "n": 8,
-   "nBuy": 6,
-   "nSell": 2,
-   "value": 88500.0,
-   "net": 56500.0,
-   "r30": -1.4323497111162875
   },
   {
    "ticker": "ICE",
@@ -3129,15 +3320,26 @@
    "r30": -14.394285839220593
   },
   {
-   "ticker": "CCI",
-   "name": "Crown Castle International Corp",
-   "sector": "real-estate",
-   "n": 11,
+   "ticker": "NXPI",
+   "name": "NXP Semiconductors NV",
+   "sector": "information-technology",
+   "n": 8,
+   "nBuy": 5,
+   "nSell": 3,
+   "value": 88500.0,
+   "net": 40500.0,
+   "r30": 1.3708454102110015
+  },
+  {
+   "ticker": "UPS",
+   "name": "United Parcel Service Inc",
+   "sector": "industrials",
+   "n": 8,
    "nBuy": 3,
-   "nSell": 8,
-   "value": 88000.0,
-   "net": -40000.0,
-   "r30": -1.6047813777908946
+   "nSell": 5,
+   "value": 88500.0,
+   "net": -40500.0,
+   "r30": -2.807542376861556
   },
   {
    "ticker": "VSAT",
@@ -3171,17 +3373,6 @@
    "value": 81000.0,
    "net": 0.0,
    "r30": -6.900734776858764
-  },
-  {
-   "ticker": "ON",
-   "name": "ON Semiconductor Corp",
-   "sector": "information-technology",
-   "n": 4,
-   "nBuy": 3,
-   "nSell": 1,
-   "value": 81000.0,
-   "net": 65000.0,
-   "r30": -16.495892767147662
   },
   {
    "ticker": "STX",
@@ -3239,15 +3430,15 @@
    "r30": 7.199106931920777
   },
   {
-   "ticker": "CARR",
-   "name": "Carrier Global Corp",
-   "sector": "industrials",
+   "ticker": "DELL",
+   "name": "Dell Technologies Inc",
+   "sector": "information-technology",
    "n": 7,
-   "nBuy": 1,
-   "nSell": 6,
+   "nBuy": 5,
+   "nSell": 2,
    "value": 80500.0,
-   "net": -64500.0,
-   "r30": -8.073059342689252
+   "net": 48500.0,
+   "r30": -4.353851240467036
   },
   {
    "ticker": "EA",
@@ -3261,15 +3452,15 @@
    "r30": 3.045713189086763
   },
   {
-   "ticker": "NXPI",
-   "name": "NXP Semiconductors NV",
-   "sector": "information-technology",
+   "ticker": "O",
+   "name": "Realty Income Corp",
+   "sector": "real-estate",
    "n": 7,
-   "nBuy": 4,
-   "nSell": 3,
+   "nBuy": 3,
+   "nSell": 4,
    "value": 80500.0,
-   "net": 32500.0,
-   "r30": 1.3708454102110015
+   "net": -32500.0,
+   "r30": -2.172570652074759
   },
   {
    "ticker": "TSM",
@@ -3283,6 +3474,39 @@
    "r30": 0.6600411541750117
   },
   {
+   "ticker": "LEN",
+   "name": "Lennar Corp",
+   "sector": "consumer-discretionary",
+   "n": 10,
+   "nBuy": 4,
+   "nSell": 6,
+   "value": 80000.0,
+   "net": -16000.0,
+   "r30": -3.209885231024913
+  },
+  {
+   "ticker": "MRNA",
+   "name": "Moderna Inc",
+   "sector": "health-care",
+   "n": 10,
+   "nBuy": 7,
+   "nSell": 3,
+   "value": 80000.0,
+   "net": 32000.0,
+   "r30": 42.59937617960311
+  },
+  {
+   "ticker": "OTIS",
+   "name": "Otis Worldwide Corp",
+   "sector": "industrials",
+   "n": 10,
+   "nBuy": 4,
+   "nSell": 6,
+   "value": 80000.0,
+   "net": -16000.0,
+   "r30": 0.22168300751857634
+  },
+  {
    "ticker": "PENN",
    "name": "Penn National Gaming Inc",
    "sector": "consumer-discretionary",
@@ -3292,6 +3516,17 @@
    "value": 80000.0,
    "net": -80000.0,
    "r30": -5.635236178297646
+  },
+  {
+   "ticker": "PODD",
+   "name": "Insulet Corp",
+   "sector": "health-care",
+   "n": 10,
+   "nBuy": 5,
+   "nSell": 5,
+   "value": 80000.0,
+   "net": 0.0,
+   "r30": 2.988655915253395
   },
   {
    "ticker": "FNMA",
@@ -3360,17 +3595,6 @@
    "r30": 7.482870537324193
   },
   {
-   "ticker": "ABBV",
-   "name": "AbbVie Inc",
-   "sector": "health-care",
-   "n": 3,
-   "nBuy": 1,
-   "nSell": 2,
-   "value": 73000.0,
-   "net": -57000.0,
-   "r30": 12.621310612692996
-  },
-  {
    "ticker": "FCFS",
    "name": "FirstCash Holdings Inc",
    "sector": "financials",
@@ -3391,6 +3615,17 @@
    "value": 73000.0,
    "net": 57000.0,
    "r30": -0.4718087709017049
+  },
+  {
+   "ticker": "FICO",
+   "name": "Fair Isaac Corporation",
+   "sector": "information-technology",
+   "n": 3,
+   "nBuy": 1,
+   "nSell": 2,
+   "value": 73000.0,
+   "net": -8000.0,
+   "r30": 7.403095098018097
   },
   {
    "ticker": "HAYW",
@@ -3448,6 +3683,17 @@
    "r30": 13.279864492388072
   },
   {
+   "ticker": "AXP",
+   "name": "American Express Co",
+   "sector": "financials",
+   "n": 6,
+   "nBuy": 5,
+   "nSell": 1,
+   "value": 72500.0,
+   "net": 56500.0,
+   "r30": -1.8108127593041792
+  },
+  {
    "ticker": "CME",
    "name": "CME Group Inc",
    "sector": "financials",
@@ -3457,17 +3703,6 @@
    "value": 72500.0,
    "net": -40500.0,
    "r30": 6.857680173250529
-  },
-  {
-   "ticker": "DELL",
-   "name": "Dell Technologies Inc",
-   "sector": "information-technology",
-   "n": 6,
-   "nBuy": 5,
-   "nSell": 1,
-   "value": 72500.0,
-   "net": 56500.0,
-   "r30": -4.353851240467036
   },
   {
    "ticker": "HCA",
@@ -3481,17 +3716,6 @@
    "r30": 7.163146670004202
   },
   {
-   "ticker": "IDXX",
-   "name": "IDEXX Laboratories Inc",
-   "sector": "health-care",
-   "n": 6,
-   "nBuy": 3,
-   "nSell": 3,
-   "value": 72500.0,
-   "net": -24500.0,
-   "r30": 3.0913566957581162
-  },
-  {
    "ticker": "IQV",
    "name": "Iqvia Holdings Inc",
    "sector": "health-care",
@@ -3503,15 +3727,37 @@
    "r30": 11.94980705130164
   },
   {
-   "ticker": "O",
-   "name": "Realty Income Corp",
-   "sector": "real-estate",
+   "ticker": "LITE",
+   "name": "Lumentum Holdings Inc",
+   "sector": "information-technology",
    "n": 6,
-   "nBuy": 3,
-   "nSell": 3,
+   "nBuy": 4,
+   "nSell": 2,
    "value": 72500.0,
-   "net": -24500.0,
-   "r30": -2.172570652074759
+   "net": 40500.0,
+   "r30": 1.2911821952078628
+  },
+  {
+   "ticker": "MPWR",
+   "name": "Monolithic Power Systems Inc",
+   "sector": "information-technology",
+   "n": 6,
+   "nBuy": 4,
+   "nSell": 2,
+   "value": 72500.0,
+   "net": 40500.0,
+   "r30": -10.698033546946792
+  },
+  {
+   "ticker": "RVTY",
+   "name": "Revvity Inc",
+   "sector": "health-care",
+   "n": 6,
+   "nBuy": 1,
+   "nSell": 5,
+   "value": 72500.0,
+   "net": -56500.0,
+   "r30": 16.290507389045317
   },
   {
    "ticker": "TDY",
@@ -3547,15 +3793,37 @@
    "r30": 0.7263632715514377
   },
   {
-   "ticker": "KR",
-   "name": "The Kroger Co",
-   "sector": "consumer-staples",
+   "ticker": "CSGP",
+   "name": "CoStar Group Inc",
+   "sector": "real-estate",
    "n": 9,
-   "nBuy": 7,
-   "nSell": 2,
+   "nBuy": 6,
+   "nSell": 3,
    "value": 72000.0,
-   "net": 40000.0,
-   "r30": 1.0787200342447734
+   "net": 24000.0,
+   "r30": -1.7865449616913314
+  },
+  {
+   "ticker": "CVNA",
+   "name": "Carvana Co",
+   "sector": "consumer-discretionary",
+   "n": 9,
+   "nBuy": 4,
+   "nSell": 5,
+   "value": 72000.0,
+   "net": -8000.0,
+   "r30": -4.602285415267504
+  },
+  {
+   "ticker": "GLW",
+   "name": "Corning Inc",
+   "sector": "information-technology",
+   "n": 9,
+   "nBuy": 5,
+   "nSell": 4,
+   "value": 72000.0,
+   "net": 8000.0,
+   "r30": -17.01027042660222
   },
   {
    "ticker": "MODG",
@@ -3567,28 +3835,6 @@
    "value": 72000.0,
    "net": -72000.0,
    "r30": null
-  },
-  {
-   "ticker": "OTIS",
-   "name": "Otis Worldwide Corp",
-   "sector": "industrials",
-   "n": 9,
-   "nBuy": 3,
-   "nSell": 6,
-   "value": 72000.0,
-   "net": -24000.0,
-   "r30": 0.22168300751857634
-  },
-  {
-   "ticker": "PODD",
-   "name": "Insulet Corp",
-   "sector": "health-care",
-   "n": 9,
-   "nBuy": 4,
-   "nSell": 5,
-   "value": 72000.0,
-   "net": -8000.0,
-   "r30": 2.988655915253395
   },
   {
    "ticker": "ALH",
@@ -3624,17 +3870,6 @@
    "r30": null
   },
   {
-   "ticker": "FICO",
-   "name": "Fair Isaac Corporation",
-   "sector": "information-technology",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 65000.0,
-   "net": 0.0,
-   "r30": 7.403095098018097
-  },
-  {
    "ticker": "HUBS",
    "name": "HubSpot Inc",
    "sector": "information-technology",
@@ -3657,6 +3892,17 @@
    "r30": null
   },
   {
+   "ticker": "RY",
+   "name": "Royal Bank of Canada",
+   "sector": "financials",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 65000.0,
+   "net": 0.0,
+   "r30": 1.2084295328388395
+  },
+  {
    "ticker": "CI",
    "name": "Cigna Corp",
    "sector": "health-care",
@@ -3666,17 +3912,6 @@
    "value": 64500.0,
    "net": -32500.0,
    "r30": 4.071601671947628
-  },
-  {
-   "ticker": "COF",
-   "name": "Capital One Financial Corp",
-   "sector": "financials",
-   "n": 5,
-   "nBuy": 3,
-   "nSell": 2,
-   "value": 64500.0,
-   "net": -16500.0,
-   "r30": 8.308786194998884
   },
   {
    "ticker": "CSX",
@@ -3690,37 +3925,70 @@
    "r30": 0.29295995292150545
   },
   {
-   "ticker": "LITE",
-   "name": "Lumentum Holdings Inc",
-   "sector": "information-technology",
+   "ticker": "CVS",
+   "name": "CVS Health Corp",
+   "sector": "health-care",
+   "n": 5,
+   "nBuy": 2,
+   "nSell": 3,
+   "value": 64500.0,
+   "net": -32500.0,
+   "r30": 2.212311381851495
+  },
+  {
+   "ticker": "DHI",
+   "name": "D.R. Horton Inc",
+   "sector": "consumer-discretionary",
+   "n": 5,
+   "nBuy": 4,
+   "nSell": 1,
+   "value": 64500.0,
+   "net": 48500.0,
+   "r30": 1.2750366942060998
+  },
+  {
+   "ticker": "GIS",
+   "name": "General Mills Inc",
+   "sector": "consumer-staples",
+   "n": 5,
+   "nBuy": 4,
+   "nSell": 1,
+   "value": 64500.0,
+   "net": 48500.0,
+   "r30": 9.589559848383633
+  },
+  {
+   "ticker": "IR",
+   "name": "Ingersoll Rand Inc",
+   "sector": "industrials",
    "n": 5,
    "nBuy": 3,
    "nSell": 2,
    "value": 64500.0,
    "net": 32500.0,
-   "r30": 1.2911821952078628
+   "r30": 4.467187809353545
   },
   {
-   "ticker": "MPWR",
-   "name": "Monolithic Power Systems Inc",
-   "sector": "information-technology",
+   "ticker": "MTD",
+   "name": "Mettler-Toledo International Inc",
+   "sector": "health-care",
    "n": 5,
    "nBuy": 3,
    "nSell": 2,
    "value": 64500.0,
    "net": 32500.0,
-   "r30": -10.698033546946792
+   "r30": 20.578324757551037
   },
   {
-   "ticker": "PLD",
-   "name": "Prologis Inc",
-   "sector": "real-estate",
+   "ticker": "ODFL",
+   "name": "Old Dominion Freight Line Inc",
+   "sector": "industrials",
    "n": 5,
    "nBuy": 3,
    "nSell": 2,
    "value": 64500.0,
-   "net": -16500.0,
-   "r30": -1.4840251271713345
+   "net": 32500.0,
+   "r30": -3.078407312035919
   },
   {
    "ticker": "SNOW",
@@ -3734,6 +4002,28 @@
    "r30": 3.707079589883977
   },
   {
+   "ticker": "TLH",
+   "name": "iShares 10-20 Year Treasury Bond ETF",
+   "sector": null,
+   "n": 5,
+   "nBuy": 3,
+   "nSell": 2,
+   "value": 64500.0,
+   "net": -16500.0,
+   "r30": -1.7103793905479152
+  },
+  {
+   "ticker": "TMO",
+   "name": "Thermo Fisher Scientific Inc",
+   "sector": "health-care",
+   "n": 5,
+   "nBuy": 3,
+   "nSell": 2,
+   "value": 64500.0,
+   "net": -16500.0,
+   "r30": 16.52497258282554
+  },
+  {
    "ticker": "VEA",
    "name": "Vanguard FTSE Developed Markets ETF",
    "sector": null,
@@ -3743,6 +4033,17 @@
    "value": 64500.0,
    "net": 32500.0,
    "r30": 1.0048593615045176
+  },
+  {
+   "ticker": "WM",
+   "name": "Waste Management Inc",
+   "sector": "industrials",
+   "n": 5,
+   "nBuy": 0,
+   "nSell": 5,
+   "value": 64500.0,
+   "net": -64500.0,
+   "r30": 11.559327640783284
   },
   {
    "ticker": "COIN",
@@ -3756,6 +4057,17 @@
    "r30": 11.606719461417718
   },
   {
+   "ticker": "CRH",
+   "name": "CRH PLC",
+   "sector": "materials",
+   "n": 8,
+   "nBuy": 3,
+   "nSell": 5,
+   "value": 64000.0,
+   "net": -16000.0,
+   "r30": -11.377906665938188
+  },
+  {
    "ticker": "CTSH",
    "name": "Cognizant Technology Solutions Corp",
    "sector": "information-technology",
@@ -3767,37 +4079,48 @@
    "r30": 14.666157827774494
   },
   {
-   "ticker": "GLW",
-   "name": "Corning Inc",
-   "sector": "information-technology",
+   "ticker": "DASH",
+   "name": "DoorDash Inc",
+   "sector": "consumer-discretionary",
    "n": 8,
    "nBuy": 4,
    "nSell": 4,
    "value": 64000.0,
    "net": 0.0,
-   "r30": -17.01027042660222
+   "r30": 4.268289765982063
   },
   {
-   "ticker": "LEN",
-   "name": "Lennar Corp",
-   "sector": "consumer-discretionary",
-   "n": 8,
-   "nBuy": 3,
-   "nSell": 5,
-   "value": 64000.0,
-   "net": -16000.0,
-   "r30": -3.209885231024913
-  },
-  {
-   "ticker": "MRNA",
-   "name": "Moderna Inc",
-   "sector": "health-care",
+   "ticker": "FCX",
+   "name": "Freeport-McMoRan Inc",
+   "sector": "materials",
    "n": 8,
    "nBuy": 5,
    "nSell": 3,
    "value": 64000.0,
    "net": 16000.0,
-   "r30": 42.59937617960311
+   "r30": 4.4041716841844645
+  },
+  {
+   "ticker": "LULU",
+   "name": "Lululemon Athletica Inc",
+   "sector": "consumer-discretionary",
+   "n": 8,
+   "nBuy": 4,
+   "nSell": 4,
+   "value": 64000.0,
+   "net": 0.0,
+   "r30": -8.253944692327545
+  },
+  {
+   "ticker": "RCL",
+   "name": "Royal Caribbean Group",
+   "sector": "consumer-discretionary",
+   "n": 8,
+   "nBuy": 5,
+   "nSell": 3,
+   "value": 64000.0,
+   "net": 16000.0,
+   "r30": 5.650139208850163
   },
   {
    "ticker": "ADSK",
@@ -3855,6 +4178,17 @@
    "r30": 8.242419911262461
   },
   {
+   "ticker": "KKR",
+   "name": "KKR & Co Inc",
+   "sector": "financials",
+   "n": 4,
+   "nBuy": 1,
+   "nSell": 3,
+   "value": 56500.0,
+   "net": -40500.0,
+   "r30": 5.56205360734063
+  },
+  {
    "ticker": "MDT",
    "name": "Medtronic PLC",
    "sector": "health-care",
@@ -3864,6 +4198,17 @@
    "value": 56500.0,
    "net": -24500.0,
    "r30": 3.786960415499127
+  },
+  {
+   "ticker": "MTSI",
+   "name": "MACOM Technology Solutions Holdings Inc",
+   "sector": "information-technology",
+   "n": 4,
+   "nBuy": 1,
+   "nSell": 3,
+   "value": 56500.0,
+   "net": -40500.0,
+   "r30": 0.6025627064503158
   },
   {
    "ticker": "NOK",
@@ -3899,37 +4244,15 @@
    "r30": 5.771633429664503
   },
   {
-   "ticker": "RVTY",
-   "name": "Revvity Inc",
-   "sector": "health-care",
-   "n": 4,
-   "nBuy": 1,
-   "nSell": 3,
-   "value": 56500.0,
-   "net": -40500.0,
-   "r30": 16.290507389045317
-  },
-  {
-   "ticker": "TLH",
-   "name": "iShares 10-20 Year Treasury Bond ETF",
-   "sector": null,
+   "ticker": "UAL",
+   "name": "United Airlines Holdings Inc",
+   "sector": "industrials",
    "n": 4,
    "nBuy": 2,
    "nSell": 2,
    "value": 56500.0,
-   "net": -24500.0,
-   "r30": -1.7103793905479152
-  },
-  {
-   "ticker": "WM",
-   "name": "Waste Management Inc",
-   "sector": "industrials",
-   "n": 4,
-   "nBuy": 0,
-   "nSell": 4,
-   "value": 56500.0,
-   "net": -56500.0,
-   "r30": 11.559327640783284
+   "net": 24500.0,
+   "r30": -6.336513226024676
   },
   {
    "ticker": "ADI",
@@ -3943,48 +4266,26 @@
    "r30": -1.1760283830085185
   },
   {
-   "ticker": "CSGP",
-   "name": "CoStar Group Inc",
+   "ticker": "CBRE",
+   "name": "CBRE Group Inc",
    "sector": "real-estate",
-   "n": 7,
-   "nBuy": 5,
-   "nSell": 2,
-   "value": 56000.0,
-   "net": 24000.0,
-   "r30": -1.7865449616913314
-  },
-  {
-   "ticker": "CVNA",
-   "name": "Carvana Co",
-   "sector": "consumer-discretionary",
-   "n": 7,
-   "nBuy": 4,
-   "nSell": 3,
-   "value": 56000.0,
-   "net": 8000.0,
-   "r30": -4.602285415267504
-  },
-  {
-   "ticker": "DASH",
-   "name": "DoorDash Inc",
-   "sector": "consumer-discretionary",
    "n": 7,
    "nBuy": 3,
    "nSell": 4,
    "value": 56000.0,
    "net": -8000.0,
-   "r30": 4.268289765982063
+   "r30": 3.8519733486912533
   },
   {
-   "ticker": "FCX",
-   "name": "Freeport-McMoRan Inc",
+   "ticker": "GPK",
+   "name": "Graphic Packaging Holding Co",
    "sector": "materials",
    "n": 7,
-   "nBuy": 4,
-   "nSell": 3,
+   "nBuy": 0,
+   "nSell": 7,
    "value": 56000.0,
-   "net": 8000.0,
-   "r30": 4.4041716841844645
+   "net": -56000.0,
+   "r30": -7.983193277310918
   },
   {
    "ticker": "KO",
@@ -3996,17 +4297,6 @@
    "value": 56000.0,
    "net": 24000.0,
    "r30": 5.771242606719719
-  },
-  {
-   "ticker": "LULU",
-   "name": "Lululemon Athletica Inc",
-   "sector": "consumer-discretionary",
-   "n": 7,
-   "nBuy": 3,
-   "nSell": 4,
-   "value": 56000.0,
-   "net": -8000.0,
-   "r30": -8.253944692327545
   },
   {
    "ticker": "MCK",
@@ -4031,6 +4321,28 @@
    "r30": 26.21677556239054
   },
   {
+   "ticker": "URI",
+   "name": "United Rentals Inc",
+   "sector": "industrials",
+   "n": 7,
+   "nBuy": 3,
+   "nSell": 4,
+   "value": 56000.0,
+   "net": -8000.0,
+   "r30": 0.539514321077253
+  },
+  {
+   "ticker": "ARGX",
+   "name": "ARGENX SE",
+   "sector": "health-care",
+   "n": 3,
+   "nBuy": 3,
+   "nSell": 0,
+   "value": 48500.0,
+   "net": 48500.0,
+   "r30": null
+  },
+  {
    "ticker": "BA",
    "name": "Boeing Co",
    "sector": "industrials",
@@ -4042,15 +4354,15 @@
    "r30": -14.005991403638262
   },
   {
-   "ticker": "CVS",
-   "name": "CVS Health Corp",
-   "sector": "health-care",
+   "ticker": "CLX",
+   "name": "The Clorox Co",
+   "sector": "consumer-staples",
    "n": 3,
-   "nBuy": 1,
-   "nSell": 2,
+   "nBuy": 2,
+   "nSell": 1,
    "value": 48500.0,
-   "net": -32500.0,
-   "r30": 2.212311381851495
+   "net": 32500.0,
+   "r30": 10.130536650675005
   },
   {
    "ticker": "DUK",
@@ -4064,26 +4376,26 @@
    "r30": 0.17365679575762627
   },
   {
-   "ticker": "KKR",
-   "name": "KKR & Co Inc",
+   "ticker": "FMAO",
+   "name": "Farmers & Merchants Bancorp Inc",
    "sector": "financials",
    "n": 3,
-   "nBuy": 1,
-   "nSell": 2,
+   "nBuy": 3,
+   "nSell": 0,
    "value": 48500.0,
-   "net": -32500.0,
-   "r30": 5.56205360734063
+   "net": 48500.0,
+   "r30": 10.38993584836836
   },
   {
-   "ticker": "MTSI",
-   "name": "MACOM Technology Solutions Holdings Inc",
-   "sector": "information-technology",
+   "ticker": "PNR",
+   "name": "Pentair PLC",
+   "sector": "industrials",
    "n": 3,
-   "nBuy": 0,
-   "nSell": 3,
+   "nBuy": 2,
+   "nSell": 1,
    "value": 48500.0,
-   "net": -48500.0,
-   "r30": 0.6025627064503158
+   "net": 32500.0,
+   "r30": -2.262283492400141
   },
   {
    "ticker": "PWR",
@@ -4130,6 +4442,39 @@
    "r30": 3.4012317817154747
   },
   {
+   "ticker": "CART",
+   "name": "MAPLEBEAR INC",
+   "sector": "consumer-staples",
+   "n": 6,
+   "nBuy": 0,
+   "nSell": 6,
+   "value": 48000.0,
+   "net": -48000.0,
+   "r30": 7.249378624689307
+  },
+  {
+   "ticker": "CCL",
+   "name": "Carnival Corporation & PLC",
+   "sector": "consumer-discretionary",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": 3.7269851525630475
+  },
+  {
+   "ticker": "CIEN",
+   "name": "Ciena Corp",
+   "sector": "information-technology",
+   "n": 6,
+   "nBuy": 2,
+   "nSell": 4,
+   "value": 48000.0,
+   "net": -16000.0,
+   "r30": -14.429661623015875
+  },
+  {
    "ticker": "CPRT",
    "name": "Copart Inc",
    "sector": "industrials",
@@ -4141,17 +4486,6 @@
    "r30": -3.5737084162156223
   },
   {
-   "ticker": "CRH",
-   "name": "CRH PLC",
-   "sector": "materials",
-   "n": 6,
-   "nBuy": 3,
-   "nSell": 3,
-   "value": 48000.0,
-   "net": 0.0,
-   "r30": -11.377906665938188
-  },
-  {
    "ticker": "ECL",
    "name": "Ecolab Inc",
    "sector": "materials",
@@ -4161,6 +4495,105 @@
    "value": 48000.0,
    "net": 16000.0,
    "r30": 4.788429152861027
+  },
+  {
+   "ticker": "F",
+   "name": "Ford Motor Co",
+   "sector": "consumer-discretionary",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": -7.683058407935625
+  },
+  {
+   "ticker": "FERG",
+   "name": "Ferguson PLC",
+   "sector": "industrials",
+   "n": 6,
+   "nBuy": 5,
+   "nSell": 1,
+   "value": 48000.0,
+   "net": 32000.0,
+   "r30": -5.803314247165581
+  },
+  {
+   "ticker": "FISV",
+   "name": "Fiserv Inc",
+   "sector": "financials",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": -3.9601401632382736
+  },
+  {
+   "ticker": "IT",
+   "name": "Gartner Inc",
+   "sector": "information-technology",
+   "n": 6,
+   "nBuy": 4,
+   "nSell": 2,
+   "value": 48000.0,
+   "net": 16000.0,
+   "r30": 22.820451166431045
+  },
+  {
+   "ticker": "LII",
+   "name": "Lennox International Inc",
+   "sector": "industrials",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": -5.386085345031654
+  },
+  {
+   "ticker": "LRCX",
+   "name": "Lam Research Corp",
+   "sector": "information-technology",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": -8.27437872795985
+  },
+  {
+   "ticker": "MDB",
+   "name": "MongoDB Inc",
+   "sector": "information-technology",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": 17.160180536689534
+  },
+  {
+   "ticker": "PBCRY",
+   "name": "BANK CENTRAL ASIA TBK (PT)",
+   "sector": "financials",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": null
+  },
+  {
+   "ticker": "PCAR",
+   "name": "PACCAR Inc",
+   "sector": "industrials",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": 2.831286132495983
   },
   {
    "ticker": "PLTR",
@@ -4196,15 +4629,26 @@
    "r30": -1.096355715187939
   },
   {
-   "ticker": "UPS",
-   "name": "United Parcel Service Inc",
-   "sector": "industrials",
+   "ticker": "SNPS",
+   "name": "Synopsys Inc",
+   "sector": "information-technology",
    "n": 6,
-   "nBuy": 3,
-   "nSell": 3,
+   "nBuy": 5,
+   "nSell": 1,
    "value": 48000.0,
-   "net": 0.0,
-   "r30": -2.807542376861556
+   "net": 32000.0,
+   "r30": -8.144344780538201
+  },
+  {
+   "ticker": "STZ",
+   "name": "Constellation Brands Inc",
+   "sector": "consumer-staples",
+   "n": 6,
+   "nBuy": 2,
+   "nSell": 4,
+   "value": 48000.0,
+   "net": -16000.0,
+   "r30": 2.9433738571994827
   },
   {
    "ticker": "VLTO",
@@ -4216,6 +4660,50 @@
    "value": 48000.0,
    "net": 0.0,
    "r30": 5.164222379125186
+  },
+  {
+   "ticker": "VMC",
+   "name": "Vulcan Materials Co",
+   "sector": "materials",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": -4.397680240238477
+  },
+  {
+   "ticker": "VRSK",
+   "name": "VERISK ANALYTICS Inc",
+   "sector": "industrials",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": 6.259488847163736
+  },
+  {
+   "ticker": "VRT",
+   "name": "Vertiv Holdings Co",
+   "sector": "industrials",
+   "n": 6,
+   "nBuy": 3,
+   "nSell": 3,
+   "value": 48000.0,
+   "net": 0.0,
+   "r30": -12.562301586008557
+  },
+  {
+   "ticker": "XYL",
+   "name": "Xylem Inc",
+   "sector": "industrials",
+   "n": 6,
+   "nBuy": 4,
+   "nSell": 2,
+   "value": 48000.0,
+   "net": 16000.0,
+   "r30": 4.95302895108736
   },
   {
    "ticker": "ARM",
@@ -4262,6 +4750,17 @@
    "r30": null
   },
   {
+   "ticker": "BMO",
+   "name": "Bank of Montreal",
+   "sector": "financials",
+   "n": 2,
+   "nBuy": 2,
+   "nSell": 0,
+   "value": 40500.0,
+   "net": 40500.0,
+   "r30": 4.902245170273245
+  },
+  {
    "ticker": "CNC",
    "name": "Centene Corp",
    "sector": "health-care",
@@ -4304,17 +4803,6 @@
    "value": 40500.0,
    "net": -24500.0,
    "r30": -0.37248849760329605
-  },
-  {
-   "ticker": "FMAO",
-   "name": "Farmers & Merchants Bancorp Inc",
-   "sector": "financials",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 40500.0,
-   "net": 40500.0,
-   "r30": 10.38993584836836
   },
   {
    "ticker": "FN",
@@ -4416,6 +4904,28 @@
    "r30": -2.680652680652673
   },
   {
+   "ticker": "SONY",
+   "name": "Sony Group Corporation",
+   "sector": "consumer-discretionary",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 40500.0,
+   "net": -24500.0,
+   "r30": 14.724220623501205
+  },
+  {
+   "ticker": "UNP",
+   "name": "Union Pacific Corp",
+   "sector": "industrials",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 40500.0,
+   "net": -24500.0,
+   "r30": 2.7094742116754444
+  },
+  {
    "ticker": "WWD",
    "name": "Woodward Inc",
    "sector": "industrials",
@@ -4427,48 +4937,15 @@
    "r30": 10.96258227353517
   },
   {
-   "ticker": "AXP",
-   "name": "American Express Co",
+   "ticker": "BK",
+   "name": "The Bank of New York Mellon Corp",
    "sector": "financials",
    "n": 5,
-   "nBuy": 4,
-   "nSell": 1,
+   "nBuy": 5,
+   "nSell": 0,
    "value": 40000.0,
-   "net": 24000.0,
-   "r30": -1.8108127593041792
-  },
-  {
-   "ticker": "CBRE",
-   "name": "CBRE Group Inc",
-   "sector": "real-estate",
-   "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
-   "value": 40000.0,
-   "net": -8000.0,
-   "r30": 3.8519733486912533
-  },
-  {
-   "ticker": "CCL",
-   "name": "Carnival Corporation & PLC",
-   "sector": "consumer-discretionary",
-   "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
-   "value": 40000.0,
-   "net": -8000.0,
-   "r30": 3.7269851525630475
-  },
-  {
-   "ticker": "CIEN",
-   "name": "Ciena Corp",
-   "sector": "information-technology",
-   "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
-   "value": 40000.0,
-   "net": -8000.0,
-   "r30": -14.429661623015875
+   "net": 40000.0,
+   "r30": null
   },
   {
    "ticker": "DECK",
@@ -4493,28 +4970,6 @@
    "r30": 2.519735750336502
   },
   {
-   "ticker": "F",
-   "name": "Ford Motor Co",
-   "sector": "consumer-discretionary",
-   "n": 5,
-   "nBuy": 3,
-   "nSell": 2,
-   "value": 40000.0,
-   "net": 8000.0,
-   "r30": -7.683058407935625
-  },
-  {
-   "ticker": "FISV",
-   "name": "Fiserv Inc",
-   "sector": "financials",
-   "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
-   "value": 40000.0,
-   "net": -8000.0,
-   "r30": -3.9601401632382736
-  },
-  {
    "ticker": "FITB",
    "name": "Fifth Third Bancorp",
    "sector": "financials",
@@ -4524,6 +4979,39 @@
    "value": 40000.0,
    "net": -8000.0,
    "r30": 0.2935586636927334
+  },
+  {
+   "ticker": "FSLR",
+   "name": "First Solar Inc",
+   "sector": "information-technology",
+   "n": 5,
+   "nBuy": 3,
+   "nSell": 2,
+   "value": 40000.0,
+   "net": 8000.0,
+   "r30": -17.783186089366037
+  },
+  {
+   "ticker": "HIG",
+   "name": "The Hartford Financial Services Group Inc",
+   "sector": "financials",
+   "n": 5,
+   "nBuy": 1,
+   "nSell": 4,
+   "value": 40000.0,
+   "net": -24000.0,
+   "r30": 6.433223956027312
+  },
+  {
+   "ticker": "HOOD",
+   "name": "Robinhood Markets Inc",
+   "sector": "financials",
+   "n": 5,
+   "nBuy": 3,
+   "nSell": 2,
+   "value": 40000.0,
+   "net": 8000.0,
+   "r30": 10.708314472769901
   },
   {
    "ticker": "IVV",
@@ -4537,26 +5025,15 @@
    "r30": 1.1875369187497054
   },
   {
-   "ticker": "LII",
-   "name": "Lennox International Inc",
-   "sector": "industrials",
+   "ticker": "KMB",
+   "name": "Kimberly-Clark Corp",
+   "sector": "consumer-staples",
    "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
+   "nBuy": 3,
+   "nSell": 2,
    "value": 40000.0,
-   "net": -8000.0,
-   "r30": -5.386085345031654
-  },
-  {
-   "ticker": "LRCX",
-   "name": "Lam Research Corp",
-   "sector": "information-technology",
-   "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
-   "value": 40000.0,
-   "net": -8000.0,
-   "r30": -8.27437872795985
+   "net": 8000.0,
+   "r30": 3.7200745819656795
   },
   {
    "ticker": "LVS",
@@ -4570,28 +5047,6 @@
    "r30": -11.200632560760528
   },
   {
-   "ticker": "MBGL",
-   "name": "MOBILITY GLOBAL INC",
-   "sector": "industrials",
-   "n": 5,
-   "nBuy": 1,
-   "nSell": 4,
-   "value": 40000.0,
-   "net": -24000.0,
-   "r30": -3.7001522915494522
-  },
-  {
-   "ticker": "MDB",
-   "name": "MongoDB Inc",
-   "sector": "information-technology",
-   "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
-   "value": 40000.0,
-   "net": -8000.0,
-   "r30": 17.160180536689534
-  },
-  {
    "ticker": "MNST",
    "name": "Monster Beverage Corp",
    "sector": "consumer-staples",
@@ -4601,6 +5056,17 @@
    "value": 40000.0,
    "net": 24000.0,
    "r30": -4.390333288168322
+  },
+  {
+   "ticker": "MS",
+   "name": "Morgan Stanley",
+   "sector": "financials",
+   "n": 5,
+   "nBuy": 3,
+   "nSell": 2,
+   "value": 40000.0,
+   "net": 8000.0,
+   "r30": 2.9088665818367816
   },
   {
    "ticker": "MSI",
@@ -4614,26 +5080,26 @@
    "r30": 6.951615413122278
   },
   {
-   "ticker": "PCAR",
-   "name": "PACCAR Inc",
+   "ticker": "NSC",
+   "name": "Norfolk Southern Corp",
    "sector": "industrials",
-   "n": 5,
-   "nBuy": 3,
-   "nSell": 2,
-   "value": 40000.0,
-   "net": 8000.0,
-   "r30": 2.831286132495983
-  },
-  {
-   "ticker": "RCL",
-   "name": "Royal Caribbean Group",
-   "sector": "consumer-discretionary",
    "n": 5,
    "nBuy": 2,
    "nSell": 3,
    "value": 40000.0,
    "net": -8000.0,
-   "r30": 5.650139208850163
+   "r30": 0.11805654114699082
+  },
+  {
+   "ticker": "REGN",
+   "name": "Regeneron Pharmaceuticals Inc",
+   "sector": "health-care",
+   "n": 5,
+   "nBuy": 3,
+   "nSell": 2,
+   "value": 40000.0,
+   "net": 8000.0,
+   "r30": 11.753775087271482
   },
   {
    "ticker": "RMD",
@@ -4647,6 +5113,17 @@
    "r30": 8.978923237214834
   },
   {
+   "ticker": "SHW",
+   "name": "The Sherwin-Williams Co",
+   "sector": "materials",
+   "n": 5,
+   "nBuy": 3,
+   "nSell": 2,
+   "value": 40000.0,
+   "net": 8000.0,
+   "r30": 7.508663818143413
+  },
+  {
    "ticker": "SPYM",
    "name": "TRADR 2X LONG SPY MNTHLY ETF",
    "sector": null,
@@ -4658,48 +5135,15 @@
    "r30": 2.364319765896483
   },
   {
-   "ticker": "URI",
-   "name": "United Rentals Inc",
-   "sector": "industrials",
-   "n": 5,
-   "nBuy": 3,
-   "nSell": 2,
-   "value": 40000.0,
-   "net": 8000.0,
-   "r30": 0.539514321077253
-  },
-  {
-   "ticker": "VMC",
-   "name": "Vulcan Materials Co",
-   "sector": "materials",
+   "ticker": "VRTX",
+   "name": "Vertex Pharmaceuticals Inc",
+   "sector": "health-care",
    "n": 5,
    "nBuy": 2,
    "nSell": 3,
    "value": 40000.0,
    "net": -8000.0,
-   "r30": -4.397680240238477
-  },
-  {
-   "ticker": "VRSK",
-   "name": "VERISK ANALYTICS Inc",
-   "sector": "industrials",
-   "n": 5,
-   "nBuy": 3,
-   "nSell": 2,
-   "value": 40000.0,
-   "net": 8000.0,
-   "r30": 6.259488847163736
-  },
-  {
-   "ticker": "VRT",
-   "name": "Vertiv Holdings Co",
-   "sector": "industrials",
-   "n": 5,
-   "nBuy": 2,
-   "nSell": 3,
-   "value": 40000.0,
-   "net": -8000.0,
-   "r30": -12.562301586008557
+   "r30": 2.304559100870432
   },
   {
    "ticker": "WY",
@@ -4711,17 +5155,6 @@
    "value": 40000.0,
    "net": -8000.0,
    "r30": -6.189818775902309
-  },
-  {
-   "ticker": "XYL",
-   "name": "Xylem Inc",
-   "sector": "industrials",
-   "n": 5,
-   "nBuy": 3,
-   "nSell": 2,
-   "value": 40000.0,
-   "net": 8000.0,
-   "r30": 4.95302895108736
   },
   {
    "ticker": "AGX",
@@ -4755,17 +5188,6 @@
    "value": 32500.0,
    "net": -32500.0,
    "r30": 11.054421768707478
-  },
-  {
-   "ticker": "BMO",
-   "name": "Bank of Montreal",
-   "sector": "financials",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 32500.0,
-   "net": 32500.0,
-   "r30": 4.902245170273245
   },
   {
    "ticker": "CACI",
@@ -4944,17 +5366,6 @@
    "r30": -3.7289677125966203
   },
   {
-   "ticker": "MSTR",
-   "name": "MicroStrategy Inc",
-   "sector": "information-technology",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 32500.0,
-   "net": 32500.0,
-   "r30": -15.352042510793751
-  },
-  {
    "ticker": "MTN",
    "name": "Vail Resorts Inc",
    "sector": "consumer-discretionary",
@@ -4985,6 +5396,17 @@
    "nSell": 0,
    "value": 32500.0,
    "net": 0.0,
+   "r30": null
+  },
+  {
+   "ticker": "NTIOF",
+   "name": "National Bank of Canada",
+   "sector": "financials",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 32500.0,
+   "net": 32500.0,
    "r30": null
   },
   {
@@ -5065,6 +5487,17 @@
    "r30": -1.8367346938775508
   },
   {
+   "ticker": "REG",
+   "name": "Regency Centers Corp",
+   "sector": "real-estate",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 32500.0,
+   "net": 32500.0,
+   "r30": 6.186440677966121
+  },
+  {
    "ticker": "RELX",
    "name": "RELX PLC",
    "sector": "industrials",
@@ -5098,17 +5531,6 @@
    "r30": 19.816513761467892
   },
   {
-   "ticker": "RY",
-   "name": "Royal Bank of Canada",
-   "sector": "financials",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 32500.0,
-   "net": -32500.0,
-   "r30": 1.2084295328388395
-  },
-  {
    "ticker": "SFM",
    "name": "Sprouts Farmers Market Inc",
    "sector": "consumer-staples",
@@ -5118,17 +5540,6 @@
    "value": 32500.0,
    "net": 32500.0,
    "r30": 10.004072213926985
-  },
-  {
-   "ticker": "SONY",
-   "name": "Sony Group Corporation",
-   "sector": "consumer-discretionary",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 32500.0,
-   "net": -32500.0,
-   "r30": 14.724220623501205
   },
   {
    "ticker": "SPTI",
@@ -5219,6 +5630,17 @@
    "r30": 4.3770408247028465
   },
   {
+   "ticker": "ARE",
+   "name": "Alexandria Real Estate Equities Inc",
+   "sector": "real-estate",
+   "n": 4,
+   "nBuy": 3,
+   "nSell": 1,
+   "value": 32000.0,
+   "net": 16000.0,
+   "r30": -15.877982010168157
+  },
+  {
    "ticker": "AXTA",
    "name": "Axalta Coating Systems Ltd",
    "sector": "materials",
@@ -5239,6 +5661,17 @@
    "value": 32000.0,
    "net": 16000.0,
    "r30": 0.9014553152794869
+  },
+  {
+   "ticker": "CINF",
+   "name": "Cincinnati Financial Corp",
+   "sector": "financials",
+   "n": 4,
+   "nBuy": 2,
+   "nSell": 2,
+   "value": 32000.0,
+   "net": 0.0,
+   "r30": 6.027259446691927
   },
   {
    "ticker": "COP",
@@ -5296,26 +5729,37 @@
    "r30": 5.193503681603145
   },
   {
-   "ticker": "FERG",
-   "name": "Ferguson PLC",
-   "sector": "industrials",
-   "n": 4,
-   "nBuy": 4,
-   "nSell": 0,
-   "value": 32000.0,
-   "net": 32000.0,
-   "r30": -5.803314247165581
-  },
-  {
-   "ticker": "FSLR",
-   "name": "First Solar Inc",
-   "sector": "information-technology",
+   "ticker": "DPZ",
+   "name": "Domino's Pizza Inc",
+   "sector": "consumer-discretionary",
    "n": 4,
    "nBuy": 2,
    "nSell": 2,
    "value": 32000.0,
    "net": 0.0,
-   "r30": -17.783186089366037
+   "r30": 1.349263178977661
+  },
+  {
+   "ticker": "FDS",
+   "name": "FactSet Research Systems Inc",
+   "sector": "financials",
+   "n": 4,
+   "nBuy": 0,
+   "nSell": 4,
+   "value": 32000.0,
+   "net": -32000.0,
+   "r30": -6.873532371687352
+  },
+  {
+   "ticker": "FIS",
+   "name": "Fidelity National Information Services Inc",
+   "sector": "financials",
+   "n": 4,
+   "nBuy": 3,
+   "nSell": 1,
+   "value": 32000.0,
+   "net": 16000.0,
+   "r30": 7.718958866463059
   },
   {
    "ticker": "FTV",
@@ -5329,15 +5773,15 @@
    "r30": -0.9845172925793427
   },
   {
-   "ticker": "HIG",
-   "name": "The Hartford Financial Services Group Inc",
+   "ticker": "HBAN",
+   "name": "Huntington Bancshares Inc",
    "sector": "financials",
    "n": 4,
-   "nBuy": 1,
-   "nSell": 3,
+   "nBuy": 2,
+   "nSell": 2,
    "value": 32000.0,
-   "net": -16000.0,
-   "r30": 6.433223956027312
+   "net": 0.0,
+   "r30": 12.917304238164029
   },
   {
    "ticker": "HLT",
@@ -5351,37 +5795,15 @@
    "r30": 0.2799728888352726
   },
   {
-   "ticker": "HOOD",
-   "name": "Robinhood Markets Inc",
-   "sector": "financials",
+   "ticker": "IBP",
+   "name": "Installed Building Products Inc",
+   "sector": "consumer-discretionary",
    "n": 4,
-   "nBuy": 2,
-   "nSell": 2,
+   "nBuy": 4,
+   "nSell": 0,
    "value": 32000.0,
-   "net": 0.0,
-   "r30": 10.708314472769901
-  },
-  {
-   "ticker": "IR",
-   "name": "Ingersoll Rand Inc",
-   "sector": "industrials",
-   "n": 4,
-   "nBuy": 2,
-   "nSell": 2,
-   "value": 32000.0,
-   "net": 0.0,
-   "r30": 4.467187809353545
-  },
-  {
-   "ticker": "IT",
-   "name": "Gartner Inc",
-   "sector": "information-technology",
-   "n": 4,
-   "nBuy": 2,
-   "nSell": 2,
-   "value": 32000.0,
-   "net": 0.0,
-   "r30": 22.820451166431045
+   "net": 32000.0,
+   "r30": -8.303083282703723
   },
   {
    "ticker": "KEYS",
@@ -5393,17 +5815,6 @@
    "value": 32000.0,
    "net": 32000.0,
    "r30": -8.008843404354375
-  },
-  {
-   "ticker": "KMB",
-   "name": "Kimberly-Clark Corp",
-   "sector": "consumer-staples",
-   "n": 4,
-   "nBuy": 3,
-   "nSell": 1,
-   "value": 32000.0,
-   "net": 16000.0,
-   "r30": 3.7200745819656795
   },
   {
    "ticker": "KVUE",
@@ -5428,6 +5839,17 @@
    "r30": -14.936241505098524
   },
   {
+   "ticker": "MKC",
+   "name": "McCormick & Co Inc",
+   "sector": "consumer-staples",
+   "n": 4,
+   "nBuy": 3,
+   "nSell": 1,
+   "value": 32000.0,
+   "net": 16000.0,
+   "r30": 10.973380577988438
+  },
+  {
    "ticker": "MOS",
    "name": "The Mosaic Company",
    "sector": "materials",
@@ -5448,28 +5870,6 @@
    "value": 32000.0,
    "net": 0.0,
    "r30": -1.4027928278934454
-  },
-  {
-   "ticker": "NSC",
-   "name": "Norfolk Southern Corp",
-   "sector": "industrials",
-   "n": 4,
-   "nBuy": 2,
-   "nSell": 2,
-   "value": 32000.0,
-   "net": 0.0,
-   "r30": 0.11805654114699082
-  },
-  {
-   "ticker": "ODFL",
-   "name": "Old Dominion Freight Line Inc",
-   "sector": "industrials",
-   "n": 4,
-   "nBuy": 2,
-   "nSell": 2,
-   "value": 32000.0,
-   "net": 0.0,
-   "r30": -3.078407312035919
   },
   {
    "ticker": "PANW",
@@ -5494,28 +5894,6 @@
    "r30": 3.1368943089043513
   },
   {
-   "ticker": "REGN",
-   "name": "Regeneron Pharmaceuticals Inc",
-   "sector": "health-care",
-   "n": 4,
-   "nBuy": 2,
-   "nSell": 2,
-   "value": 32000.0,
-   "net": 0.0,
-   "r30": 11.753775087271482
-  },
-  {
-   "ticker": "SHW",
-   "name": "The Sherwin-Williams Co",
-   "sector": "materials",
-   "n": 4,
-   "nBuy": 3,
-   "nSell": 1,
-   "value": 32000.0,
-   "net": 16000.0,
-   "r30": 7.508663818143413
-  },
-  {
    "ticker": "SMTC",
    "name": "Semtech Corp",
    "sector": "information-technology",
@@ -5525,28 +5903,6 @@
    "value": 32000.0,
    "net": -32000.0,
    "r30": -1.9875121374791305
-  },
-  {
-   "ticker": "SNPS",
-   "name": "Synopsys Inc",
-   "sector": "information-technology",
-   "n": 4,
-   "nBuy": 3,
-   "nSell": 1,
-   "value": 32000.0,
-   "net": 16000.0,
-   "r30": -8.144344780538201
-  },
-  {
-   "ticker": "STZ",
-   "name": "Constellation Brands Inc",
-   "sector": "consumer-staples",
-   "n": 4,
-   "nBuy": 1,
-   "nSell": 3,
-   "value": 32000.0,
-   "net": -16000.0,
-   "r30": 2.9433738571994827
   },
   {
    "ticker": "SYF",
@@ -5582,17 +5938,6 @@
    "r30": -0.5421401793401392
   },
   {
-   "ticker": "TMO",
-   "name": "Thermo Fisher Scientific Inc",
-   "sector": "health-care",
-   "n": 4,
-   "nBuy": 3,
-   "nSell": 1,
-   "value": 32000.0,
-   "net": 16000.0,
-   "r30": 16.52497258282554
-  },
-  {
    "ticker": "TYL",
    "name": "Tyler Technologies Inc",
    "sector": "information-technology",
@@ -5626,15 +5971,37 @@
    "r30": -4.1440942800047065
   },
   {
-   "ticker": "VRTX",
-   "name": "Vertex Pharmaceuticals Inc",
-   "sector": "health-care",
+   "ticker": "WDC",
+   "name": "Western Digital Corp",
+   "sector": "information-technology",
    "n": 4,
    "nBuy": 2,
    "nSell": 2,
    "value": 32000.0,
    "net": 0.0,
-   "r30": 2.304559100870432
+   "r30": -10.386611756855313
+  },
+  {
+   "ticker": "YUM",
+   "name": "YUM BRANDS  Inc",
+   "sector": "consumer-discretionary",
+   "n": 4,
+   "nBuy": 0,
+   "nSell": 4,
+   "value": 32000.0,
+   "net": -32000.0,
+   "r30": -0.7224808293429381
+  },
+  {
+   "ticker": "A",
+   "name": "Agilent Technologies Inc",
+   "sector": "health-care",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": 6.18939235339433
   },
   {
    "ticker": "ADP",
@@ -5646,6 +6013,17 @@
    "value": 24000.0,
    "net": 8000.0,
    "r30": 10.558329595438416
+  },
+  {
+   "ticker": "ALB",
+   "name": "Albemarle Corp",
+   "sector": "materials",
+   "n": 3,
+   "nBuy": 1,
+   "nSell": 2,
+   "value": 24000.0,
+   "net": -8000.0,
+   "r30": 14.18781725888325
   },
   {
    "ticker": "ALL",
@@ -5681,6 +6059,28 @@
    "r30": -18.07691520451071
   },
   {
+   "ticker": "APTV",
+   "name": "Aptiv PLC",
+   "sector": "consumer-discretionary",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": -21.433344470431003
+  },
+  {
+   "ticker": "ARES",
+   "name": "Ares Management Corp",
+   "sector": "financials",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": 6.239262646412808
+  },
+  {
    "ticker": "AVY",
    "name": "Avery Dennison Corp",
    "sector": "materials",
@@ -5690,6 +6090,28 @@
    "value": 24000.0,
    "net": -8000.0,
    "r30": 5.152596364568026
+  },
+  {
+   "ticker": "BALL",
+   "name": "BALL CORPORATION",
+   "sector": "materials",
+   "n": 3,
+   "nBuy": 1,
+   "nSell": 2,
+   "value": 24000.0,
+   "net": -8000.0,
+   "r30": 4.3749262667374555
+  },
+  {
+   "ticker": "BBIO",
+   "name": "BRIDGEBIO PHARMA INC",
+   "sector": "health-care",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": null
   },
   {
    "ticker": "BDX",
@@ -5703,15 +6125,15 @@
    "r30": 8.58844973441492
   },
   {
-   "ticker": "BK",
-   "name": "The Bank of New York Mellon Corp",
-   "sector": "financials",
+   "ticker": "BMY",
+   "name": "Bristol-Myers Squibb Co",
+   "sector": "health-care",
    "n": 3,
-   "nBuy": 3,
-   "nSell": 0,
+   "nBuy": 1,
+   "nSell": 2,
    "value": 24000.0,
-   "net": 24000.0,
-   "r30": null
+   "net": -8000.0,
+   "r30": 15.987124463519308
   },
   {
    "ticker": "BR",
@@ -5725,15 +6147,15 @@
    "r30": 5.129714750206346
   },
   {
-   "ticker": "CINF",
-   "name": "Cincinnati Financial Corp",
-   "sector": "financials",
+   "ticker": "COR",
+   "name": "Cencora Inc",
+   "sector": "health-care",
    "n": 3,
    "nBuy": 2,
    "nSell": 1,
    "value": 24000.0,
    "net": 8000.0,
-   "r30": 6.027259446691927
+   "r30": 9.513704055587857
   },
   {
    "ticker": "CTVA",
@@ -5769,28 +6191,6 @@
    "r30": -0.43839996321530056
   },
   {
-   "ticker": "DHI",
-   "name": "D.R. Horton Inc",
-   "sector": "consumer-discretionary",
-   "n": 3,
-   "nBuy": 2,
-   "nSell": 1,
-   "value": 24000.0,
-   "net": 8000.0,
-   "r30": 1.2750366942060998
-  },
-  {
-   "ticker": "DPZ",
-   "name": "Domino's Pizza Inc",
-   "sector": "consumer-discretionary",
-   "n": 3,
-   "nBuy": 2,
-   "nSell": 1,
-   "value": 24000.0,
-   "net": 8000.0,
-   "r30": 1.349263178977661
-  },
-  {
    "ticker": "EPAC",
    "name": "Enerpac Tool Group Corp",
    "sector": "industrials",
@@ -5802,6 +6202,17 @@
    "r30": 5.849147677302435
   },
   {
+   "ticker": "EWA",
+   "name": "iShares MSCI Australia ETF",
+   "sector": null,
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": -0.08511937875948505
+  },
+  {
    "ticker": "FAST",
    "name": "Fastenal Co",
    "sector": "industrials",
@@ -5811,17 +6222,6 @@
    "value": 24000.0,
    "net": 8000.0,
    "r30": 5.584748193899239
-  },
-  {
-   "ticker": "FIS",
-   "name": "Fidelity National Information Services Inc",
-   "sector": "financials",
-   "n": 3,
-   "nBuy": 2,
-   "nSell": 1,
-   "value": 24000.0,
-   "net": 8000.0,
-   "r30": 7.718958866463059
   },
   {
    "ticker": "FTNT",
@@ -5857,15 +6257,15 @@
    "r30": 0.9410627469934374
   },
   {
-   "ticker": "GIS",
-   "name": "General Mills Inc",
-   "sector": "consumer-staples",
+   "ticker": "GLPI",
+   "name": "Gaming and Leisure Properties Inc",
+   "sector": "real-estate",
    "n": 3,
-   "nBuy": 3,
-   "nSell": 0,
+   "nBuy": 2,
+   "nSell": 1,
    "value": 24000.0,
-   "net": 24000.0,
-   "r30": 9.589559848383633
+   "net": 8000.0,
+   "r30": -7.699574870099212
   },
   {
    "ticker": "HLI",
@@ -5890,6 +6290,17 @@
    "r30": 11.95620412704513
   },
   {
+   "ticker": "HSY",
+   "name": "The Hershey Co",
+   "sector": "consumer-staples",
+   "n": 3,
+   "nBuy": 1,
+   "nSell": 2,
+   "value": 24000.0,
+   "net": -8000.0,
+   "r30": 1.9094453668898503
+  },
+  {
    "ticker": "HWM",
    "name": "Howmet Aerospace Inc",
    "sector": "industrials",
@@ -5899,17 +6310,6 @@
    "value": 24000.0,
    "net": -24000.0,
    "r30": -11.412639342958574
-  },
-  {
-   "ticker": "IBP",
-   "name": "Installed Building Products Inc",
-   "sector": "consumer-discretionary",
-   "n": 3,
-   "nBuy": 3,
-   "nSell": 0,
-   "value": 24000.0,
-   "net": 24000.0,
-   "r30": -8.303083282703723
   },
   {
    "ticker": "IEF",
@@ -5956,6 +6356,28 @@
    "r30": 14.236303903852999
   },
   {
+   "ticker": "KLAC",
+   "name": "KLA Corp",
+   "sector": "information-technology",
+   "n": 3,
+   "nBuy": 3,
+   "nSell": 0,
+   "value": 24000.0,
+   "net": 24000.0,
+   "r30": -21.34565535895413
+  },
+  {
+   "ticker": "L",
+   "name": "Loews Corp",
+   "sector": "financials",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": 4.694947592386988
+  },
+  {
    "ticker": "LHX",
    "name": "L3Harris Technologies Inc",
    "sector": "industrials",
@@ -5967,15 +6389,15 @@
    "r30": -3.7925687906336916
   },
   {
-   "ticker": "MKC",
-   "name": "McCormick & Co Inc",
-   "sector": "consumer-staples",
+   "ticker": "MBB",
+   "name": "iShares MBS ETF",
+   "sector": null,
    "n": 3,
    "nBuy": 3,
    "nSell": 0,
    "value": 24000.0,
    "net": 24000.0,
-   "r30": 10.973380577988438
+   "r30": -1.260515671706297
   },
   {
    "ticker": "MO",
@@ -5989,26 +6411,15 @@
    "r30": 4.854848230217282
   },
   {
-   "ticker": "MS",
-   "name": "Morgan Stanley",
-   "sector": "financials",
+   "ticker": "NCLH",
+   "name": "Norwegian Cruise Line Holdings Ltd",
+   "sector": "consumer-discretionary",
    "n": 3,
-   "nBuy": 3,
-   "nSell": 0,
+   "nBuy": 2,
+   "nSell": 1,
    "value": 24000.0,
-   "net": 24000.0,
-   "r30": 2.9088665818367816
-  },
-  {
-   "ticker": "MTD",
-   "name": "Mettler-Toledo International Inc",
-   "sector": "health-care",
-   "n": 3,
-   "nBuy": 1,
-   "nSell": 2,
-   "value": 24000.0,
-   "net": -8000.0,
-   "r30": 20.578324757551037
+   "net": 8000.0,
+   "r30": 8.044077134986228
   },
   {
    "ticker": "NCR",
@@ -6044,6 +6455,17 @@
    "r30": -15.179232631518147
   },
   {
+   "ticker": "NVR",
+   "name": "NVR Inc",
+   "sector": "consumer-discretionary",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": -4.488551621021824
+  },
+  {
    "ticker": "OKTA",
    "name": "OKTA Inc",
    "sector": "information-technology",
@@ -6053,17 +6475,6 @@
    "value": 24000.0,
    "net": 8000.0,
    "r30": 11.330597889800709
-  },
-  {
-   "ticker": "PBCRY",
-   "name": "BANK CENTRAL ASIA TBK (PT)",
-   "sector": "financials",
-   "n": 3,
-   "nBuy": 3,
-   "nSell": 0,
-   "value": 24000.0,
-   "net": 24000.0,
-   "r30": null
   },
   {
    "ticker": "PH",
@@ -6088,6 +6499,17 @@
    "r30": 25.823703950658448
   },
   {
+   "ticker": "RF",
+   "name": "Regions Financial Corp",
+   "sector": "financials",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": 13.010598546260821
+  },
+  {
    "ticker": "SNDK",
    "name": "SANDISK CORP",
    "sector": "information-technology",
@@ -6110,6 +6532,17 @@
    "r30": -5.520955653739162
   },
   {
+   "ticker": "SWK",
+   "name": "Stanley Black & Decker Inc",
+   "sector": "industrials",
+   "n": 3,
+   "nBuy": 1,
+   "nSell": 2,
+   "value": 24000.0,
+   "net": -8000.0,
+   "r30": 13.146711407407729
+  },
+  {
    "ticker": "TFC",
    "name": "Truist Financial Corp",
    "sector": "financials",
@@ -6121,15 +6554,26 @@
    "r30": 6.248956277091811
   },
   {
-   "ticker": "UAL",
-   "name": "United Airlines Holdings Inc",
-   "sector": "industrials",
+   "ticker": "TOELY",
+   "name": "Tokyo Electron Ltd",
+   "sector": "information-technology",
    "n": 3,
    "nBuy": 1,
    "nSell": 2,
    "value": 24000.0,
    "net": -8000.0,
-   "r30": -6.336513226024676
+   "r30": null
+  },
+  {
+   "ticker": "TXRH",
+   "name": "Texas Roadhouse Inc",
+   "sector": "consumer-discretionary",
+   "n": 3,
+   "nBuy": 2,
+   "nSell": 1,
+   "value": 24000.0,
+   "net": 8000.0,
+   "r30": -5.271834497364026
   },
   {
    "ticker": "VST",
@@ -6143,17 +6587,6 @@
    "r30": 6.006007073670555
   },
   {
-   "ticker": "WDC",
-   "name": "Western Digital Corp",
-   "sector": "information-technology",
-   "n": 3,
-   "nBuy": 2,
-   "nSell": 1,
-   "value": 24000.0,
-   "net": 8000.0,
-   "r30": -10.386611756855313
-  },
-  {
    "ticker": "WRB",
    "name": "Berkley (W.R.) Corp",
    "sector": "financials",
@@ -6163,28 +6596,6 @@
    "value": 24000.0,
    "net": -8000.0,
    "r30": 8.586660738293245
-  },
-  {
-   "ticker": "YUM",
-   "name": "YUM BRANDS  Inc",
-   "sector": "consumer-discretionary",
-   "n": 3,
-   "nBuy": 0,
-   "nSell": 3,
-   "value": 24000.0,
-   "net": -24000.0,
-   "r30": -0.7224808293429381
-  },
-  {
-   "ticker": "A",
-   "name": "Agilent Technologies Inc",
-   "sector": "health-care",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": 6.18939235339433
   },
   {
    "ticker": "ACGL",
@@ -6218,17 +6629,6 @@
    "value": 16000.0,
    "net": 0.0,
    "r30": 3.9459556308967136
-  },
-  {
-   "ticker": "ALB",
-   "name": "Albemarle Corp",
-   "sector": "materials",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": 14.18781725888325
   },
   {
    "ticker": "ALGN",
@@ -6286,39 +6686,6 @@
    "r30": 3.2173655006400015
   },
   {
-   "ticker": "APTV",
-   "name": "Aptiv PLC",
-   "sector": "consumer-discretionary",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": -21.433344470431003
-  },
-  {
-   "ticker": "ARE",
-   "name": "Alexandria Real Estate Equities Inc",
-   "sector": "real-estate",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 16000.0,
-   "net": 16000.0,
-   "r30": -15.877982010168157
-  },
-  {
-   "ticker": "ARES",
-   "name": "Ares Management Corp",
-   "sector": "financials",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 16000.0,
-   "net": 16000.0,
-   "r30": 6.239262646412808
-  },
-  {
    "ticker": "ATRC",
    "name": "AtriCure Inc",
    "sector": "health-care",
@@ -6341,17 +6708,6 @@
    "r30": 6.609226742283791
   },
   {
-   "ticker": "BALL",
-   "name": "BALL CORPORATION",
-   "sector": "materials",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": 4.3749262667374555
-  },
-  {
    "ticker": "BCPC",
    "name": "Balchem Corp",
    "sector": "materials",
@@ -6363,15 +6719,26 @@
    "r30": 7.298472980711656
   },
   {
-   "ticker": "CART",
-   "name": "MAPLEBEAR INC",
+   "ticker": "BNPQY",
+   "name": "BNP Paribas",
+   "sector": "financials",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": null
+  },
+  {
+   "ticker": "CASY",
+   "name": "Casey's General Stores Inc.",
    "sector": "consumer-staples",
    "n": 2,
-   "nBuy": 0,
-   "nSell": 2,
+   "nBuy": 1,
+   "nSell": 1,
    "value": 16000.0,
-   "net": -16000.0,
-   "r30": 7.249378624689307
+   "net": 0.0,
+   "r30": -8.247695380179609
   },
   {
    "ticker": "CAT",
@@ -6440,6 +6807,17 @@
    "r30": null
   },
   {
+   "ticker": "CMS",
+   "name": "CMS Energy Corp",
+   "sector": "utilities",
+   "n": 2,
+   "nBuy": 2,
+   "nSell": 0,
+   "value": 16000.0,
+   "net": 16000.0,
+   "r30": null
+  },
+  {
    "ticker": "COCO",
    "name": "VITA COCO COMPANY INC",
    "sector": "consumer-staples",
@@ -6449,17 +6827,6 @@
    "value": 16000.0,
    "net": 16000.0,
    "r30": -5.610583493710431
-  },
-  {
-   "ticker": "COR",
-   "name": "Cencora Inc",
-   "sector": "health-care",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 16000.0,
-   "net": 16000.0,
-   "r30": 9.513704055587857
   },
   {
    "ticker": "CPT",
@@ -6515,6 +6882,17 @@
    "value": 16000.0,
    "net": 0.0,
    "r30": 0.7054468840983263
+  },
+  {
+   "ticker": "DGX",
+   "name": "Quest Diagnostics Inc",
+   "sector": "health-care",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": -0.9403727755756042
   },
   {
    "ticker": "DOW",
@@ -6605,17 +6983,6 @@
    "r30": 1.5605731015343294
   },
   {
-   "ticker": "EWA",
-   "name": "iShares MSCI Australia ETF",
-   "sector": null,
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": -0.08511937875948505
-  },
-  {
    "ticker": "EXE",
    "name": "Chesapeake Energy Corp",
    "sector": "energy",
@@ -6625,17 +6992,6 @@
    "value": 16000.0,
    "net": 0.0,
    "r30": 0.41235752195385444
-  },
-  {
-   "ticker": "FDS",
-   "name": "FactSet Research Systems Inc",
-   "sector": "financials",
-   "n": 2,
-   "nBuy": 0,
-   "nSell": 2,
-   "value": 16000.0,
-   "net": -16000.0,
-   "r30": -6.873532371687352
   },
   {
    "ticker": "FLEX",
@@ -6671,6 +7027,17 @@
    "r30": -7.705323810362247
   },
   {
+   "ticker": "FOXA",
+   "name": "Fox Corp",
+   "sector": "communication-services",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": 12.380588460068775
+  },
+  {
    "ticker": "FSV",
    "name": "FIRSTSERVICE CORP",
    "sector": "real-estate",
@@ -6691,6 +7058,17 @@
    "value": 16000.0,
    "net": -16000.0,
    "r30": 1.988697794489147
+  },
+  {
+   "ticker": "GEN",
+   "name": "NortonLifeLock Inc",
+   "sector": "information-technology",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": 5.325203252032518
   },
   {
    "ticker": "GIGB",
@@ -6715,17 +7093,6 @@
    "r30": -2.0171182293510945
   },
   {
-   "ticker": "GLPI",
-   "name": "Gaming and Leisure Properties Inc",
-   "sector": "real-estate",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 16000.0,
-   "net": 16000.0,
-   "r30": -7.699574870099212
-  },
-  {
    "ticker": "GTES",
    "name": "Gates Industrial Corp PLC",
    "sector": "industrials",
@@ -6748,17 +7115,6 @@
    "r30": 9.552515113492376
   },
   {
-   "ticker": "HBAN",
-   "name": "Huntington Bancshares Inc",
-   "sector": "financials",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": 12.917304238164029
-  },
-  {
    "ticker": "HMN",
    "name": "Horace Mann Educators Corp",
    "sector": "financials",
@@ -6770,17 +7126,6 @@
    "r30": -6.945158967360465
   },
   {
-   "ticker": "HSY",
-   "name": "The Hershey Co",
-   "sector": "consumer-staples",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": 1.9094453668898503
-  },
-  {
    "ticker": "IBRX",
    "name": "IMMUNITYBIO INC",
    "sector": "health-care",
@@ -6790,6 +7135,28 @@
    "value": 16000.0,
    "net": 16000.0,
    "r30": null
+  },
+  {
+   "ticker": "IEUR",
+   "name": "iShares Core MSCI Europe ETF",
+   "sector": null,
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": 1.0731319554849073
+  },
+  {
+   "ticker": "INCY",
+   "name": "Incyte Corp",
+   "sector": "health-care",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": -10.650887573964496
   },
   {
    "ticker": "ING",
@@ -6825,26 +7192,15 @@
    "r30": -1.6623677711624818
   },
   {
-   "ticker": "KLAC",
-   "name": "KLA Corp",
-   "sector": "information-technology",
+   "ticker": "KIM",
+   "name": "Kimco Realty Corp",
+   "sector": "real-estate",
    "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
+   "nBuy": 1,
+   "nSell": 1,
    "value": 16000.0,
-   "net": 16000.0,
-   "r30": -21.34565535895413
-  },
-  {
-   "ticker": "L",
-   "name": "Loews Corp",
-   "sector": "financials",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 16000.0,
-   "net": 16000.0,
-   "r30": 4.694947592386988
+   "net": 0.0,
+   "r30": -3.8559322033898336
   },
   {
    "ticker": "LBRDA",
@@ -6855,6 +7211,28 @@
    "nSell": 0,
    "value": 16000.0,
    "net": 0.0,
+   "r30": null
+  },
+  {
+   "ticker": "LNT",
+   "name": "Alliant Energy Corporation",
+   "sector": "utilities",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": null
+  },
+  {
+   "ticker": "LNTH",
+   "name": "LANTHEUS HOLDINGS INC",
+   "sector": "health-care",
+   "n": 2,
+   "nBuy": 0,
+   "nSell": 2,
+   "value": 16000.0,
+   "net": -16000.0,
    "r30": null
   },
   {
@@ -6902,17 +7280,6 @@
    "r30": 1.5514667748436184
   },
   {
-   "ticker": "MBB",
-   "name": "iShares MBS ETF",
-   "sector": null,
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 16000.0,
-   "net": 16000.0,
-   "r30": -1.260515671706297
-  },
-  {
    "ticker": "MCO",
    "name": "Moody's Corp.",
    "sector": "financials",
@@ -6946,15 +7313,26 @@
    "r30": -2.7854511970534124
   },
   {
-   "ticker": "NVR",
-   "name": "NVR Inc",
-   "sector": "consumer-discretionary",
+   "ticker": "MSGE",
+   "name": "Madison Square Garden Entertainment Corp",
+   "sector": "communication-services",
    "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
+   "nBuy": 1,
+   "nSell": 1,
    "value": 16000.0,
-   "net": 16000.0,
-   "r30": -4.488551621021824
+   "net": 0.0,
+   "r30": 1.9042510392919487
+  },
+  {
+   "ticker": "NNN",
+   "name": "National Retail Properties Inc",
+   "sector": "real-estate",
+   "n": 2,
+   "nBuy": 0,
+   "nSell": 2,
+   "value": 16000.0,
+   "net": -16000.0,
+   "r30": null
   },
   {
    "ticker": "OC",
@@ -7021,17 +7399,6 @@
    "value": 16000.0,
    "net": -16000.0,
    "r30": 10.225303292894306
-  },
-  {
-   "ticker": "RF",
-   "name": "Regions Financial Corp",
-   "sector": "financials",
-   "n": 2,
-   "nBuy": 2,
-   "nSell": 0,
-   "value": 16000.0,
-   "net": 16000.0,
-   "r30": 13.010598546260821
   },
   {
    "ticker": "RJF",
@@ -7133,6 +7500,28 @@
    "r30": -2.7655890872800795
   },
   {
+   "ticker": "SMCI",
+   "name": "SUPER MICRO COMPUTER INC",
+   "sector": "information-technology",
+   "n": 2,
+   "nBuy": 2,
+   "nSell": 0,
+   "value": 16000.0,
+   "net": 16000.0,
+   "r30": 56.44146034410409
+  },
+  {
+   "ticker": "SNA",
+   "name": "Snap-On Inc",
+   "sector": "industrials",
+   "n": 2,
+   "nBuy": 1,
+   "nSell": 1,
+   "value": 16000.0,
+   "net": 0.0,
+   "r30": -4.733681462140993
+  },
+  {
    "ticker": "SPOT",
    "name": "Spotify Technology S.A",
    "sector": "communication-services",
@@ -7144,15 +7533,15 @@
    "r30": -1.382213132885135
   },
   {
-   "ticker": "SWK",
-   "name": "Stanley Black & Decker Inc",
-   "sector": "industrials",
+   "ticker": "SPYG",
+   "name": "SPDR Portfolio S&P 500 Growth ETF",
+   "sector": null,
    "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
+   "nBuy": 0,
+   "nSell": 2,
    "value": 16000.0,
-   "net": 0.0,
-   "r30": 13.146711407407729
+   "net": -16000.0,
+   "r30": 5.647491463094312
   },
   {
    "ticker": "TAP",
@@ -7243,17 +7632,6 @@
    "r30": -12.457717204579517
   },
   {
-   "ticker": "TXRH",
-   "name": "Texas Roadhouse Inc",
-   "sector": "consumer-discretionary",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": -5.271834497364026
-  },
-  {
    "ticker": "USB",
    "name": "U.S. Bancorp",
    "sector": "financials",
@@ -7298,17 +7676,6 @@
    "r30": 3.2635048900372166
   },
   {
-   "ticker": "WBD",
-   "name": "Warner Bros Discover Inc",
-   "sector": "communication-services",
-   "n": 2,
-   "nBuy": 1,
-   "nSell": 1,
-   "value": 16000.0,
-   "net": 0.0,
-   "r30": -4.248120300751889
-  },
-  {
    "ticker": "WPM",
    "name": "Wheaton Precious Metals Corp",
    "sector": "materials",
@@ -7351,6 +7718,17 @@
    "value": 16000.0,
    "net": 16000.0,
    "r30": -17.06955530216647
+  },
+  {
+   "ticker": "XAR",
+   "name": "SPDR S&P Aerospace & Defense ETF",
+   "sector": null,
+   "n": 2,
+   "nBuy": 2,
+   "nSell": 0,
+   "value": 16000.0,
+   "net": 16000.0,
+   "r30": -9.274786701971182
   },
   {
    "ticker": "XFIV",
@@ -7628,17 +8006,6 @@
    "r30": 17.02017589239526
   },
   {
-   "ticker": "BBIO",
-   "name": "BRIDGEBIO PHARMA INC",
-   "sector": "health-care",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 8000.0,
-   "net": -8000.0,
-   "r30": null
-  },
-  {
    "ticker": "BBVA",
    "name": "Banco Bilbao Vizcaya Argentaria SA (BBVA)",
    "sector": "financials",
@@ -7683,28 +8050,6 @@
    "r30": 13.940389579910818
   },
   {
-   "ticker": "BMY",
-   "name": "Bristol-Myers Squibb Co",
-   "sector": "health-care",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 8000.0,
-   "net": -8000.0,
-   "r30": 15.987124463519308
-  },
-  {
-   "ticker": "BNPQY",
-   "name": "BNP Paribas",
-   "sector": "financials",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": null
-  },
-  {
    "ticker": "BOOT",
    "name": "Boot Barn Holdings Inc",
    "sector": "consumer-discretionary",
@@ -7738,6 +8083,17 @@
    "r30": -5.1142967841921845
   },
   {
+   "ticker": "BX",
+   "name": "Blackstone Group Inc",
+   "sector": "financials",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 8000.0,
+   "net": 8000.0,
+   "r30": null
+  },
+  {
    "ticker": "BXP",
    "name": "Boston Properties Inc",
    "sector": "real-estate",
@@ -7747,17 +8103,6 @@
    "value": 8000.0,
    "net": 8000.0,
    "r30": -4.0185471406491535
-  },
-  {
-   "ticker": "CASY",
-   "name": "Casey's General Stores Inc.",
-   "sector": "consumer-staples",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": -8.247695380179609
   },
   {
    "ticker": "CBOE",
@@ -7815,6 +8160,17 @@
    "r30": -0.9985422740524608
   },
   {
+   "ticker": "CF",
+   "name": "CF Industries Holdings Inc",
+   "sector": "materials",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 8000.0,
+   "net": 8000.0,
+   "r30": null
+  },
+  {
    "ticker": "CGEMY",
    "name": "Capgemini SE",
    "sector": "information-technology",
@@ -7824,17 +8180,6 @@
    "value": 8000.0,
    "net": -8000.0,
    "r30": null
-  },
-  {
-   "ticker": "CLX",
-   "name": "The Clorox Co",
-   "sector": "consumer-staples",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": 10.130536650675005
   },
   {
    "ticker": "CM",
@@ -7859,14 +8204,14 @@
    "r30": -15.02555366269165
   },
   {
-   "ticker": "CMS",
-   "name": "CMS Energy Corp",
-   "sector": "utilities",
+   "ticker": "CPB",
+   "name": "Campbell Soup Co",
+   "sector": "consumer-staples",
    "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
+   "nBuy": 0,
+   "nSell": 1,
    "value": 8000.0,
-   "net": 8000.0,
+   "net": -8000.0,
    "r30": null
   },
   {
@@ -7958,17 +8303,6 @@
    "r30": -1.9337328960760014
   },
   {
-   "ticker": "DGX",
-   "name": "Quest Diagnostics Inc",
-   "sector": "health-care",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": -0.9403727755756042
-  },
-  {
    "ticker": "DOV",
    "name": "Dover Corp",
    "sector": "industrials",
@@ -8002,6 +8336,17 @@
    "r30": -0.7187780772686447
   },
   {
+   "ticker": "EIX",
+   "name": "Edison International",
+   "sector": "utilities",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 8000.0,
+   "net": 8000.0,
+   "r30": null
+  },
+  {
    "ticker": "ELAN",
    "name": "Elanco Animal Health Inc",
    "sector": "health-care",
@@ -8022,6 +8367,17 @@
    "value": 8000.0,
    "net": -8000.0,
    "r30": 2.6973288334249057
+  },
+  {
+   "ticker": "ENGIY",
+   "name": "Engie SA",
+   "sector": "utilities",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "r30": null
   },
   {
    "ticker": "EQIX",
@@ -8145,17 +8501,6 @@
    "r30": 1.0082493125572745
   },
   {
-   "ticker": "FOXA",
-   "name": "Fox Corp",
-   "sector": "communication-services",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 8000.0,
-   "net": -8000.0,
-   "r30": 12.380588460068775
-  },
-  {
    "ticker": "FSS",
    "name": "Federal Signal Corp",
    "sector": "industrials",
@@ -8222,17 +8567,6 @@
    "r30": -1.410083059687084
   },
   {
-   "ticker": "GEN",
-   "name": "NortonLifeLock Inc",
-   "sector": "information-technology",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": 5.325203252032518
-  },
-  {
    "ticker": "GENI",
    "name": "GENIUS SPORTS LTD",
    "sector": "consumer-discretionary",
@@ -8275,17 +8609,6 @@
    "value": 8000.0,
    "net": -8000.0,
    "r30": 9.251820236003017
-  },
-  {
-   "ticker": "GPK",
-   "name": "Graphic Packaging Holding Co",
-   "sector": "materials",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 8000.0,
-   "net": -8000.0,
-   "r30": -7.983193277310918
   },
   {
    "ticker": "GPN",
@@ -8376,6 +8699,28 @@
    "r30": 8.245745745745747
   },
   {
+   "ticker": "HUM",
+   "name": "Humana Inc",
+   "sector": "health-care",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 8000.0,
+   "net": 8000.0,
+   "r30": null
+  },
+  {
+   "ticker": "HYBB",
+   "name": "ISHARES BB RAT CORP BOND ETF",
+   "sector": null,
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 8000.0,
+   "net": 8000.0,
+   "r30": null
+  },
+  {
    "ticker": "IBKR",
    "name": "Interactive Brokers Group Inc",
    "sector": "financials",
@@ -8387,15 +8732,15 @@
    "r30": 16.23224212476837
   },
   {
-   "ticker": "IEUR",
-   "name": "iShares Core MSCI Europe ETF",
-   "sector": null,
+   "ticker": "IFF",
+   "name": "International Flavors & Fragrances Inc",
+   "sector": "materials",
    "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
+   "nBuy": 0,
+   "nSell": 1,
    "value": 8000.0,
-   "net": 8000.0,
-   "r30": 1.0731319554849073
+   "net": -8000.0,
+   "r30": null
   },
   {
    "ticker": "IGV",
@@ -8431,15 +8776,15 @@
    "r30": 3.1102825745682905
   },
   {
-   "ticker": "INCY",
-   "name": "Incyte Corp",
+   "ticker": "ILMN",
+   "name": "Illumina Inc",
    "sector": "health-care",
    "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
+   "nBuy": 0,
+   "nSell": 1,
    "value": 8000.0,
-   "net": 8000.0,
-   "r30": -10.650887573964496
+   "net": -8000.0,
+   "r30": null
   },
   {
    "ticker": "INDB",
@@ -8508,6 +8853,17 @@
    "r30": 1.9354616523745483
   },
   {
+   "ticker": "JBGS",
+   "name": "JBG SMITH Properties",
+   "sector": "real-estate",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "r30": null
+  },
+  {
    "ticker": "JBHT",
    "name": "J.B. Hunt Transport Services Inc",
    "sector": "industrials",
@@ -8530,15 +8886,26 @@
    "r30": -14.912280701754387
   },
   {
-   "ticker": "KIM",
-   "name": "Kimco Realty Corp",
-   "sector": "real-estate",
+   "ticker": "KDP",
+   "name": "Keurig Dr Pepper Inc",
+   "sector": "consumer-staples",
    "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
+   "nBuy": 0,
+   "nSell": 1,
    "value": 8000.0,
-   "net": 8000.0,
-   "r30": -3.8559322033898336
+   "net": -8000.0,
+   "r30": null
+  },
+  {
+   "ticker": "KEY",
+   "name": "KeyCorp",
+   "sector": "financials",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "r30": 3.2778618255169034
   },
   {
    "ticker": "KMX",
@@ -8607,14 +8974,14 @@
    "r30": 15.121718790609018
   },
   {
-   "ticker": "LNT",
-   "name": "Alliant Energy Corporation",
-   "sector": "utilities",
+   "ticker": "MDYG",
+   "name": "SPDR S&P 400 Mid Cap Growth ETF",
+   "sector": null,
    "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
+   "nBuy": 1,
+   "nSell": 0,
    "value": 8000.0,
-   "net": -8000.0,
+   "net": 8000.0,
    "r30": null
   },
   {
@@ -8651,6 +9018,28 @@
    "r30": null
   },
   {
+   "ticker": "MICR",
+   "name": "MICRON SOLUTIONS INC",
+   "sector": "health-care",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "r30": null
+  },
+  {
+   "ticker": "MRAAY",
+   "name": "Murata Manufacturing Co Ltd",
+   "sector": "information-technology",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 8000.0,
+   "net": 8000.0,
+   "r30": null
+  },
+  {
    "ticker": "MSA",
    "name": "MSA Safety Inc",
    "sector": "industrials",
@@ -8660,17 +9049,6 @@
    "value": 8000.0,
    "net": -8000.0,
    "r30": 17.075247886124465
-  },
-  {
-   "ticker": "MSGE",
-   "name": "Madison Square Garden Entertainment Corp",
-   "sector": "communication-services",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": 1.9042510392919487
   },
   {
    "ticker": "MTX",
@@ -8693,17 +9071,6 @@
    "value": 8000.0,
    "net": 8000.0,
    "r30": -17.599338991962743
-  },
-  {
-   "ticker": "NCLH",
-   "name": "Norwegian Cruise Line Holdings Ltd",
-   "sector": "consumer-discretionary",
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 8000.0,
-   "net": -8000.0,
-   "r30": 8.044077134986228
   },
   {
    "ticker": "NDSN",
@@ -8926,17 +9293,6 @@
    "r30": null
   },
   {
-   "ticker": "PNR",
-   "name": "Pentair PLC",
-   "sector": "industrials",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": -2.262283492400141
-  },
-  {
    "ticker": "PRI",
    "name": "Primerica Inc",
    "sector": "financials",
@@ -9069,6 +9425,17 @@
    "r30": 7.660961695191526
   },
   {
+   "ticker": "SARO",
+   "name": "STANDARDAERO INC",
+   "sector": "industrials",
+   "n": 1,
+   "nBuy": 1,
+   "nSell": 0,
+   "value": 8000.0,
+   "net": 8000.0,
+   "r30": null
+  },
+  {
    "ticker": "SBGSY",
    "name": "Schneider Electric SA",
    "sector": "industrials",
@@ -9135,17 +9502,6 @@
    "r30": 2.3305272485600437
   },
   {
-   "ticker": "SMCI",
-   "name": "SUPER MICRO COMPUTER INC",
-   "sector": "information-technology",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": 56.44146034410409
-  },
-  {
    "ticker": "SMNEY",
    "name": "SIEMENS ENERGY AG",
    "sector": "industrials",
@@ -9155,17 +9511,6 @@
    "value": 8000.0,
    "net": 8000.0,
    "r30": null
-  },
-  {
-   "ticker": "SNA",
-   "name": "Snap-On Inc",
-   "sector": "industrials",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": -4.733681462140993
   },
   {
    "ticker": "SO",
@@ -9210,17 +9555,6 @@
    "value": 8000.0,
    "net": -8000.0,
    "r30": -4.945360251898501
-  },
-  {
-   "ticker": "SPYG",
-   "name": "SPDR Portfolio S&P 500 Growth ETF",
-   "sector": null,
-   "n": 1,
-   "nBuy": 0,
-   "nSell": 1,
-   "value": 8000.0,
-   "net": -8000.0,
-   "r30": 5.647491463094312
   },
   {
    "ticker": "SRE",
@@ -9289,8 +9623,8 @@
    "r30": 12.834672021419014
   },
   {
-   "ticker": "TNDM",
-   "name": "Tandem Diabetes Care Inc",
+   "ticker": "TAK",
+   "name": "Takeda Pharmaceutical Co Ltd",
    "sector": "health-care",
    "n": 1,
    "nBuy": 1,
@@ -9300,9 +9634,20 @@
    "r30": null
   },
   {
-   "ticker": "TOELY",
-   "name": "Tokyo Electron Ltd",
-   "sector": "information-technology",
+   "ticker": "TLK",
+   "name": "PT Telekomunikasi Indonesia (Persero) TBK",
+   "sector": "communication-services",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "r30": null
+  },
+  {
+   "ticker": "TNDM",
+   "name": "Tandem Diabetes Care Inc",
+   "sector": "health-care",
    "n": 1,
    "nBuy": 1,
    "nSell": 0,
@@ -9342,17 +9687,6 @@
    "value": 8000.0,
    "net": -8000.0,
    "r30": -9.726801695713617
-  },
-  {
-   "ticker": "UNP",
-   "name": "Union Pacific Corp",
-   "sector": "industrials",
-   "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
-   "value": 8000.0,
-   "net": 8000.0,
-   "r30": 2.7094742116754444
   },
   {
    "ticker": "USOU",
@@ -9465,15 +9799,26 @@
    "r30": 4.376266539516038
   },
   {
-   "ticker": "XAR",
-   "name": "SPDR S&P Aerospace & Defense ETF",
+   "ticker": "WWE",
+   "name": "World Wrestling Entertainment Inc",
+   "sector": "communication-services",
+   "n": 1,
+   "nBuy": 0,
+   "nSell": 1,
+   "value": 8000.0,
+   "net": -8000.0,
+   "r30": null
+  },
+  {
+   "ticker": "XLE",
+   "name": "The Select Sector SPDR Trust - The Energy Select Sector SPDR Fund",
    "sector": null,
    "n": 1,
-   "nBuy": 1,
-   "nSell": 0,
+   "nBuy": 0,
+   "nSell": 1,
    "value": 8000.0,
-   "net": 8000.0,
-   "r30": -9.274786701971182
+   "net": -8000.0,
+   "r30": null
   },
   {
    "ticker": "XSHQ",
