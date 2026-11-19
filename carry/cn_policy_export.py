@@ -35,6 +35,20 @@ def r2(x, nd=2):
     return round(float(x), nd)
 
 
+def price_snapshot_date():
+    """Last close of the benchmark series = the vintage of the price panel."""
+    try:
+        import us_prices
+        path = os.path.join(us_prices.CACHE, "SPY.csv")
+        if os.path.exists(path):
+            df = pd.read_csv(path)
+            if len(df):
+                return str(pd.to_datetime(df["date"].iloc[-1]).date())
+    except Exception:  # noqa: BLE001
+        pass
+    return None
+
+
 def main():
     with open(ANALYSIS, encoding="utf-8") as f:
         a = json.load(f)
@@ -82,6 +96,11 @@ def main():
                else (gaps[len(gaps) // 2 - 1] + gaps[len(gaps) // 2]) / 2) if gaps else None
     ds = sorted(r["d"] for r in rows if r["d"])
     window = f"{ds[0]} → {ds[-1]}" if ds else ""
+    # 数据新鲜度：交易表与排名的更新状态 = 表内最新披露日；
+    # 事后收益用的是价格面板，其版本 = 基准 SPY 的最后一个收盘日。
+    pubs = sorted(r["pd"] for r in rows if r["pd"])
+    fetched = pubs[-1] if pubs else "—"
+    snapshot_date = price_snapshot_date() or "—"
 
     stats = {}
     for h in ("30", "90", "180"):
@@ -146,7 +165,8 @@ def main():
     meta = {
         "source": "Capitol Trades",
         "sourceUrl": "https://www.capitoltrades.com/trades",
-        "fetched": "2026-11-01",
+        "fetched": fetched,
+        "snapshotDate": snapshot_date,
         "window": window,
         "nTrades": len(rows),
         "nPoliticians": n_people,
